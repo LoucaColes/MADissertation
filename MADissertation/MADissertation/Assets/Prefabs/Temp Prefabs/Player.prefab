@@ -103,7 +103,8 @@ MonoBehaviour:
   m_dropOffset: 0.07
   m_raycastLength: 0.1
   m_dashCooldown: 0.5
-  m_dashForce: 100
+  m_dashForce: 15000
+  m_dashTime: 0.5
 --- !u!212 &212276028670878370
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -26,10 +26,12 @@ MonoBehaviour:
     - {fileID: 1968044073818610, guid: db6859028ad321c4ba5d7f8f55d68cf1, type: 2}
     - {fileID: 1344385291901924, guid: ed93c3e7177a93b4185297cddd55abdc, type: 2}
     - {fileID: 1412680728148210, guid: 2557fc5c4d70dbf4fbb861672be0d9a2, type: 2}
+    - {fileID: 1957859099490406, guid: b1587706adf66c142aee9aa3683f4096, type: 2}
     m_gridMinMax: {x: 6, y: 8}
   m_hardGroup:
     m_groupName: Hard
     m_difficulty: 2
     m_roomPrefabs:
     - {fileID: 1404175029471172, guid: a39d5280413773f4ebc308745451d6ab, type: 2}
+    - {fileID: 1116501990642578, guid: 2c44ce66d26faa940a52e5fcf4d51c0b, type: 2}
     m_gridMinMax: {x: 9, y: 11}

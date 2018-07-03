@@ -30,6 +30,9 @@ public class Player : Character
     [SerializeField]
     private float m_dashForce = 100f;
 
+    [SerializeField]
+    private float m_dashTime = 0.25f;
+
     // Private variables
     private Rewired.Player m_rewiredPlayer;
     private Vector3 m_movementInput;
@@ -43,6 +46,8 @@ public class Player : Character
     private CameraMovement m_cameraMovement;
     private Vector2 m_startPosition;
     private float m_dashTimer = 0;
+    private bool m_dashing = false;
+    private float m_dashingTimer = 0;
 
     /// <summary>
     /// Handle Set Up
@@ -115,14 +120,34 @@ public class Player : Character
             m_dashTimer += Time.deltaTime;
             if (m_rewiredPlayer.GetButtonDown("DashRight") && m_dashTimer > m_dashCooldown)
             {
+                float xVelocity = m_rigidBody.velocity.x;
+                float yVelocity = m_rigidBody.velocity.y;
+                Vector2 invertedVelocity = new Vector2(xVelocity, -yVelocity);
+                m_rigidBody.velocity += invertedVelocity;
                 m_rigidBody.AddForce(Vector2.right * m_dashForce * Time.deltaTime);
                 m_dashTimer = 0;
+                m_dashing = true;
             }
 
             if (m_rewiredPlayer.GetButtonDown("DashLeft") && m_dashTimer > m_dashCooldown)
             {
+                float xVelocity = m_rigidBody.velocity.x;
+                float yVelocity = m_rigidBody.velocity.y;
+                Vector2 invertedVelocity = new Vector2(xVelocity, -yVelocity);
+                m_rigidBody.velocity += invertedVelocity;
                 m_rigidBody.AddForce(Vector2.left * m_dashForce * Time.deltaTime);
                 m_dashTimer = 0;
+                m_dashing = true;
+            }
+
+            if (m_dashing)
+            {
+                m_dashingTimer += Time.deltaTime;
+                if (m_dashingTimer >= m_dashTime)
+                {
+                    m_dashingTimer = 0;
+                    m_dashing = false;
+                }
             }
 
             base.Update();
@@ -138,10 +163,15 @@ public class Player : Character
         {
             // Calculate movement based on whether the player is grounded or not
             Vector2 movement;
-            if (!m_grounded)
+            if (!m_grounded && !m_dashing)
             {
                 movement = new Vector2(m_movementInput.x * m_characterData.m_moveSpeed * m_movementMultiplier,
                     m_gravity);
+            }
+            else if (m_dashing || (!m_grounded && m_dashing))
+            {
+                movement = new Vector2(m_movementInput.x * m_characterData.m_moveSpeed * m_movementMultiplier,
+                    -m_gravity);
             }
             else
             {
