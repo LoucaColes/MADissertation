@@ -1,0 +1,93 @@
+Here is a list of the control schemes for supported devices.
+
+Keyboard
+Gameplay
+Move Left - A
+Move Right - D
+Move Up - W
+Move Down - S 
+Jump - Space
+Sprint - Left Shift
+Dash Right - E
+Dash Left - Q
+Drop Down - Z
+Pause - ESC
+
+UI
+Move Left - A
+Move Right - D
+Move Up - W
+Move Down - S
+Submit - Return
+Cancel - Backspace
+
+
+Xbox 360
+Gameplay
+Move Horizontal - Left Analogue Stick
+Move Vertical- Left Analogue Stick
+Jump - A
+Sprint - Right Trigger
+Dash Right - Right Bumper
+Dash Left - Left Bumper
+Drop Down - X or D-pad Down
+Pause - Start
+UI
+Move Horizontal - Left Analogue Stick
+Move Vertical - Left Analogue Stick
+Submit - A
+Cancel - B
+
+
+Xbox One 
+Gameplay
+Move Horizontal - Left Analogue Stick
+Move Vertical- Left Analogue Stick
+Jump - A
+Sprint - Right Trigger
+Dash Right - Right Bumper
+Dash Left - Left Bumper
+Drop Down - X or D-pad Down
+Pause - Menu
+
+UI
+Move Horizontal - Left Analogue Stick
+Move Vertical - Left Analogue Stick
+Submit - A
+Cancel - B
+
+
+PS3
+Gameplay
+Move Horizontal - Left Analogue Stick
+Move Vertical- Left Analogue Stick
+Jump - Cross
+Sprint - Right Trigger
+Dash Right - Right Bumper
+Dash Left - Left Bumper
+Drop Down - Square or D-pad Down
+Pause - Start
+
+UI
+Move Horizontal - Left Analogue Stick
+Move Vertical - Left Analogue Stick
+Submit - Cross
+Cancel - Circle
+
+
+PS4
+Gameplay
+Move Horizontal - Left Analogue Stick
+Move Vertical- Left Analogue Stick
+Jump - Cross
+Sprint - Right Trigger
+Dash Right - Right Bumper
+Dash Left - Left Bumper
+Drop Down - Square or D-pad Down
+Pause - Options
+
+UI
+Move Horizontal - Left Analogue Stick
+Move Vertical - Left Analogue Stick
+Submit - Cross
+Cancel - Circle

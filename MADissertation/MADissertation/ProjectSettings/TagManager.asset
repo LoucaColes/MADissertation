@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Collectable
   - EndZone
+  - Entrance
+  - Obstacle
+  - OneWayTrigger
+  - OneWayPlatform
   layers:
   - Default
   - TransparentFX
@@ -15,7 +19,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - OneWayPlatform
   - 
   - 
   - 

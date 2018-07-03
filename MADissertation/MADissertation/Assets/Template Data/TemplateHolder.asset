@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c84f1fc4d06cd4c499a9fd845f912bbd, type: 3}
+  m_Name: TemplateHolder
+  m_EditorClassIdentifier: 
+  m_easyGroup:
+    m_groupName: Easy
+    m_difficulty: 0
+    m_roomPrefabs:
+    - {fileID: 1706853008077524, guid: 6076124a90c593c41a1e7b0e099ad940, type: 2}
+    - {fileID: 1949425896427038, guid: b4d0bf709dbb74c41861f3c849471012, type: 2}
+    - {fileID: 1427945506388662, guid: 64a7dbb0eca47a64b835f7a8fdedc72d, type: 2}
+    m_gridMinMax: {x: 4, y: 5}
+  m_mediumGroup:
+    m_groupName: Medium
+    m_difficulty: 1
+    m_roomPrefabs:
+    - {fileID: 1968044073818610, guid: db6859028ad321c4ba5d7f8f55d68cf1, type: 2}
+    - {fileID: 1344385291901924, guid: ed93c3e7177a93b4185297cddd55abdc, type: 2}
+    - {fileID: 1412680728148210, guid: 2557fc5c4d70dbf4fbb861672be0d9a2, type: 2}
+    m_gridMinMax: {x: 6, y: 8}
+  m_hardGroup:
+    m_groupName: Hard
+    m_difficulty: 2
+    m_roomPrefabs:
+    - {fileID: 1404175029471172, guid: a39d5280413773f4ebc308745451d6ab, type: 2}
+    m_gridMinMax: {x: 9, y: 11}
