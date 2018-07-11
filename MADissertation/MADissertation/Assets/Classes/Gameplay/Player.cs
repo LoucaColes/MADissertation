@@ -33,6 +33,21 @@ public class Player : Character
     [SerializeField]
     private float m_dashTime = 0.25f;
 
+    [SerializeField]
+    private float m_jumpTime = 0.35f;
+
+    [SerializeField]
+    private Transform m_rightWallCheck;
+
+    [SerializeField]
+    private Transform m_leftWallCheck;
+
+    [SerializeField]
+    private float m_wallCheckRadius = 0.3f;
+
+    [SerializeField]
+    private LayerMask m_wallMask;
+
     // Private variables
     private Rewired.Player m_rewiredPlayer;
     private Vector3 m_movementInput;
@@ -48,6 +63,8 @@ public class Player : Character
     private float m_dashTimer = 0;
     private bool m_dashing = false;
     private float m_dashingTimer = 0;
+    private float m_jumpTimer = 0;
+    private bool m_jumping = false;
 
     /// <summary>
     /// Handle Set Up
@@ -59,6 +76,7 @@ public class Player : Character
         m_collider = GetComponent<Collider2D>();
         m_height = m_collider.bounds.extents.y + m_heightOffset;
         m_startPosition = transform.position;
+        m_jumpTimer = m_jumpTime;
     }
 
     public void SetCameraMovement(CameraMovement _cameraMovement)
@@ -82,6 +100,24 @@ public class Player : Character
             if (m_rewiredPlayer.GetButtonDown("Jump"))
             {
                 Jump();
+            }
+
+            if (m_rewiredPlayer.GetButton("Jump") && m_jumping)
+            {
+                if (m_jumpTimer > 0)
+                {
+                    m_rigidBody.velocity = Vector2.up * m_characterData.m_jumpSpeed * m_movementMultiplier;
+                    m_jumpTimer -= Time.deltaTime;
+                }
+                else
+                {
+                    m_jumping = false;
+                }
+            }
+
+            if (m_rewiredPlayer.GetButtonUp("Jump"))
+            {
+                m_jumping = false;
             }
 
             // Handle Sprint Input
@@ -163,23 +199,10 @@ public class Player : Character
         {
             // Calculate movement based on whether the player is grounded or not
             Vector2 movement;
-            if (!m_grounded && !m_dashing)
-            {
-                movement = new Vector2(m_movementInput.x * m_characterData.m_moveSpeed * m_movementMultiplier,
-                    m_gravity);
-            }
-            else if (m_dashing || (!m_grounded && m_dashing))
-            {
-                movement = new Vector2(m_movementInput.x * m_characterData.m_moveSpeed * m_movementMultiplier,
-                    -m_gravity);
-            }
-            else
-            {
-                movement = new Vector2(m_movementInput.x * m_characterData.m_moveSpeed * m_movementMultiplier, 0);
-            }
+            movement = new Vector2(m_movementInput.x * m_characterData.m_moveSpeed * m_movementMultiplier, m_rigidBody.velocity.y);
 
             // Update movement
-            m_rigidBody.AddForce(movement * Time.deltaTime);
+            m_rigidBody.velocity = movement;
         }
     }
 
@@ -188,12 +211,16 @@ public class Player : Character
     /// </summary>
     private void Jump()
     {
+        bool wallCheckLeft = Physics2D.OverlapCircle(m_leftWallCheck.position, m_wallCheckRadius, m_wallMask);
+        Debug.Log("Wall Check Left: " + wallCheckLeft);
+        bool wallCheckRight = Physics2D.OverlapCircle(m_rightWallCheck.position, m_wallCheckRadius, m_wallMask);
+        Debug.Log("Wall Check Right: " + wallCheckRight);
         // If player is grounded then jump
-        if (m_grounded)
+        if (m_grounded || wallCheckRight || wallCheckLeft)
         {
-            Vector2 movement = new Vector2(m_movementInput.x * m_characterData.m_moveSpeed * m_movementMultiplier,
-                m_characterData.m_jumpSpeed);
-            m_rigidBody.AddForce(movement * Time.deltaTime);
+            m_jumping = true;
+            m_jumpTimer = m_jumpTime;
+            m_rigidBody.velocity = Vector2.up * m_characterData.m_jumpSpeed * m_movementMultiplier;
         }
     }
 

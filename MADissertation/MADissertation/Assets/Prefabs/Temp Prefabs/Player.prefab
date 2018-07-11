@@ -11,6 +11,36 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1980645332649368}
   m_IsPrefabParent: 1
+--- !u!1 &1790767624797010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4450373767398278}
+  m_Layer: 0
+  m_Name: LeftWallCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1814183930599056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4573151119372008}
+  m_Layer: 0
+  m_Name: RightWallCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1980645332649368
 GameObject:
   m_ObjectHideFlags: 0
@@ -39,8 +69,36 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -1.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 4573151119372008}
+  - {fileID: 4450373767398278}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4450373767398278
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1790767624797010}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.3, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4446168586803316}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4573151119372008
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1814183930599056}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.3, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4446168586803316}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &50530918536706086
@@ -91,8 +149,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_characterData:
     m_health: 10
-    m_moveSpeed: 500
-    m_jumpSpeed: 30000
+    m_moveSpeed: 5
+    m_jumpSpeed: 6
     m_idleSprite: {fileID: 21300376, guid: df6e711e8a6d9624cb102eb12e6d408d, type: 3}
     m_rightSprite: {fileID: 21300248, guid: df6e711e8a6d9624cb102eb12e6d408d, type: 3}
     m_leftSprite: {fileID: 21300296, guid: df6e711e8a6d9624cb102eb12e6d408d, type: 3}
@@ -105,6 +163,13 @@ MonoBehaviour:
   m_dashCooldown: 0.5
   m_dashForce: 15000
   m_dashTime: 0.5
+  m_jumpTime: 0.1
+  m_rightWallCheck: {fileID: 4573151119372008}
+  m_leftWallCheck: {fileID: 4450373767398278}
+  m_wallCheckRadius: 0.3
+  m_wallMask:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!212 &212276028670878370
 SpriteRenderer:
   m_ObjectHideFlags: 1
