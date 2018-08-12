@@ -1,0 +1,168 @@
+\hypertarget{class_camera_movement}{}\section{Camera\+Movement Class Reference}
+\label{class_camera_movement}\index{Camera\+Movement@{Camera\+Movement}}
+
+
+Moves the camera based on the type of camera needed  
+
+
+Inheritance diagram for Camera\+Movement\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_camera_movement}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_camera_movement_a297cb93f5fc197103c3447dac2340a83}{Camera\+Type}} \{ {\bfseries Room\+To\+Room}
+ \}
+\begin{DoxyCompactList}\small\item\em Type of camera that will be used \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_camera_movement_a9203ee195c435d40bf4fc1de221ed0cd}{Init}} ()
+\begin{DoxyCompactList}\small\item\em Handles set up \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_movement_a198122a1f8e338c1bfe843a0f4f6ce96}{Set\+New\+Room\+Target}} (Transform \+\_\+target\+Transform)
+\begin{DoxyCompactList}\small\item\em Set the target room transform \end{DoxyCompactList}\item 
+Transform \mbox{\hyperlink{class_camera_movement_a6129de38ce5788f51e7427417bdf7a98}{Has\+Room\+Target}} ()
+\begin{DoxyCompactList}\small\item\em Get the target room transform \end{DoxyCompactList}\item 
+Transform \mbox{\hyperlink{class_camera_movement_ad707fba6a3e906310efa90dd4285a407}{Current\+Target\+Transform}} ()
+\begin{DoxyCompactList}\small\item\em Get the current room trasnform \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_movement_a22e6e76309d99376ead5b3dffd474938}{Set\+Start\+Room\+Transform}} (Transform \+\_\+start\+Room\+Transform)
+\begin{DoxyCompactList}\small\item\em Set the start room transform \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_movement_a06848ed3326e21d52be8c25ecfe12843}{Reset\+Camera}} ()
+\begin{DoxyCompactList}\small\item\em Reset the camera \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Moves the camera based on the type of camera needed 
+
+
+
+Definition at line 8 of file Camera\+Movement.\+cs.
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_camera_movement_a297cb93f5fc197103c3447dac2340a83}\label{class_camera_movement_a297cb93f5fc197103c3447dac2340a83}} 
+\index{Camera\+Movement@{Camera\+Movement}!Camera\+Type@{Camera\+Type}}
+\index{Camera\+Type@{Camera\+Type}!Camera\+Movement@{Camera\+Movement}}
+\subsubsection{\texorpdfstring{Camera\+Type}{CameraType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_camera_movement_a297cb93f5fc197103c3447dac2340a83}{Camera\+Movement.\+Camera\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Type of camera that will be used 
+
+
+
+Definition at line 154 of file Camera\+Movement.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_camera_movement_ad707fba6a3e906310efa90dd4285a407}\label{class_camera_movement_ad707fba6a3e906310efa90dd4285a407}} 
+\index{Camera\+Movement@{Camera\+Movement}!Current\+Target\+Transform@{Current\+Target\+Transform}}
+\index{Current\+Target\+Transform@{Current\+Target\+Transform}!Camera\+Movement@{Camera\+Movement}}
+\subsubsection{\texorpdfstring{Current\+Target\+Transform()}{CurrentTargetTransform()}}
+{\footnotesize\ttfamily Transform Camera\+Movement.\+Current\+Target\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the current room trasnform 
+
+\begin{DoxyReturn}{Returns}
+Current room transform
+\end{DoxyReturn}
+
+
+Definition at line 125 of file Camera\+Movement.\+cs.
+
+\mbox{\Hypertarget{class_camera_movement_a6129de38ce5788f51e7427417bdf7a98}\label{class_camera_movement_a6129de38ce5788f51e7427417bdf7a98}} 
+\index{Camera\+Movement@{Camera\+Movement}!Has\+Room\+Target@{Has\+Room\+Target}}
+\index{Has\+Room\+Target@{Has\+Room\+Target}!Camera\+Movement@{Camera\+Movement}}
+\subsubsection{\texorpdfstring{Has\+Room\+Target()}{HasRoomTarget()}}
+{\footnotesize\ttfamily Transform Camera\+Movement.\+Has\+Room\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the target room transform 
+
+\begin{DoxyReturn}{Returns}
+Target room transform
+\end{DoxyReturn}
+
+
+Definition at line 116 of file Camera\+Movement.\+cs.
+
+\mbox{\Hypertarget{class_camera_movement_a9203ee195c435d40bf4fc1de221ed0cd}\label{class_camera_movement_a9203ee195c435d40bf4fc1de221ed0cd}} 
+\index{Camera\+Movement@{Camera\+Movement}!Init@{Init}}
+\index{Init@{Init}!Camera\+Movement@{Camera\+Movement}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Camera\+Movement.\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles set up 
+
+
+
+Definition at line 45 of file Camera\+Movement.\+cs.
+
+\mbox{\Hypertarget{class_camera_movement_a06848ed3326e21d52be8c25ecfe12843}\label{class_camera_movement_a06848ed3326e21d52be8c25ecfe12843}} 
+\index{Camera\+Movement@{Camera\+Movement}!Reset\+Camera@{Reset\+Camera}}
+\index{Reset\+Camera@{Reset\+Camera}!Camera\+Movement@{Camera\+Movement}}
+\subsubsection{\texorpdfstring{Reset\+Camera()}{ResetCamera()}}
+{\footnotesize\ttfamily void Camera\+Movement.\+Reset\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reset the camera 
+
+
+
+Definition at line 142 of file Camera\+Movement.\+cs.
+
+\mbox{\Hypertarget{class_camera_movement_a198122a1f8e338c1bfe843a0f4f6ce96}\label{class_camera_movement_a198122a1f8e338c1bfe843a0f4f6ce96}} 
+\index{Camera\+Movement@{Camera\+Movement}!Set\+New\+Room\+Target@{Set\+New\+Room\+Target}}
+\index{Set\+New\+Room\+Target@{Set\+New\+Room\+Target}!Camera\+Movement@{Camera\+Movement}}
+\subsubsection{\texorpdfstring{Set\+New\+Room\+Target()}{SetNewRoomTarget()}}
+{\footnotesize\ttfamily void Camera\+Movement.\+Set\+New\+Room\+Target (\begin{DoxyParamCaption}\item[{Transform}]{\+\_\+target\+Transform }\end{DoxyParamCaption})}
+
+
+
+Set the target room transform 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+target\+Transform} & New target transform\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 107 of file Camera\+Movement.\+cs.
+
+\mbox{\Hypertarget{class_camera_movement_a22e6e76309d99376ead5b3dffd474938}\label{class_camera_movement_a22e6e76309d99376ead5b3dffd474938}} 
+\index{Camera\+Movement@{Camera\+Movement}!Set\+Start\+Room\+Transform@{Set\+Start\+Room\+Transform}}
+\index{Set\+Start\+Room\+Transform@{Set\+Start\+Room\+Transform}!Camera\+Movement@{Camera\+Movement}}
+\subsubsection{\texorpdfstring{Set\+Start\+Room\+Transform()}{SetStartRoomTransform()}}
+{\footnotesize\ttfamily void Camera\+Movement.\+Set\+Start\+Room\+Transform (\begin{DoxyParamCaption}\item[{Transform}]{\+\_\+start\+Room\+Transform }\end{DoxyParamCaption})}
+
+
+
+Set the start room transform 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+start\+Room\+Transform} & Start room transform\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 134 of file Camera\+Movement.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/louca/\+Documents/\+M\+A\+Dissertation/\+M\+A\+Dissertation/\+M\+A\+Dissertation/\+Assets/\+Classes/\+Gameplay/Camera\+Movement.\+cs\end{DoxyCompactItemize}

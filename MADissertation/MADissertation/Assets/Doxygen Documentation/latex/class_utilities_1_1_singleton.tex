@@ -1,0 +1,124 @@
+\hypertarget{class_utilities_1_1_singleton}{}\section{Utilities.\+Singleton$<$ T $>$ Class Template Reference}
+\label{class_utilities_1_1_singleton}\index{Utilities.\+Singleton$<$ T $>$@{Utilities.\+Singleton$<$ T $>$}}
+
+
+\mbox{\hyperlink{class_utilities_1_1_singleton}{Singleton}} behaviour class, used for components that should only have one instance.  
+
+
+Inheritance diagram for Utilities.\+Singleton$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_utilities_1_1_singleton}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_utilities_1_1_singleton_a123c0df7e7714b113a68d48f1d247a04}\label{class_utilities_1_1_singleton_a123c0df7e7714b113a68d48f1d247a04}} 
+static void {\bfseries Assert\+Is\+Initialized} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_utilities_1_1_singleton_a634b915d7ac492899512de602d59e650}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Base Awake method that sets the \mbox{\hyperlink{class_utilities_1_1_singleton}{Singleton}}\textquotesingle{}s unique instance. Called by Unity when initializing a Mono\+Behaviour. Scripts that extend \mbox{\hyperlink{class_utilities_1_1_singleton}{Singleton}} should be sure to call base.\+Awake() to ensure the static Instance reference is properly created. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_utilities_1_1_singleton_a2f20e07021a39a041e87e1a4906c77cb}{On\+Destroy}} ()
+\begin{DoxyCompactList}\small\item\em Base On\+Destroy method that destroys the \mbox{\hyperlink{class_utilities_1_1_singleton}{Singleton}}\textquotesingle{}s unique instance. Called by Unity when destroying a Mono\+Behaviour. Scripts that extend \mbox{\hyperlink{class_utilities_1_1_singleton}{Singleton}} should be sure to call base.\+On\+Destroy() to ensure the underlying static Instance reference is properly cleaned up. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static T \mbox{\hyperlink{class_utilities_1_1_singleton_a7b33f3dfee9e78908ad67a0b80eb3a61}{Instance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{class_utilities_1_1_singleton}{Singleton}} instance of the classes type. If no instance is found, then we search for an instance in the scene. If more than one instance is found, we throw an error and no instance is returned. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_utilities_1_1_singleton_ae3d28b0d6fbd2091235b2b2cd17a4c9a}{Is\+Initialized}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns whether the instance has been initialized or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_utilities_1_1_singleton}{Singleton}} behaviour class, used for components that should only have one instance. 
+
+\mbox{\hyperlink{class_utilities_1_1_singleton}{Singleton}} classes live on through scene transitions and will mark their parent root Game\+Object with Object.\+Dont\+Destroy\+On\+Load
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The \mbox{\hyperlink{class_utilities_1_1_singleton}{Singleton}} Type\\
+\hline
+\end{DoxyTemplParams}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em \mbox{\hyperlink{class_utilities_1_1_singleton}{Singleton}}$<$T$>$}]\end{description}
+\end{Desc}
+
+
+Definition at line 14 of file Singleton.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_utilities_1_1_singleton_a634b915d7ac492899512de602d59e650}\label{class_utilities_1_1_singleton_a634b915d7ac492899512de602d59e650}} 
+\index{Utilities\+::\+Singleton@{Utilities\+::\+Singleton}!Awake@{Awake}}
+\index{Awake@{Awake}!Utilities\+::\+Singleton@{Utilities\+::\+Singleton}}
+\subsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily virtual void \mbox{\hyperlink{class_utilities_1_1_singleton}{Utilities.\+Singleton}}$<$ T $>$.Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Base Awake method that sets the \mbox{\hyperlink{class_utilities_1_1_singleton}{Singleton}}\textquotesingle{}s unique instance. Called by Unity when initializing a Mono\+Behaviour. Scripts that extend \mbox{\hyperlink{class_utilities_1_1_singleton}{Singleton}} should be sure to call base.\+Awake() to ensure the static Instance reference is properly created. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_data_tracker_a683df3af0a4675dc96498519641f6c53}{Data\+Tracker}}, and \mbox{\hyperlink{class_database_manager_ab6b2a5348b157b217b1ee38a468a3167}{Database\+Manager}}.
+
+
+
+Definition at line 73 of file Singleton.\+cs.
+
+\mbox{\Hypertarget{class_utilities_1_1_singleton_a2f20e07021a39a041e87e1a4906c77cb}\label{class_utilities_1_1_singleton_a2f20e07021a39a041e87e1a4906c77cb}} 
+\index{Utilities\+::\+Singleton@{Utilities\+::\+Singleton}!On\+Destroy@{On\+Destroy}}
+\index{On\+Destroy@{On\+Destroy}!Utilities\+::\+Singleton@{Utilities\+::\+Singleton}}
+\subsubsection{\texorpdfstring{On\+Destroy()}{OnDestroy()}}
+{\footnotesize\ttfamily virtual void \mbox{\hyperlink{class_utilities_1_1_singleton}{Utilities.\+Singleton}}$<$ T $>$.On\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Base On\+Destroy method that destroys the \mbox{\hyperlink{class_utilities_1_1_singleton}{Singleton}}\textquotesingle{}s unique instance. Called by Unity when destroying a Mono\+Behaviour. Scripts that extend \mbox{\hyperlink{class_utilities_1_1_singleton}{Singleton}} should be sure to call base.\+On\+Destroy() to ensure the underlying static Instance reference is properly cleaned up. 
+
+
+
+Definition at line 110 of file Singleton.\+cs.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_utilities_1_1_singleton_a7b33f3dfee9e78908ad67a0b80eb3a61}\label{class_utilities_1_1_singleton_a7b33f3dfee9e78908ad67a0b80eb3a61}} 
+\index{Utilities\+::\+Singleton@{Utilities\+::\+Singleton}!Instance@{Instance}}
+\index{Instance@{Instance}!Utilities\+::\+Singleton@{Utilities\+::\+Singleton}}
+\subsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{class_utilities_1_1_singleton}{Utilities.\+Singleton}}$<$ T $>$.Instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Returns the \mbox{\hyperlink{class_utilities_1_1_singleton}{Singleton}} instance of the classes type. If no instance is found, then we search for an instance in the scene. If more than one instance is found, we throw an error and no instance is returned. 
+
+
+
+Definition at line 29 of file Singleton.\+cs.
+
+\mbox{\Hypertarget{class_utilities_1_1_singleton_ae3d28b0d6fbd2091235b2b2cd17a4c9a}\label{class_utilities_1_1_singleton_ae3d28b0d6fbd2091235b2b2cd17a4c9a}} 
+\index{Utilities\+::\+Singleton@{Utilities\+::\+Singleton}!Is\+Initialized@{Is\+Initialized}}
+\index{Is\+Initialized@{Is\+Initialized}!Utilities\+::\+Singleton@{Utilities\+::\+Singleton}}
+\subsubsection{\texorpdfstring{Is\+Initialized}{IsInitialized}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_utilities_1_1_singleton}{Utilities.\+Singleton}}$<$ T $>$.Is\+Initialized\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Returns whether the instance has been initialized or not. 
+
+
+
+Definition at line 60 of file Singleton.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/louca/\+Documents/\+M\+A\+Dissertation/\+M\+A\+Dissertation/\+M\+A\+Dissertation/\+Assets/\+Classes/\+Utils/Singleton.\+cs\end{DoxyCompactItemize}

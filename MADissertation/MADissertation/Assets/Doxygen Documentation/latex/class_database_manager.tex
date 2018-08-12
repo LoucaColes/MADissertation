@@ -1,0 +1,244 @@
+\hypertarget{class_database_manager}{}\section{Database\+Manager Class Reference}
+\label{class_database_manager}\index{Database\+Manager@{Database\+Manager}}
+
+
+Singleton class to handle the linking between the game and the firebase database  
+
+
+Inheritance diagram for Database\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_database_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Database\+Reference \mbox{\hyperlink{class_database_manager_a14c609571c0d42f0735da6e8c8ff92c0}{Get\+Database\+Reference}} ()
+\begin{DoxyCompactList}\small\item\em Allow other classes to access the database reference \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_database_manager_ad0baa3bf8e05288ba738646770672b34}{Is\+Database\+Ready}} ()
+\begin{DoxyCompactList}\small\item\em Allows other classes to check if the database is ready \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_database_manager_a4c6fcf71634e8465870bb7468da305e4}{Get\+Playthrough\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Allows other classes to access the playthrough id \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_database_manager_a8215a2e17e479aa9c2f76bdf1a18a018}{Increase\+Playthrough\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Increases the playthrough count \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_level_generation_1_1_averages}{Averages}} \mbox{\hyperlink{class_database_manager_a8b767bfbaf23f5ebc65fb3616db8932b}{Access\+Init\+Easy\+Averages}} ()
+\begin{DoxyCompactList}\small\item\em Access the easy averages \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_level_generation_1_1_averages}{Averages}} \mbox{\hyperlink{class_database_manager_a7e11fd2b33cec339e52eb3df7b595da1}{Access\+Init\+Medium\+Averages}} ()
+\begin{DoxyCompactList}\small\item\em Access the medium averages \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_level_generation_1_1_averages}{Averages}} \mbox{\hyperlink{class_database_manager_a61d0614a2d858005a6c3abac1283c8f2}{Access\+Init\+Hard\+Averages}} ()
+\begin{DoxyCompactList}\small\item\em Access the hard averages \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_database_manager_a3ecc1e7d30ba7c71922588dd7a03c8cb}{Access\+Group\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Access the group ID \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_database_manager_a78fbe5d16d91f8a9da73c348518af5fb}{Access\+Unique\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Access the unique device ID \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_database_manager_a59fd27d4114804a39d197da3b95fa2de}{Access\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Access the player ID \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_database_manager_ab6b2a5348b157b217b1ee38a468a3167}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Database initialisation and singleton set up \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Singleton class to handle the linking between the game and the firebase database 
+
+
+
+Definition at line 13 of file Database\+Manager.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_database_manager_a3ecc1e7d30ba7c71922588dd7a03c8cb}\label{class_database_manager_a3ecc1e7d30ba7c71922588dd7a03c8cb}} 
+\index{Database\+Manager@{Database\+Manager}!Access\+Group\+Name@{Access\+Group\+Name}}
+\index{Access\+Group\+Name@{Access\+Group\+Name}!Database\+Manager@{Database\+Manager}}
+\subsubsection{\texorpdfstring{Access\+Group\+Name()}{AccessGroupName()}}
+{\footnotesize\ttfamily string Database\+Manager.\+Access\+Group\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Access the group ID 
+
+\begin{DoxyReturn}{Returns}
+Group ID
+\end{DoxyReturn}
+
+
+Definition at line 339 of file Database\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_database_manager_a59fd27d4114804a39d197da3b95fa2de}\label{class_database_manager_a59fd27d4114804a39d197da3b95fa2de}} 
+\index{Database\+Manager@{Database\+Manager}!Access\+Id@{Access\+Id}}
+\index{Access\+Id@{Access\+Id}!Database\+Manager@{Database\+Manager}}
+\subsubsection{\texorpdfstring{Access\+Id()}{AccessId()}}
+{\footnotesize\ttfamily string Database\+Manager.\+Access\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Access the player ID 
+
+\begin{DoxyReturn}{Returns}
+Returns the group ID or the unique ID
+\end{DoxyReturn}
+
+
+Definition at line 357 of file Database\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_database_manager_a8b767bfbaf23f5ebc65fb3616db8932b}\label{class_database_manager_a8b767bfbaf23f5ebc65fb3616db8932b}} 
+\index{Database\+Manager@{Database\+Manager}!Access\+Init\+Easy\+Averages@{Access\+Init\+Easy\+Averages}}
+\index{Access\+Init\+Easy\+Averages@{Access\+Init\+Easy\+Averages}!Database\+Manager@{Database\+Manager}}
+\subsubsection{\texorpdfstring{Access\+Init\+Easy\+Averages()}{AccessInitEasyAverages()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_level_generation_1_1_averages}{Averages}} Database\+Manager.\+Access\+Init\+Easy\+Averages (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Access the easy averages 
+
+\begin{DoxyReturn}{Returns}
+Easy averages
+\end{DoxyReturn}
+
+
+Definition at line 312 of file Database\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_database_manager_a61d0614a2d858005a6c3abac1283c8f2}\label{class_database_manager_a61d0614a2d858005a6c3abac1283c8f2}} 
+\index{Database\+Manager@{Database\+Manager}!Access\+Init\+Hard\+Averages@{Access\+Init\+Hard\+Averages}}
+\index{Access\+Init\+Hard\+Averages@{Access\+Init\+Hard\+Averages}!Database\+Manager@{Database\+Manager}}
+\subsubsection{\texorpdfstring{Access\+Init\+Hard\+Averages()}{AccessInitHardAverages()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_level_generation_1_1_averages}{Averages}} Database\+Manager.\+Access\+Init\+Hard\+Averages (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Access the hard averages 
+
+\begin{DoxyReturn}{Returns}
+Hard averages
+\end{DoxyReturn}
+
+
+Definition at line 330 of file Database\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_database_manager_a7e11fd2b33cec339e52eb3df7b595da1}\label{class_database_manager_a7e11fd2b33cec339e52eb3df7b595da1}} 
+\index{Database\+Manager@{Database\+Manager}!Access\+Init\+Medium\+Averages@{Access\+Init\+Medium\+Averages}}
+\index{Access\+Init\+Medium\+Averages@{Access\+Init\+Medium\+Averages}!Database\+Manager@{Database\+Manager}}
+\subsubsection{\texorpdfstring{Access\+Init\+Medium\+Averages()}{AccessInitMediumAverages()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_level_generation_1_1_averages}{Averages}} Database\+Manager.\+Access\+Init\+Medium\+Averages (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Access the medium averages 
+
+\begin{DoxyReturn}{Returns}
+Medium averages
+\end{DoxyReturn}
+
+
+Definition at line 321 of file Database\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_database_manager_a78fbe5d16d91f8a9da73c348518af5fb}\label{class_database_manager_a78fbe5d16d91f8a9da73c348518af5fb}} 
+\index{Database\+Manager@{Database\+Manager}!Access\+Unique\+Id@{Access\+Unique\+Id}}
+\index{Access\+Unique\+Id@{Access\+Unique\+Id}!Database\+Manager@{Database\+Manager}}
+\subsubsection{\texorpdfstring{Access\+Unique\+Id()}{AccessUniqueId()}}
+{\footnotesize\ttfamily string Database\+Manager.\+Access\+Unique\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Access the unique device ID 
+
+\begin{DoxyReturn}{Returns}
+Unique device ID
+\end{DoxyReturn}
+
+
+Definition at line 348 of file Database\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_database_manager_ab6b2a5348b157b217b1ee38a468a3167}\label{class_database_manager_ab6b2a5348b157b217b1ee38a468a3167}} 
+\index{Database\+Manager@{Database\+Manager}!Awake@{Awake}}
+\index{Awake@{Awake}!Database\+Manager@{Database\+Manager}}
+\subsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily override void Database\+Manager.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Database initialisation and singleton set up 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_utilities_1_1_singleton_a634b915d7ac492899512de602d59e650}{Utilities.\+Singleton$<$ Database\+Manager $>$}}.
+
+
+
+Definition at line 37 of file Database\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_database_manager_a14c609571c0d42f0735da6e8c8ff92c0}\label{class_database_manager_a14c609571c0d42f0735da6e8c8ff92c0}} 
+\index{Database\+Manager@{Database\+Manager}!Get\+Database\+Reference@{Get\+Database\+Reference}}
+\index{Get\+Database\+Reference@{Get\+Database\+Reference}!Database\+Manager@{Database\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Database\+Reference()}{GetDatabaseReference()}}
+{\footnotesize\ttfamily Database\+Reference Database\+Manager.\+Get\+Database\+Reference (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Allow other classes to access the database reference 
+
+\begin{DoxyReturn}{Returns}
+Returns the reference to the database
+\end{DoxyReturn}
+
+
+Definition at line 277 of file Database\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_database_manager_a4c6fcf71634e8465870bb7468da305e4}\label{class_database_manager_a4c6fcf71634e8465870bb7468da305e4}} 
+\index{Database\+Manager@{Database\+Manager}!Get\+Playthrough\+Id@{Get\+Playthrough\+Id}}
+\index{Get\+Playthrough\+Id@{Get\+Playthrough\+Id}!Database\+Manager@{Database\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Playthrough\+Id()}{GetPlaythroughId()}}
+{\footnotesize\ttfamily int Database\+Manager.\+Get\+Playthrough\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Allows other classes to access the playthrough id 
+
+\begin{DoxyReturn}{Returns}
+Returns the current playthrough count
+\end{DoxyReturn}
+
+
+Definition at line 295 of file Database\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_database_manager_a8215a2e17e479aa9c2f76bdf1a18a018}\label{class_database_manager_a8215a2e17e479aa9c2f76bdf1a18a018}} 
+\index{Database\+Manager@{Database\+Manager}!Increase\+Playthrough\+Id@{Increase\+Playthrough\+Id}}
+\index{Increase\+Playthrough\+Id@{Increase\+Playthrough\+Id}!Database\+Manager@{Database\+Manager}}
+\subsubsection{\texorpdfstring{Increase\+Playthrough\+Id()}{IncreasePlaythroughId()}}
+{\footnotesize\ttfamily void Database\+Manager.\+Increase\+Playthrough\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Increases the playthrough count 
+
+
+
+Definition at line 303 of file Database\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_database_manager_ad0baa3bf8e05288ba738646770672b34}\label{class_database_manager_ad0baa3bf8e05288ba738646770672b34}} 
+\index{Database\+Manager@{Database\+Manager}!Is\+Database\+Ready@{Is\+Database\+Ready}}
+\index{Is\+Database\+Ready@{Is\+Database\+Ready}!Database\+Manager@{Database\+Manager}}
+\subsubsection{\texorpdfstring{Is\+Database\+Ready()}{IsDatabaseReady()}}
+{\footnotesize\ttfamily bool Database\+Manager.\+Is\+Database\+Ready (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Allows other classes to check if the database is ready 
+
+\begin{DoxyReturn}{Returns}
+Returns if the database is ready or not
+\end{DoxyReturn}
+
+
+Definition at line 286 of file Database\+Manager.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/louca/\+Documents/\+M\+A\+Dissertation/\+M\+A\+Dissertation/\+M\+A\+Dissertation/\+Assets/\+Classes/\+Database/Database\+Manager.\+cs\end{DoxyCompactItemize}

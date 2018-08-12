@@ -1,0 +1,227 @@
+\hypertarget{class_player}{}\section{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+
+
+Human controlled player class  
+
+
+Inheritance diagram for Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_player}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_player_ae4848921e3458e9d0a2cde5acb63e165}{Set\+Camera\+Movement}} (\mbox{\hyperlink{class_camera_movement}{Camera\+Movement}} \+\_\+camera\+Movement)
+\begin{DoxyCompactList}\small\item\em Set the camera movement reference \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a89c5345d4267bf7902531407fe50c61e}{Reset\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Reset the player \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a8e3a84181da3b91573fb395fb8821a90}{Freeze}} ()
+\begin{DoxyCompactList}\small\item\em Freeze the player \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a7a222872698adba22fbd3c90302cc8ca}{Un\+Freeze}} ()
+\begin{DoxyCompactList}\small\item\em Unfreeze the player \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a24f8aeed0a7bb4dc8d2dcceea07dcaf7}{Set\+Current\+Room}} (\mbox{\hyperlink{class_level_generation_1_1_room}{Room}} \+\_\+new\+Room)
+\begin{DoxyCompactList}\small\item\em Set the current room the player is in \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a425c47ab72a45262765b2d60b6636911}{Set\+Spawn}} (Vector3 \+\_\+position)
+\begin{DoxyCompactList}\small\item\em Set the spawn position \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_level_generation_1_1_room}{Room}} \mbox{\hyperlink{class_player_ac4bbf69d383242cbf6807fdd28ee0f0d}{Get\+Current\+Room}} ()
+\begin{DoxyCompactList}\small\item\em Get the current room the player is in \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_player_a21d9f4bbd86a4a1aaa8844917270aefb}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Handle Set Up \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_player_abccf91b671f93492dfdb704ddf894ae3}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Handle Input \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_player_a9f719f4557355ff498cc7ff6d3723a84}{Fixed\+Update}} ()
+\begin{DoxyCompactList}\small\item\em Handle physics \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Human controlled player class 
+
+
+
+Definition at line 10 of file Player.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_a21d9f4bbd86a4a1aaa8844917270aefb}\label{class_player_a21d9f4bbd86a4a1aaa8844917270aefb}} 
+\index{Player@{Player}!Awake@{Awake}}
+\index{Awake@{Awake}!Player@{Player}}
+\subsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily override void Player.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Handle Set Up 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_character_a7cca5d1f141f2f46a1d087fd3e28a953}{Character}}.
+
+
+
+Definition at line 79 of file Player.\+cs.
+
+\mbox{\Hypertarget{class_player_a9f719f4557355ff498cc7ff6d3723a84}\label{class_player_a9f719f4557355ff498cc7ff6d3723a84}} 
+\index{Player@{Player}!Fixed\+Update@{Fixed\+Update}}
+\index{Fixed\+Update@{Fixed\+Update}!Player@{Player}}
+\subsubsection{\texorpdfstring{Fixed\+Update()}{FixedUpdate()}}
+{\footnotesize\ttfamily override void Player.\+Fixed\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Handle physics 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_character_ad90105ab5e234884e5bca7ce5bd2c50e}{Character}}.
+
+
+
+Definition at line 248 of file Player.\+cs.
+
+\mbox{\Hypertarget{class_player_a8e3a84181da3b91573fb395fb8821a90}\label{class_player_a8e3a84181da3b91573fb395fb8821a90}} 
+\index{Player@{Player}!Freeze@{Freeze}}
+\index{Freeze@{Freeze}!Player@{Player}}
+\subsubsection{\texorpdfstring{Freeze()}{Freeze()}}
+{\footnotesize\ttfamily void Player.\+Freeze (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Freeze the player 
+
+
+
+Definition at line 404 of file Player.\+cs.
+
+\mbox{\Hypertarget{class_player_ac4bbf69d383242cbf6807fdd28ee0f0d}\label{class_player_ac4bbf69d383242cbf6807fdd28ee0f0d}} 
+\index{Player@{Player}!Get\+Current\+Room@{Get\+Current\+Room}}
+\index{Get\+Current\+Room@{Get\+Current\+Room}!Player@{Player}}
+\subsubsection{\texorpdfstring{Get\+Current\+Room()}{GetCurrentRoom()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_level_generation_1_1_room}{Room}} Player.\+Get\+Current\+Room (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the current room the player is in 
+
+\begin{DoxyReturn}{Returns}
+The current room the player is in
+\end{DoxyReturn}
+
+
+Definition at line 451 of file Player.\+cs.
+
+\mbox{\Hypertarget{class_player_a89c5345d4267bf7902531407fe50c61e}\label{class_player_a89c5345d4267bf7902531407fe50c61e}} 
+\index{Player@{Player}!Reset\+Player@{Reset\+Player}}
+\index{Reset\+Player@{Reset\+Player}!Player@{Player}}
+\subsubsection{\texorpdfstring{Reset\+Player()}{ResetPlayer()}}
+{\footnotesize\ttfamily void Player.\+Reset\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reset the player 
+
+
+
+Definition at line 387 of file Player.\+cs.
+
+\mbox{\Hypertarget{class_player_ae4848921e3458e9d0a2cde5acb63e165}\label{class_player_ae4848921e3458e9d0a2cde5acb63e165}} 
+\index{Player@{Player}!Set\+Camera\+Movement@{Set\+Camera\+Movement}}
+\index{Set\+Camera\+Movement@{Set\+Camera\+Movement}!Player@{Player}}
+\subsubsection{\texorpdfstring{Set\+Camera\+Movement()}{SetCameraMovement()}}
+{\footnotesize\ttfamily void Player.\+Set\+Camera\+Movement (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_camera_movement}{Camera\+Movement}}}]{\+\_\+camera\+Movement }\end{DoxyParamCaption})}
+
+
+
+Set the camera movement reference 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+camera\+Movement} & Camera movement reference\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 101 of file Player.\+cs.
+
+\mbox{\Hypertarget{class_player_a24f8aeed0a7bb4dc8d2dcceea07dcaf7}\label{class_player_a24f8aeed0a7bb4dc8d2dcceea07dcaf7}} 
+\index{Player@{Player}!Set\+Current\+Room@{Set\+Current\+Room}}
+\index{Set\+Current\+Room@{Set\+Current\+Room}!Player@{Player}}
+\subsubsection{\texorpdfstring{Set\+Current\+Room()}{SetCurrentRoom()}}
+{\footnotesize\ttfamily void Player.\+Set\+Current\+Room (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_level_generation_1_1_room}{Room}}}]{\+\_\+new\+Room }\end{DoxyParamCaption})}
+
+
+
+Set the current room the player is in 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+new\+Room} & New current room\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 433 of file Player.\+cs.
+
+\mbox{\Hypertarget{class_player_a425c47ab72a45262765b2d60b6636911}\label{class_player_a425c47ab72a45262765b2d60b6636911}} 
+\index{Player@{Player}!Set\+Spawn@{Set\+Spawn}}
+\index{Set\+Spawn@{Set\+Spawn}!Player@{Player}}
+\subsubsection{\texorpdfstring{Set\+Spawn()}{SetSpawn()}}
+{\footnotesize\ttfamily void Player.\+Set\+Spawn (\begin{DoxyParamCaption}\item[{Vector3}]{\+\_\+position }\end{DoxyParamCaption})}
+
+
+
+Set the spawn position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+position} & Spawn positon\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 442 of file Player.\+cs.
+
+\mbox{\Hypertarget{class_player_a7a222872698adba22fbd3c90302cc8ca}\label{class_player_a7a222872698adba22fbd3c90302cc8ca}} 
+\index{Player@{Player}!Un\+Freeze@{Un\+Freeze}}
+\index{Un\+Freeze@{Un\+Freeze}!Player@{Player}}
+\subsubsection{\texorpdfstring{Un\+Freeze()}{UnFreeze()}}
+{\footnotesize\ttfamily void Player.\+Un\+Freeze (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unfreeze the player 
+
+
+
+Definition at line 420 of file Player.\+cs.
+
+\mbox{\Hypertarget{class_player_abccf91b671f93492dfdb704ddf894ae3}\label{class_player_abccf91b671f93492dfdb704ddf894ae3}} 
+\index{Player@{Player}!Update@{Update}}
+\index{Update@{Update}!Player@{Player}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily override void Player.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Handle Input 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_character}{Character}}.
+
+
+
+Definition at line 110 of file Player.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/louca/\+Documents/\+M\+A\+Dissertation/\+M\+A\+Dissertation/\+M\+A\+Dissertation/\+Assets/\+Classes/\+Gameplay/Player.\+cs\end{DoxyCompactItemize}

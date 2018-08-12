@@ -1,0 +1,97 @@
+\hypertarget{class_character}{}\section{Character Class Reference}
+\label{class_character}\index{Character@{Character}}
+
+
+Base class for player and enemies  
+
+
+Inheritance diagram for Character\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_character}
+\end{center}
+\end{figure}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_character_a7cca5d1f141f2f46a1d087fd3e28a953}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Handles inital set up \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_character_a98bebdb5d37a51749749f0684f14a6ca}\label{class_character_a98bebdb5d37a51749749f0684f14a6ca}} 
+virtual void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_character_aeabbd75a8c44cc4542112852ca735f2d}\label{class_character_aeabbd75a8c44cc4542112852ca735f2d}} 
+virtual void {\bfseries Update} ()
+\item 
+virtual void \mbox{\hyperlink{class_character_ad90105ab5e234884e5bca7ce5bd2c50e}{Fixed\+Update}} ()
+\begin{DoxyCompactList}\small\item\em Fixed update is called once per fixed frame \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_character_ae6f38ea3ad77f6aeba55631d8a47f089}\label{class_character_ae6f38ea3ad77f6aeba55631d8a47f089}} 
+\mbox{\hyperlink{struct_character_start_data}{Character\+Start\+Data}} {\bfseries m\+\_\+character\+Data}
+\item 
+\mbox{\Hypertarget{class_character_a0049d5b1f387150dbe1086086fcaea4c}\label{class_character_a0049d5b1f387150dbe1086086fcaea4c}} 
+float {\bfseries m\+\_\+gravity}
+\item 
+\mbox{\Hypertarget{class_character_a694ba48446eed2ff9ce2354f83f2072c}\label{class_character_a694ba48446eed2ff9ce2354f83f2072c}} 
+int {\bfseries m\+\_\+current\+Health}
+\item 
+\mbox{\Hypertarget{class_character_a98899aa78f445adc994fb39a50f37fc4}\label{class_character_a98899aa78f445adc994fb39a50f37fc4}} 
+Rigidbody2D {\bfseries m\+\_\+rigid\+Body}
+\item 
+\mbox{\Hypertarget{class_character_a3522770974fe60235263b7050b30e1c8}\label{class_character_a3522770974fe60235263b7050b30e1c8}} 
+Sprite\+Renderer {\bfseries m\+\_\+renderer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for player and enemies 
+
+
+
+Definition at line 8 of file Character.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_character_a7cca5d1f141f2f46a1d087fd3e28a953}\label{class_character_a7cca5d1f141f2f46a1d087fd3e28a953}} 
+\index{Character@{Character}!Awake@{Awake}}
+\index{Awake@{Awake}!Character@{Character}}
+\subsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily virtual void Character.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Handles inital set up 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_player_a21d9f4bbd86a4a1aaa8844917270aefb}{Player}}.
+
+
+
+Definition at line 25 of file Character.\+cs.
+
+\mbox{\Hypertarget{class_character_ad90105ab5e234884e5bca7ce5bd2c50e}\label{class_character_ad90105ab5e234884e5bca7ce5bd2c50e}} 
+\index{Character@{Character}!Fixed\+Update@{Fixed\+Update}}
+\index{Fixed\+Update@{Fixed\+Update}!Character@{Character}}
+\subsubsection{\texorpdfstring{Fixed\+Update()}{FixedUpdate()}}
+{\footnotesize\ttfamily virtual void Character.\+Fixed\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Fixed update is called once per fixed frame 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_player_a9f719f4557355ff498cc7ff6d3723a84}{Player}}.
+
+
+
+Definition at line 46 of file Character.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/louca/\+Documents/\+M\+A\+Dissertation/\+M\+A\+Dissertation/\+M\+A\+Dissertation/\+Assets/\+Classes/\+Gameplay/Character.\+cs\end{DoxyCompactItemize}

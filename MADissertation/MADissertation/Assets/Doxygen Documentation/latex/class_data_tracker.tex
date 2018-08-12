@@ -1,0 +1,232 @@
+\hypertarget{class_data_tracker}{}\section{Data\+Tracker Class Reference}
+\label{class_data_tracker}\index{Data\+Tracker@{Data\+Tracker}}
+
+
+Class to handle the data tracking over the playthrough of the demo  
+
+
+Inheritance diagram for Data\+Tracker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_data_tracker}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_data_tracker_a385ec3ae6529d79a33932e3c759ec2b5}{Add\+New\+Player\+Data}} (ref \mbox{\hyperlink{struct_player_data}{Player\+Data}} \+\_\+data)
+\begin{DoxyCompactList}\small\item\em Adds new data to the tracked data list \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_data_tracker_ac3e1b7782c5a373f34f909549055fd6e}{Update\+Current\+Player\+Data}} (ref \mbox{\hyperlink{struct_player_data}{Player\+Data}} \+\_\+data)
+\begin{DoxyCompactList}\small\item\em Update the current player data in the current playthrough data \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_data_tracker_a4869a1c8785620380fa42fef58d7ad6a}{Compare\+Player\+Data}} (\mbox{\hyperlink{struct_player_data}{Player\+Data}} \+\_\+player\+Data)
+\begin{DoxyCompactList}\small\item\em Compares the current player data against the averages \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_data_tracker_ad8d42a698f0dc7bfa12d5200e158d0a4}{Add\+New\+Level\+Data}} (ref \mbox{\hyperlink{class_design_data}{Design\+Data}} \+\_\+level\+Data)
+\begin{DoxyCompactList}\small\item\em Add a new level data to the playthrough data \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_data_tracker_af9257217e007188c0437f1d446542942}{Set\+Up\+Next\+Level\+Data\+And\+Send\+To\+Database}} (out int level\+Count)
+\begin{DoxyCompactList}\small\item\em Create and set up a new level data struct, send old data to the database \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_data_tracker_a4b123c238cc2f165d9d12ef9c9d408d2}{Update\+Playthrough\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Update the playthrough data onto the database \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_data_tracker_a7b834b9df13c46f7dfa9b51e87e1c6c0}{Decide\+Next\+Difficulty}} ()
+\begin{DoxyCompactList}\small\item\em Decide the next level\textquotesingle{}s difficulty \end{DoxyCompactList}\item 
+Difficulty \mbox{\hyperlink{class_data_tracker_aa31f9a357bd8db7116f0070b13f673d5}{Get\+Difficulty}} ()
+\begin{DoxyCompactList}\small\item\em Get the current difficulty \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_data_tracker_ac408fabd7e0e96255508610fb66a18f2}{Get\+Level\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Get the current playthrough ID \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_data_tracker_a683df3af0a4675dc96498519641f6c53}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Initialise the data tracker object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class to handle the data tracking over the playthrough of the demo 
+
+
+
+Definition at line 17 of file Data\+Tracker.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_data_tracker_ad8d42a698f0dc7bfa12d5200e158d0a4}\label{class_data_tracker_ad8d42a698f0dc7bfa12d5200e158d0a4}} 
+\index{Data\+Tracker@{Data\+Tracker}!Add\+New\+Level\+Data@{Add\+New\+Level\+Data}}
+\index{Add\+New\+Level\+Data@{Add\+New\+Level\+Data}!Data\+Tracker@{Data\+Tracker}}
+\subsubsection{\texorpdfstring{Add\+New\+Level\+Data()}{AddNewLevelData()}}
+{\footnotesize\ttfamily void Data\+Tracker.\+Add\+New\+Level\+Data (\begin{DoxyParamCaption}\item[{ref \mbox{\hyperlink{class_design_data}{Design\+Data}}}]{\+\_\+level\+Data }\end{DoxyParamCaption})}
+
+
+
+Add a new level data to the playthrough data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+level\+Data} & Current level data\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 385 of file Data\+Tracker.\+cs.
+
+\mbox{\Hypertarget{class_data_tracker_a385ec3ae6529d79a33932e3c759ec2b5}\label{class_data_tracker_a385ec3ae6529d79a33932e3c759ec2b5}} 
+\index{Data\+Tracker@{Data\+Tracker}!Add\+New\+Player\+Data@{Add\+New\+Player\+Data}}
+\index{Add\+New\+Player\+Data@{Add\+New\+Player\+Data}!Data\+Tracker@{Data\+Tracker}}
+\subsubsection{\texorpdfstring{Add\+New\+Player\+Data()}{AddNewPlayerData()}}
+{\footnotesize\ttfamily void Data\+Tracker.\+Add\+New\+Player\+Data (\begin{DoxyParamCaption}\item[{ref \mbox{\hyperlink{struct_player_data}{Player\+Data}}}]{\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+Adds new data to the tracked data list 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+data} & Current levels player data\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 156 of file Data\+Tracker.\+cs.
+
+\mbox{\Hypertarget{class_data_tracker_a683df3af0a4675dc96498519641f6c53}\label{class_data_tracker_a683df3af0a4675dc96498519641f6c53}} 
+\index{Data\+Tracker@{Data\+Tracker}!Awake@{Awake}}
+\index{Awake@{Awake}!Data\+Tracker@{Data\+Tracker}}
+\subsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily override void Data\+Tracker.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Initialise the data tracker object 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_utilities_1_1_singleton_a634b915d7ac492899512de602d59e650}{Utilities.\+Singleton$<$ Data\+Tracker $>$}}.
+
+
+
+Definition at line 64 of file Data\+Tracker.\+cs.
+
+\mbox{\Hypertarget{class_data_tracker_a4869a1c8785620380fa42fef58d7ad6a}\label{class_data_tracker_a4869a1c8785620380fa42fef58d7ad6a}} 
+\index{Data\+Tracker@{Data\+Tracker}!Compare\+Player\+Data@{Compare\+Player\+Data}}
+\index{Compare\+Player\+Data@{Compare\+Player\+Data}!Data\+Tracker@{Data\+Tracker}}
+\subsubsection{\texorpdfstring{Compare\+Player\+Data()}{ComparePlayerData()}}
+{\footnotesize\ttfamily void Data\+Tracker.\+Compare\+Player\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_player_data}{Player\+Data}}}]{\+\_\+player\+Data }\end{DoxyParamCaption})}
+
+
+
+Compares the current player data against the averages 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+player\+Data} & Current levels player data\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 179 of file Data\+Tracker.\+cs.
+
+\mbox{\Hypertarget{class_data_tracker_a7b834b9df13c46f7dfa9b51e87e1c6c0}\label{class_data_tracker_a7b834b9df13c46f7dfa9b51e87e1c6c0}} 
+\index{Data\+Tracker@{Data\+Tracker}!Decide\+Next\+Difficulty@{Decide\+Next\+Difficulty}}
+\index{Decide\+Next\+Difficulty@{Decide\+Next\+Difficulty}!Data\+Tracker@{Data\+Tracker}}
+\subsubsection{\texorpdfstring{Decide\+Next\+Difficulty()}{DecideNextDifficulty()}}
+{\footnotesize\ttfamily void Data\+Tracker.\+Decide\+Next\+Difficulty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Decide the next level\textquotesingle{}s difficulty 
+
+
+
+Definition at line 477 of file Data\+Tracker.\+cs.
+
+\mbox{\Hypertarget{class_data_tracker_aa31f9a357bd8db7116f0070b13f673d5}\label{class_data_tracker_aa31f9a357bd8db7116f0070b13f673d5}} 
+\index{Data\+Tracker@{Data\+Tracker}!Get\+Difficulty@{Get\+Difficulty}}
+\index{Get\+Difficulty@{Get\+Difficulty}!Data\+Tracker@{Data\+Tracker}}
+\subsubsection{\texorpdfstring{Get\+Difficulty()}{GetDifficulty()}}
+{\footnotesize\ttfamily Difficulty Data\+Tracker.\+Get\+Difficulty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the current difficulty 
+
+\begin{DoxyReturn}{Returns}
+Current difficulty
+\end{DoxyReturn}
+
+
+Definition at line 496 of file Data\+Tracker.\+cs.
+
+\mbox{\Hypertarget{class_data_tracker_ac408fabd7e0e96255508610fb66a18f2}\label{class_data_tracker_ac408fabd7e0e96255508610fb66a18f2}} 
+\index{Data\+Tracker@{Data\+Tracker}!Get\+Level\+Id@{Get\+Level\+Id}}
+\index{Get\+Level\+Id@{Get\+Level\+Id}!Data\+Tracker@{Data\+Tracker}}
+\subsubsection{\texorpdfstring{Get\+Level\+Id()}{GetLevelId()}}
+{\footnotesize\ttfamily int Data\+Tracker.\+Get\+Level\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the current playthrough ID 
+
+\begin{DoxyReturn}{Returns}
+Current playthrough ID
+\end{DoxyReturn}
+
+
+Definition at line 505 of file Data\+Tracker.\+cs.
+
+\mbox{\Hypertarget{class_data_tracker_af9257217e007188c0437f1d446542942}\label{class_data_tracker_af9257217e007188c0437f1d446542942}} 
+\index{Data\+Tracker@{Data\+Tracker}!Set\+Up\+Next\+Level\+Data\+And\+Send\+To\+Database@{Set\+Up\+Next\+Level\+Data\+And\+Send\+To\+Database}}
+\index{Set\+Up\+Next\+Level\+Data\+And\+Send\+To\+Database@{Set\+Up\+Next\+Level\+Data\+And\+Send\+To\+Database}!Data\+Tracker@{Data\+Tracker}}
+\subsubsection{\texorpdfstring{Set\+Up\+Next\+Level\+Data\+And\+Send\+To\+Database()}{SetUpNextLevelDataAndSendToDatabase()}}
+{\footnotesize\ttfamily void Data\+Tracker.\+Set\+Up\+Next\+Level\+Data\+And\+Send\+To\+Database (\begin{DoxyParamCaption}\item[{out int}]{level\+Count }\end{DoxyParamCaption})}
+
+
+
+Create and set up a new level data struct, send old data to the database 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level\+Count} & sends out the new level count\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 395 of file Data\+Tracker.\+cs.
+
+\mbox{\Hypertarget{class_data_tracker_ac3e1b7782c5a373f34f909549055fd6e}\label{class_data_tracker_ac3e1b7782c5a373f34f909549055fd6e}} 
+\index{Data\+Tracker@{Data\+Tracker}!Update\+Current\+Player\+Data@{Update\+Current\+Player\+Data}}
+\index{Update\+Current\+Player\+Data@{Update\+Current\+Player\+Data}!Data\+Tracker@{Data\+Tracker}}
+\subsubsection{\texorpdfstring{Update\+Current\+Player\+Data()}{UpdateCurrentPlayerData()}}
+{\footnotesize\ttfamily void Data\+Tracker.\+Update\+Current\+Player\+Data (\begin{DoxyParamCaption}\item[{ref \mbox{\hyperlink{struct_player_data}{Player\+Data}}}]{\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+Update the current player data in the current playthrough data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+data} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 169 of file Data\+Tracker.\+cs.
+
+\mbox{\Hypertarget{class_data_tracker_a4b123c238cc2f165d9d12ef9c9d408d2}\label{class_data_tracker_a4b123c238cc2f165d9d12ef9c9d408d2}} 
+\index{Data\+Tracker@{Data\+Tracker}!Update\+Playthrough\+Data@{Update\+Playthrough\+Data}}
+\index{Update\+Playthrough\+Data@{Update\+Playthrough\+Data}!Data\+Tracker@{Data\+Tracker}}
+\subsubsection{\texorpdfstring{Update\+Playthrough\+Data()}{UpdatePlaythroughData()}}
+{\footnotesize\ttfamily void Data\+Tracker.\+Update\+Playthrough\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Update the playthrough data onto the database 
+
+
+
+Definition at line 420 of file Data\+Tracker.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/louca/\+Documents/\+M\+A\+Dissertation/\+M\+A\+Dissertation/\+M\+A\+Dissertation/\+Assets/\+Classes/\+Database/Data\+Tracker.\+cs\end{DoxyCompactItemize}
