@@ -5,8 +5,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using Rewired;
 
+/// <summary>
+/// A class that controls the control scheme scene
+/// </summary>
 public class ControlScheme : MonoBehaviour
 {
+    // Designer variables
     [SerializeField]
     private SceneData m_gameSceneData;
 
@@ -31,30 +35,19 @@ public class ControlScheme : MonoBehaviour
     [SerializeField]
     private string m_fileName = "HardwareName";
 
-    // Use this for initialization
-    private void Start()
-    {
-        if (ReInput.controllers.joystickCount > 0)
-        {
-            string filePath = Application.dataPath + "/" + m_fileName + ".txt";
-            File.WriteAllText(filePath, ReInput.controllers.Joysticks[0].hardwareName);
-        }
-        else
-        {
-            string filePath = Application.dataPath + "/" + m_fileName + ".txt";
-            File.WriteAllText(filePath, "Keyboard");
-        }
-    }
-
     // Update is called once per frame
     private void Update()
     {
+        // Check if there is any controllers connected
+        // If there isn't any then enable keyboard input text
         if (ReInput.controllers.joystickCount == 0)
         {
             EnableKeyboardInput();
         }
         else
         {
+            // Dependant on the controller name, enable related
+            // Input text
             switch (ReInput.controllers.Joysticks[0].name)
             {
                 case "XInput Gamepad 1":
@@ -73,15 +66,20 @@ public class ControlScheme : MonoBehaviour
                     DisableAllInput();
                     break;
             }
-            Debug.Log(ReInput.controllers.Joysticks[0].hardwareName);
         }
     }
 
+    /// <summary>
+    /// Load the game scene
+    /// </summary>
     public void LoadGame()
     {
         SceneLoader.Instance.LoadScene(m_gameSceneData.m_sceneName);
     }
 
+    /// <summary>
+    /// Enable the keyboard input text
+    /// </summary>
     private void EnableKeyboardInput()
     {
         m_keyboardInput.m_gameplayInput.SetActive(true);
@@ -102,6 +100,9 @@ public class ControlScheme : MonoBehaviour
         m_defaultText.SetActive(false);
     }
 
+    /// <summary>
+    /// Enable the xbox 360 input text
+    /// </summary>
     private void EnableX360Input()
     {
         m_keyboardInput.m_gameplayInput.SetActive(false);
@@ -122,6 +123,9 @@ public class ControlScheme : MonoBehaviour
         m_defaultText.SetActive(false);
     }
 
+    /// <summary>
+    /// Enable the Xbox One input text
+    /// </summary>
     private void EnableXOneInput()
     {
         m_keyboardInput.m_gameplayInput.SetActive(false);
@@ -142,6 +146,9 @@ public class ControlScheme : MonoBehaviour
         m_defaultText.SetActive(false);
     }
 
+    /// <summary>
+    /// Enable the ps3 input text
+    /// </summary>
     private void EnablePS3Input()
     {
         m_keyboardInput.m_gameplayInput.SetActive(false);
@@ -162,6 +169,9 @@ public class ControlScheme : MonoBehaviour
         m_defaultText.SetActive(false);
     }
 
+    /// <summary>
+    /// Enable the ps4 input text
+    /// </summary>
     private void EnablePS4Input()
     {
         m_keyboardInput.m_gameplayInput.SetActive(false);
@@ -182,6 +192,9 @@ public class ControlScheme : MonoBehaviour
         m_defaultText.SetActive(false);
     }
 
+    /// <summary>
+    /// Disable all input text
+    /// </summary>
     private void DisableAllInput()
     {
         m_keyboardInput.m_gameplayInput.SetActive(false);
@@ -203,6 +216,9 @@ public class ControlScheme : MonoBehaviour
     }
 }
 
+/// <summary>
+/// A struct containing the input name and various input text objects
+/// </summary>
 [Serializable]
 public struct InputSchemeObjects
 {

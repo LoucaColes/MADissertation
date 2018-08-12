@@ -13,9 +13,6 @@ public class CameraMovement : MonoBehaviour
 
     // Designer variables
     [SerializeField]
-    private Transform m_player;
-
-    [SerializeField]
     private CameraType m_type;
 
     [SerializeField]
@@ -31,18 +28,12 @@ public class CameraMovement : MonoBehaviour
     private float m_transitionSpeed;
 
     [SerializeField]
-    private LevelEdges m_levelEdge;
-
-    [SerializeField]
     private Transform m_startRoomTransform;
 
     // private variables
-    private CameraWindowBounds m_bounds;
+    private Player m_player;
     private Vector3 m_lastPlayerPosition = Vector3.zero;
-    private bool m_moving = false;
     private Vector3 m_nextPosition = Vector3.zero;
-    private Rigidbody2D m_playerRigidbody;
-    private IEnumerator m_movementIenumerator = null;
     private Transform m_targetRoomTransform = null;
     private Transform m_currentRoomTransform = null;
     private Vector3 m_startPosition;
@@ -53,18 +44,19 @@ public class CameraMovement : MonoBehaviour
     /// </summary>
     public void Init()
     {
-        m_bounds = CalculateNewCameraWindowBounds(this.transform.position);
-        Player player = GameObject.FindObjectOfType<Player>();
-        m_player = player.gameObject.transform;
-        player.SetCameraMovement(this);
-        m_playerRigidbody = m_player.gameObject.GetComponent<Rigidbody2D>();
-        if (m_type == CameraType.EdgeLocking)
-        {
-            Vector3 playerBasedPostion = new Vector3(transform.position.x, m_player.position.y, transform.position.z);
-            transform.position = playerBasedPostion;
-        }
+        // Find the player object
+        m_player = GameObject.FindObjectOfType<Player>();
+
+        // Give the player a reference to this camera movement class
+        m_player.SetCameraMovement(this);
+
+        // Set the current room transform
         m_currentRoomTransform = m_startRoomTransform;
+
+        // Set the start position
         m_startPosition = transform.position;
+
+        // Set init to true
         m_init = true;
     }
 
@@ -73,234 +65,87 @@ public class CameraMovement : MonoBehaviour
     /// </summary>
     private void Update()
     {
+        // If the camera has initialised
         if (m_init)
         {
+            // If the game state is play and we have a player
             if (GameManager.Instance.GetGameState() == GameState.Play && m_player != null)
             {
-                if (m_type == CameraType.PositionLocking)
+                // Check if we dont have a target room transform and the target room transform doesn't equal
+                // the current room transform
+                if (m_targetRoomTransform != null && (m_targetRoomTransform != m_currentRoomTransform))
                 {
-                    Vector3 playerBasedPostion = new Vector3(m_player.position.x, m_player.position.y,
-                        transform.position.z);
-                    transform.position = playerBasedPostion;
-                }
-                else if (m_type == CameraType.EdgeLocking)
-                {
-                    if (m_player.position.x > m_levelEdge.m_leftEdge && m_player.position.x < m_levelEdge.m_rightEdge
-                        && m_player.position.y > m_levelEdge.m_bottomEdge &&
-                        m_player.position.y < m_levelEdge.m_topEdge)
+                    // Calculate the target position
+                    Vector3 targetPosition = new Vector3(m_targetRoomTransform.position.x,
+                        m_targetRoomTransform.position.y, transform.position.z);
+
+                    // Use move towards to set the cameras position over time
+                    transform.position =
+                        Vector3.MoveTowards(transform.position, targetPosition, m_transitionSpeed * Time.deltaTime);
+
+                    // Check if we are close to the target position
+                    if (Vector3.Distance(transform.position, targetPosition) < 0.1f)
                     {
-                        Vector3 playerBasedPostion =
-                            new Vector3(m_player.position.x, m_player.position.y, transform.position.z);
-                        transform.position = playerBasedPostion;
-                    }
-                }
-                else if (m_type == CameraType.CameraWindowCentral)
-                {
-                    Bounds boundHit;
-                    // Check if player is in camera window
-                    if (CheckIfInBounds(out boundHit) && !m_moving) // If yes
-                    {
-                        if (m_movementIenumerator != null)
-                        {
-                            StopCoroutine(m_movementIenumerator);
-                            m_movementIenumerator = null;
-                            m_moving = false;
-                        }
-                    }
-                    else // Else
-                    {
-                        // Calculate which bound was hit
-                        // Calculate new camera window
-                        CalculateNewCameraWindowPosition(boundHit);
-                        // Move camera to centre of new window
-                        m_movementIenumerator = MoveToNextPosition();
-                        StartCoroutine(m_movementIenumerator);
-                    }
-                }
-                else if (m_type == CameraType.RoomToRoom)
-                {
-                    if (m_targetRoomTransform != null && (m_targetRoomTransform != m_currentRoomTransform))
-                    {
-                        Vector3 targetPosition = new Vector3(m_targetRoomTransform.position.x,
-                            m_targetRoomTransform.position.y, transform.position.z);
-                        transform.position =
-                            Vector3.MoveTowards(transform.position, targetPosition, m_transitionSpeed * Time.deltaTime);
-                        if (Vector3.Distance(transform.position, targetPosition) < 0.1f)
-                        {
-                            transform.position = targetPosition;
-                            m_currentRoomTransform = m_targetRoomTransform;
-                            m_targetRoomTransform = null;
-                        }
+                        // Set the camera position to the target position
+                        transform.position = targetPosition;
+
+                        // Set the current room transform to the target room transform
+                        m_currentRoomTransform = m_targetRoomTransform;
+
+                        // Set the target room transform to null
+                        m_targetRoomTransform = null;
                     }
                 }
             }
         }
     }
 
+    /// <summary>
+    /// Set the target room transform
+    /// </summary>
+    /// <param name="_targetTransform">New target transform</param>
     public void SetNewRoomTarget(Transform _targetTransform)
     {
         m_targetRoomTransform = _targetTransform;
     }
 
+    /// <summary>
+    /// Get the target room transform
+    /// </summary>
+    /// <returns>Target room transform</returns>
     public Transform HasRoomTarget()
     {
         return m_targetRoomTransform;
     }
 
+    /// <summary>
+    /// Get the current room trasnform
+    /// </summary>
+    /// <returns>Current room transform</returns>
     public Transform CurrentTargetTransform()
     {
         return m_currentRoomTransform;
     }
 
+    /// <summary>
+    /// Set the start room transform
+    /// </summary>
+    /// <param name="_startRoomTransform">Start room transform</param>
     public void SetStartRoomTransform(Transform _startRoomTransform)
     {
         m_startRoomTransform = _startRoomTransform;
     }
 
+    /// <summary>
+    /// Reset the camera
+    /// </summary>
     public void ResetCamera()
     {
-        StopAllCoroutines();
-        m_moving = false;
+        // Set the target room to null
         m_targetRoomTransform = null;
+
+        // Set the camera position to the start position
         transform.position = m_startPosition;
-    }
-
-    /// <summary>
-    /// Handles drawing of bounds for debugging purposes
-    /// </summary>
-    private void OnDrawGizmos()
-    {
-        if (m_debugMode)
-        {
-            Vector3 position = new Vector3(transform.position.x, transform.position.y, 0f);
-            Vector3 cubeSize = new Vector3(2 * m_horizontalOffset, 2 * m_verticalOffset, 1f);
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireCube(position, cubeSize);
-
-            Vector3 nextposition = new Vector3(m_nextPosition.x, m_nextPosition.y, 0f);
-            Vector3 nextCubeSize = new Vector3(2 * m_horizontalOffset, 2 * m_verticalOffset, 1f);
-            Gizmos.color = Color.yellow;
-            Gizmos.DrawWireCube(nextposition, nextCubeSize);
-        }
-    }
-
-    /// <summary>
-    /// Update camera position based on bound that was hit
-    /// </summary>
-    /// <param name="bound">Bound that the player hit</param>
-    private void CalculateNewCameraWindowPosition(Bounds bound)
-    {
-        switch (bound)
-        {
-            case Bounds.Right:
-                m_nextPosition = new Vector3(transform.position.x + m_horizontalOffset, transform.position.y, transform.position.z);
-                break;
-
-            case Bounds.Left:
-                m_nextPosition = new Vector3(transform.position.x - m_horizontalOffset, transform.position.y, transform.position.z);
-                break;
-
-            case Bounds.Top:
-                m_nextPosition = new Vector3(transform.position.x, transform.position.y + m_verticalOffset, transform.position.z);
-                break;
-
-            case Bounds.Botton:
-                m_nextPosition = new Vector3(transform.position.x, transform.position.y - m_verticalOffset, transform.position.z);
-                break;
-        }
-    }
-
-    private IEnumerator MoveToNextPosition()
-    {
-        while (Vector3.Distance(transform.position, m_nextPosition) > 0.1f)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, m_nextPosition, m_moveSpeed * m_playerRigidbody.velocity.magnitude);
-            m_moving = true;
-            m_bounds = CalculateNewCameraWindowBounds(transform.position);
-            yield return null;
-        }
-        if (Vector3.Distance(transform.position, m_nextPosition) <= 0.1f)
-        {
-            transform.position = m_nextPosition;
-            m_bounds = CalculateNewCameraWindowBounds(transform.position);
-            m_moving = false;
-            if (m_movementIenumerator != null)
-            {
-                StopCoroutine(m_movementIenumerator);
-                m_movementIenumerator = null;
-            }
-        }
-    }
-
-    /// <summary>
-    /// Calculates the new camera window bounds
-    /// </summary>
-    /// <param name="_cameraPosition">Position of the camera</param>
-    /// <returns>Returns new camera window bounds</returns>
-    private CameraWindowBounds CalculateNewCameraWindowBounds(Vector3 _cameraPosition)
-    {
-        CameraWindowBounds newCameraWindowBounds = new CameraWindowBounds();
-        newCameraWindowBounds.m_rightBound = _cameraPosition.x + m_horizontalOffset;
-        newCameraWindowBounds.m_leftBound = _cameraPosition.x - m_horizontalOffset;
-        newCameraWindowBounds.m_topBound = _cameraPosition.y + m_verticalOffset;
-        newCameraWindowBounds.m_bottomBound = _cameraPosition.y - m_verticalOffset;
-        return newCameraWindowBounds;
-    }
-
-    /// <summary>
-    /// Checks if the player is within the camera window bounds
-    /// </summary>
-    /// <param name="outwardBound">Returns which bound was hit</param>
-    /// <returns>Returns true if the player is with the camera window bounds</returns>
-    private bool CheckIfInBounds(out Bounds outwardBound)
-    {
-        bool inBounds = true;
-        outwardBound = Bounds.Ignore;
-        if (m_player.position.x > m_bounds.m_rightBound)
-        {
-            inBounds = false;
-            outwardBound = Bounds.Right;
-        }
-        if (m_player.position.x < m_bounds.m_leftBound)
-        {
-            inBounds = false;
-            outwardBound = Bounds.Left;
-        }
-        if (m_player.position.y > m_bounds.m_topBound)
-        {
-            inBounds = false;
-            outwardBound = Bounds.Top;
-        }
-        if (m_player.position.y < m_bounds.m_bottomBound)
-        {
-            inBounds = false;
-            outwardBound = Bounds.Botton;
-        }
-        return inBounds;
-    }
-
-    /// <summary>
-    /// Used to define the camera window bounds
-    /// </summary>
-    [System.Serializable]
-    private struct CameraWindowBounds
-    {
-        public float m_rightBound;
-        public float m_leftBound;
-        public float m_topBound;
-        public float m_bottomBound;
-    }
-
-    /// <summary>
-    /// Used to define which bound was reached by the player
-    /// </summary>
-    private enum Bounds
-    {
-        Right,
-        Left,
-        Top,
-        Botton,
-        Ignore
     }
 
     /// <summary>
@@ -308,21 +153,6 @@ public class CameraMovement : MonoBehaviour
     /// </summary>
     public enum CameraType
     {
-        PositionLocking,
-        EdgeLocking,
-        CameraWindowCentral,
         RoomToRoom,
-    }
-
-    /// <summary>
-    /// Used to define the edges of the level
-    /// </summary>
-    [System.Serializable]
-    private struct LevelEdges
-    {
-        public float m_rightEdge;
-        public float m_leftEdge;
-        public float m_topEdge;
-        public float m_bottomEdge;
     }
 }

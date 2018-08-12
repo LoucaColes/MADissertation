@@ -69,6 +69,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_scoreValue: 5
+  m_spawnPercentage: 5
 --- !u!212 &212916400623600828
 SpriteRenderer:
   m_ObjectHideFlags: 1

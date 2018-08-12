@@ -3,6 +3,8 @@ guid: c23245c1ea32e13499e0e7cb41449aa1
 TextureImporter:
   fileIDToRecycleName:
     21300000: eobstacles_0
+    21300002: eobstacles_1
+    21300004: eobstacles_2
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -102,13 +104,53 @@ TextureImporter:
         width: 229
         height: 232
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 815395cc577708042b32fec7505e84ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eobstacles_1
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 14
+        width: 430
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3712738e39e7c5e48b5163b9ea624ced
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eobstacles_2
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 81
+        width: 67
+        height: 714
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f8519b160cfea4280a95dc7e71ccc1
       vertices: []
       indices: 
       edges: []

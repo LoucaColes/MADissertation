@@ -945,8 +945,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_gameSceneData:
-    m_sceneName: PlatformerTesting
-    m_sceneIndex: 3
+    m_sceneName: LevelGenTest
+    m_sceneIndex: 5
     m_loadASync: 0
   m_keyboardInput:
     m_name: Keyboard
@@ -969,6 +969,7 @@ MonoBehaviour:
     m_gameplayInput: {fileID: 1521051321}
     m_uiInput: {fileID: 573347047}
   m_defaultText: {fileID: 152594320}
+  m_fileName: HardwareName
 --- !u!1 &816879143
 GameObject:
   m_ObjectHideFlags: 0

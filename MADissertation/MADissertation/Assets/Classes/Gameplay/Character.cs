@@ -40,20 +40,31 @@ public class Character : MonoBehaviour
         UpdateSprite();
     }
 
+    /// <summary>
+    /// Fixed update is called once per fixed frame
+    /// </summary>
     protected virtual void FixedUpdate()
     {
     }
 
+    /// <summary>
+    /// Update the sprite based on the characters velocity
+    /// </summary>
     private void UpdateSprite()
     {
+        // If the x velocity is 0 set sprite to idle
         if (m_rigidBody.velocity.x == 0)
         {
             m_renderer.sprite = m_characterData.m_idleSprite;
         }
+
+        // If the x velocity is greater than 0 set sprite to right facing sprite
         else if (m_rigidBody.velocity.x > 0)
         {
             m_renderer.sprite = m_characterData.m_rightSprite;
         }
+        // Else x velocity is less than 0
+        // Set sprite to left facing sprite
         else
         {
             m_renderer.sprite = m_characterData.m_leftSprite;

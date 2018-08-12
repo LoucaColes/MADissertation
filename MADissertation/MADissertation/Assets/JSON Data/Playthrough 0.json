@@ -1,0 +1,2945 @@
+{
+    "m_id" : 9,
+    "m_levelData" : [ {
+      "m_designData" : {
+        "m_grid" : [ {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        } ],
+        "m_gridHeight" : 6,
+        "m_gridWidth" : 6,
+        "m_simpleRoomData" : [ {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_0",
+          "m_xPos" : 0,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_0",
+          "m_xPos" : 1,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_0",
+          "m_xPos" : 2,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "S_",
+          "m_prefabName" : "HardRoom3(Clone)_3_0",
+          "m_xPos" : 3,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom5(Clone)_4_0",
+          "m_xPos" : 4,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_0",
+          "m_xPos" : 5,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_1",
+          "m_xPos" : 0,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_1",
+          "m_xPos" : 1,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_1",
+          "m_xPos" : 2,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_1",
+          "m_xPos" : 3,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom4(Clone)_4_1",
+          "m_xPos" : 4,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom4(Clone)_5_1",
+          "m_xPos" : 5,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_2",
+          "m_xPos" : 0,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_2",
+          "m_xPos" : 1,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_2",
+          "m_xPos" : 2,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom1(Clone)_3_2",
+          "m_xPos" : 3,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom1(Clone)_4_2",
+          "m_xPos" : 4,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom1(Clone)_5_2",
+          "m_xPos" : 5,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_3",
+          "m_xPos" : 0,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_3",
+          "m_xPos" : 1,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_3",
+          "m_xPos" : 2,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom5(Clone)_3_3",
+          "m_xPos" : 3,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom5(Clone)_4_3",
+          "m_xPos" : 4,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_3",
+          "m_xPos" : 5,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_4",
+          "m_xPos" : 0,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_4",
+          "m_xPos" : 1,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_4",
+          "m_xPos" : 2,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_4",
+          "m_xPos" : 3,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom1(Clone)_4_4",
+          "m_xPos" : 4,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom4(Clone)_5_4",
+          "m_xPos" : 5,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_5",
+          "m_xPos" : 0,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_5",
+          "m_xPos" : 1,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_5",
+          "m_xPos" : 2,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_5",
+          "m_xPos" : 3,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_5",
+          "m_xPos" : 4,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "G_",
+          "m_prefabName" : "HardRoom3(Clone)_5_5",
+          "m_xPos" : 5,
+          "m_yPos" : 5
+        } ]
+      },
+      "m_difficulty" : 2,
+      "m_playerData" : {
+        "m_currentPlayerDeaths" : 0,
+        "m_currentPlayerLives" : 0,
+        "m_enemiesKilled" : 0,
+        "m_score" : 5,
+        "m_timeTakenToCompleteLevel" : 56.2818603515625
+      }
+    }, {
+      "m_designData" : {
+        "m_grid" : [ {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        } ],
+        "m_gridHeight" : 6,
+        "m_gridWidth" : 6,
+        "m_simpleRoomData" : [ {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_0",
+          "m_xPos" : 0,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_0",
+          "m_xPos" : 1,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_0",
+          "m_xPos" : 2,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom3(Clone)_3_0",
+          "m_xPos" : 3,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom5(Clone)_4_0",
+          "m_xPos" : 4,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "S_",
+          "m_prefabName" : "HardRoom2(Clone)_5_0",
+          "m_xPos" : 5,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_1",
+          "m_xPos" : 0,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom1(Clone)_1_1",
+          "m_xPos" : 1,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom5(Clone)_2_1",
+          "m_xPos" : 2,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom5(Clone)_3_1",
+          "m_xPos" : 3,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_1",
+          "m_xPos" : 4,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_1",
+          "m_xPos" : 5,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom5(Clone)_0_2",
+          "m_xPos" : 0,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom2(Clone)_1_2",
+          "m_xPos" : 1,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_2",
+          "m_xPos" : 2,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_2",
+          "m_xPos" : 3,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_2",
+          "m_xPos" : 4,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_2",
+          "m_xPos" : 5,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom2(Clone)_0_3",
+          "m_xPos" : 0,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom4(Clone)_1_3",
+          "m_xPos" : 1,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_3",
+          "m_xPos" : 2,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_3",
+          "m_xPos" : 3,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_3",
+          "m_xPos" : 4,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_3",
+          "m_xPos" : 5,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom2(Clone)_0_4",
+          "m_xPos" : 0,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom1(Clone)_1_4",
+          "m_xPos" : 1,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_4",
+          "m_xPos" : 2,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_4",
+          "m_xPos" : 3,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_4",
+          "m_xPos" : 4,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_4",
+          "m_xPos" : 5,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "G_",
+          "m_prefabName" : "HardRoom2(Clone)_0_5",
+          "m_xPos" : 0,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_5",
+          "m_xPos" : 1,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_5",
+          "m_xPos" : 2,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_5",
+          "m_xPos" : 3,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_5",
+          "m_xPos" : 4,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_5",
+          "m_xPos" : 5,
+          "m_yPos" : 5
+        } ]
+      },
+      "m_difficulty" : 2,
+      "m_playerData" : {
+        "m_currentPlayerDeaths" : 0,
+        "m_currentPlayerLives" : 0,
+        "m_enemiesKilled" : 0,
+        "m_score" : 10,
+        "m_timeTakenToCompleteLevel" : 65.29557037353516
+      }
+    }, {
+      "m_designData" : {
+        "m_grid" : [ {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        } ],
+        "m_gridHeight" : 6,
+        "m_gridWidth" : 6,
+        "m_simpleRoomData" : [ {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_0",
+          "m_xPos" : 0,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_0",
+          "m_xPos" : 1,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_0",
+          "m_xPos" : 2,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_0",
+          "m_xPos" : 3,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_0",
+          "m_xPos" : 4,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "S_",
+          "m_prefabName" : "HardRoom2(Clone)_5_0",
+          "m_xPos" : 5,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_1",
+          "m_xPos" : 0,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_1",
+          "m_xPos" : 1,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_1",
+          "m_xPos" : 2,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_1",
+          "m_xPos" : 3,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_1",
+          "m_xPos" : 4,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom1(Clone)_5_1",
+          "m_xPos" : 5,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_2",
+          "m_xPos" : 0,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_2",
+          "m_xPos" : 1,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_2",
+          "m_xPos" : 2,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_2",
+          "m_xPos" : 3,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_2",
+          "m_xPos" : 4,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom5(Clone)_5_2",
+          "m_xPos" : 5,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_3",
+          "m_xPos" : 0,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom5(Clone)_1_3",
+          "m_xPos" : 1,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom4(Clone)_2_3",
+          "m_xPos" : 2,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom1(Clone)_3_3",
+          "m_xPos" : 3,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom1(Clone)_4_3",
+          "m_xPos" : 4,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom1(Clone)_5_3",
+          "m_xPos" : 5,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_4",
+          "m_xPos" : 0,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom2(Clone)_1_4",
+          "m_xPos" : 1,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom1(Clone)_2_4",
+          "m_xPos" : 2,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_4",
+          "m_xPos" : 3,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_4",
+          "m_xPos" : 4,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_4",
+          "m_xPos" : 5,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_5",
+          "m_xPos" : 0,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_5",
+          "m_xPos" : 1,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom2(Clone)_2_5",
+          "m_xPos" : 2,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom4(Clone)_3_5",
+          "m_xPos" : 3,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "G_",
+          "m_prefabName" : "HardRoom5(Clone)_4_5",
+          "m_xPos" : 4,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_5",
+          "m_xPos" : 5,
+          "m_yPos" : 5
+        } ]
+      },
+      "m_difficulty" : 2,
+      "m_playerData" : {
+        "m_currentPlayerDeaths" : 0,
+        "m_currentPlayerLives" : 0,
+        "m_enemiesKilled" : 0,
+        "m_score" : 10,
+        "m_timeTakenToCompleteLevel" : 58.095821380615234
+      }
+    }, {
+      "m_designData" : {
+        "m_grid" : [ {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        } ],
+        "m_gridHeight" : 6,
+        "m_gridWidth" : 6,
+        "m_simpleRoomData" : [ {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_0",
+          "m_xPos" : 0,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom4(Clone)_1_0",
+          "m_xPos" : 1,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "S_",
+          "m_prefabName" : "MediumRoom2(Clone)_2_0",
+          "m_xPos" : 2,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_0",
+          "m_xPos" : 3,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_0",
+          "m_xPos" : 4,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_0",
+          "m_xPos" : 5,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom4(Clone)_0_1",
+          "m_xPos" : 0,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom2(Clone)_1_1",
+          "m_xPos" : 1,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_1",
+          "m_xPos" : 2,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_1",
+          "m_xPos" : 3,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_1",
+          "m_xPos" : 4,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_1",
+          "m_xPos" : 5,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom3(Clone)_0_2",
+          "m_xPos" : 0,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom5(Clone)_1_2",
+          "m_xPos" : 1,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom3(Clone)_2_2",
+          "m_xPos" : 2,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom5(Clone)_3_2",
+          "m_xPos" : 3,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_2",
+          "m_xPos" : 4,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_2",
+          "m_xPos" : 5,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_3",
+          "m_xPos" : 0,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_3",
+          "m_xPos" : 1,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_3",
+          "m_xPos" : 2,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom4(Clone)_3_3",
+          "m_xPos" : 3,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom1(Clone)_4_3",
+          "m_xPos" : 4,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_3",
+          "m_xPos" : 5,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_4",
+          "m_xPos" : 0,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_4",
+          "m_xPos" : 1,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_4",
+          "m_xPos" : 2,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_4",
+          "m_xPos" : 3,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom4(Clone)_4_4",
+          "m_xPos" : 4,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom1(Clone)_5_4",
+          "m_xPos" : 5,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_5",
+          "m_xPos" : 0,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_5",
+          "m_xPos" : 1,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_5",
+          "m_xPos" : 2,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_5",
+          "m_xPos" : 3,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_5",
+          "m_xPos" : 4,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "G_",
+          "m_prefabName" : "MediumRoom4(Clone)_5_5",
+          "m_xPos" : 5,
+          "m_yPos" : 5
+        } ]
+      },
+      "m_difficulty" : 1,
+      "m_playerData" : {
+        "m_currentPlayerDeaths" : 0,
+        "m_currentPlayerLives" : 0,
+        "m_enemiesKilled" : 0,
+        "m_score" : 5,
+        "m_timeTakenToCompleteLevel" : 45.270423889160156
+      }
+    }, {
+      "m_designData" : {
+        "m_grid" : [ {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        } ],
+        "m_gridHeight" : 6,
+        "m_gridWidth" : 6,
+        "m_simpleRoomData" : [ {
+          "m_letterRepresentative" : "S_",
+          "m_prefabName" : "MediumRoom4(Clone)_0_0",
+          "m_xPos" : 0,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_0",
+          "m_xPos" : 1,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_0",
+          "m_xPos" : 2,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_0",
+          "m_xPos" : 3,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_0",
+          "m_xPos" : 4,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_0",
+          "m_xPos" : 5,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom2(Clone)_0_1",
+          "m_xPos" : 0,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_1",
+          "m_xPos" : 1,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_1",
+          "m_xPos" : 2,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_1",
+          "m_xPos" : 3,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_1",
+          "m_xPos" : 4,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_1",
+          "m_xPos" : 5,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom4(Clone)_0_2",
+          "m_xPos" : 0,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom5(Clone)_1_2",
+          "m_xPos" : 1,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom1(Clone)_2_2",
+          "m_xPos" : 2,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom1(Clone)_3_2",
+          "m_xPos" : 3,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom5(Clone)_4_2",
+          "m_xPos" : 4,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_2",
+          "m_xPos" : 5,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_3",
+          "m_xPos" : 0,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_3",
+          "m_xPos" : 1,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_3",
+          "m_xPos" : 2,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_3",
+          "m_xPos" : 3,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom2(Clone)_4_3",
+          "m_xPos" : 4,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom5(Clone)_5_3",
+          "m_xPos" : 5,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_4",
+          "m_xPos" : 0,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_4",
+          "m_xPos" : 1,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_4",
+          "m_xPos" : 2,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom1(Clone)_3_4",
+          "m_xPos" : 3,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom4(Clone)_4_4",
+          "m_xPos" : 4,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom1(Clone)_5_4",
+          "m_xPos" : 5,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_5",
+          "m_xPos" : 0,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_5",
+          "m_xPos" : 1,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_5",
+          "m_xPos" : 2,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom3(Clone)_3_5",
+          "m_xPos" : 3,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "G_",
+          "m_prefabName" : "MediumRoom5(Clone)_4_5",
+          "m_xPos" : 4,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_5",
+          "m_xPos" : 5,
+          "m_yPos" : 5
+        } ]
+      },
+      "m_difficulty" : 1,
+      "m_playerData" : {
+        "m_currentPlayerDeaths" : 0,
+        "m_currentPlayerLives" : 0,
+        "m_enemiesKilled" : 0,
+        "m_score" : 0,
+        "m_timeTakenToCompleteLevel" : 58.47352600097656
+      }
+    }, {
+      "m_designData" : {
+        "m_grid" : [ {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        } ],
+        "m_gridHeight" : 6,
+        "m_gridWidth" : 6,
+        "m_simpleRoomData" : [ {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_0",
+          "m_xPos" : 0,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_0",
+          "m_xPos" : 1,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_0",
+          "m_xPos" : 2,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom2(Clone)_3_0",
+          "m_xPos" : 3,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom2(Clone)_4_0",
+          "m_xPos" : 4,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "S_",
+          "m_prefabName" : "HardRoom2(Clone)_5_0",
+          "m_xPos" : 5,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_1",
+          "m_xPos" : 0,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom3(Clone)_1_1",
+          "m_xPos" : 1,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom2(Clone)_2_1",
+          "m_xPos" : 2,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom4(Clone)_3_1",
+          "m_xPos" : 3,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_1",
+          "m_xPos" : 4,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_1",
+          "m_xPos" : 5,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom3(Clone)_0_2",
+          "m_xPos" : 0,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom1(Clone)_1_2",
+          "m_xPos" : 1,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_2",
+          "m_xPos" : 2,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_2",
+          "m_xPos" : 3,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_2",
+          "m_xPos" : 4,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_2",
+          "m_xPos" : 5,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom2(Clone)_0_3",
+          "m_xPos" : 0,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_3",
+          "m_xPos" : 1,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_3",
+          "m_xPos" : 2,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_3",
+          "m_xPos" : 3,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_3",
+          "m_xPos" : 4,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_3",
+          "m_xPos" : 5,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom1(Clone)_0_4",
+          "m_xPos" : 0,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_4",
+          "m_xPos" : 1,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_4",
+          "m_xPos" : 2,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_4",
+          "m_xPos" : 3,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_4",
+          "m_xPos" : 4,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_4",
+          "m_xPos" : 5,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom5(Clone)_0_5",
+          "m_xPos" : 0,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "HardRoom5(Clone)_1_5",
+          "m_xPos" : 1,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "G_",
+          "m_prefabName" : "HardRoom5(Clone)_2_5",
+          "m_xPos" : 2,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_5",
+          "m_xPos" : 3,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_5",
+          "m_xPos" : 4,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_5",
+          "m_xPos" : 5,
+          "m_yPos" : 5
+        } ]
+      },
+      "m_difficulty" : 2,
+      "m_playerData" : {
+        "m_currentPlayerDeaths" : 2,
+        "m_currentPlayerLives" : 8,
+        "m_deathRoomData" : [ {
+          "m_letterRepresentative" : "S_",
+          "m_prefabName" : "HardRoom2(Clone)_5_0",
+          "m_xPos" : 5,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "S_",
+          "m_prefabName" : "HardRoom2(Clone)_5_0",
+          "m_xPos" : 5,
+          "m_yPos" : 0
+        } ],
+        "m_enemiesKilled" : 0,
+        "m_score" : 10,
+        "m_timeTakenToCompleteLevel" : 71.47576141357422
+      }
+    }, {
+      "m_designData" : {
+        "m_grid" : [ {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        } ],
+        "m_gridHeight" : 7,
+        "m_gridWidth" : 7,
+        "m_simpleRoomData" : [ {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_0",
+          "m_xPos" : 0,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_0",
+          "m_xPos" : 1,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_0",
+          "m_xPos" : 2,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_0",
+          "m_xPos" : 3,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_0",
+          "m_xPos" : 4,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "S_",
+          "m_prefabName" : "MediumRoom3(Clone)_5_0",
+          "m_xPos" : 5,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom5(Clone)_6_0",
+          "m_xPos" : 6,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_1",
+          "m_xPos" : 0,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom3(Clone)_1_1",
+          "m_xPos" : 1,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom2(Clone)_2_1",
+          "m_xPos" : 2,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom3(Clone)_3_1",
+          "m_xPos" : 3,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom1(Clone)_4_1",
+          "m_xPos" : 4,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom3(Clone)_5_1",
+          "m_xPos" : 5,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom4(Clone)_6_1",
+          "m_xPos" : 6,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom5(Clone)_0_2",
+          "m_xPos" : 0,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom1(Clone)_1_2",
+          "m_xPos" : 1,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_2",
+          "m_xPos" : 2,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_2",
+          "m_xPos" : 3,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_2",
+          "m_xPos" : 4,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_2",
+          "m_xPos" : 5,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_6_2",
+          "m_xPos" : 6,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom1(Clone)_0_3",
+          "m_xPos" : 0,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_3",
+          "m_xPos" : 1,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_3",
+          "m_xPos" : 2,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_3",
+          "m_xPos" : 3,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_3",
+          "m_xPos" : 4,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_3",
+          "m_xPos" : 5,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_6_3",
+          "m_xPos" : 6,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom4(Clone)_0_4",
+          "m_xPos" : 0,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_4",
+          "m_xPos" : 1,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_4",
+          "m_xPos" : 2,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_4",
+          "m_xPos" : 3,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_4",
+          "m_xPos" : 4,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_4",
+          "m_xPos" : 5,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_6_4",
+          "m_xPos" : 6,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom3(Clone)_0_5",
+          "m_xPos" : 0,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_5",
+          "m_xPos" : 1,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_5",
+          "m_xPos" : 2,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_5",
+          "m_xPos" : 3,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_5",
+          "m_xPos" : 4,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_5",
+          "m_xPos" : 5,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_6_5",
+          "m_xPos" : 6,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "G_",
+          "m_prefabName" : "MediumRoom2(Clone)_0_6",
+          "m_xPos" : 0,
+          "m_yPos" : 6
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_6",
+          "m_xPos" : 1,
+          "m_yPos" : 6
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_6",
+          "m_xPos" : 2,
+          "m_yPos" : 6
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_6",
+          "m_xPos" : 3,
+          "m_yPos" : 6
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_6",
+          "m_xPos" : 4,
+          "m_yPos" : 6
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_6",
+          "m_xPos" : 5,
+          "m_yPos" : 6
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_6_6",
+          "m_xPos" : 6,
+          "m_yPos" : 6
+        } ]
+      },
+      "m_difficulty" : 1,
+      "m_playerData" : {
+        "m_currentPlayerDeaths" : 0,
+        "m_currentPlayerLives" : 0,
+        "m_enemiesKilled" : 0,
+        "m_score" : 20,
+        "m_timeTakenToCompleteLevel" : 67.14590454101562
+      }
+    }, {
+      "m_designData" : {
+        "m_grid" : [ {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        } ],
+        "m_gridHeight" : 4,
+        "m_gridWidth" : 4,
+        "m_simpleRoomData" : [ {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_0",
+          "m_xPos" : 0,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "S_",
+          "m_prefabName" : "EasyRoom1(Clone)_1_0",
+          "m_xPos" : 1,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "EasyRoom2(Clone)_2_0",
+          "m_xPos" : 2,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_0",
+          "m_xPos" : 3,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_1",
+          "m_xPos" : 0,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "EasyRoom2(Clone)_1_1",
+          "m_xPos" : 1,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "EasyRoom1(Clone)_2_1",
+          "m_xPos" : 2,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_1",
+          "m_xPos" : 3,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "EasyRoom3(Clone)_0_2",
+          "m_xPos" : 0,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "EasyRoom1(Clone)_1_2",
+          "m_xPos" : 1,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_2",
+          "m_xPos" : 2,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_2",
+          "m_xPos" : 3,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "G_",
+          "m_prefabName" : "EasyRoom3(Clone)_0_3",
+          "m_xPos" : 0,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_3",
+          "m_xPos" : 1,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_3",
+          "m_xPos" : 2,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_3",
+          "m_xPos" : 3,
+          "m_yPos" : 3
+        } ]
+      },
+      "m_difficulty" : 0,
+      "m_playerData" : {
+        "m_currentPlayerDeaths" : 0,
+        "m_currentPlayerLives" : 0,
+        "m_enemiesKilled" : 0,
+        "m_score" : 15,
+        "m_timeTakenToCompleteLevel" : 16.804527282714844
+      }
+    }, {
+      "m_designData" : {
+        "m_grid" : [ {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        } ],
+        "m_gridHeight" : 7,
+        "m_gridWidth" : 7,
+        "m_simpleRoomData" : [ {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_0",
+          "m_xPos" : 0,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_0",
+          "m_xPos" : 1,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom3(Clone)_2_0",
+          "m_xPos" : 2,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom4(Clone)_3_0",
+          "m_xPos" : 3,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "S_",
+          "m_prefabName" : "MediumRoom1(Clone)_4_0",
+          "m_xPos" : 4,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_0",
+          "m_xPos" : 5,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_6_0",
+          "m_xPos" : 6,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_1",
+          "m_xPos" : 0,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom1(Clone)_1_1",
+          "m_xPos" : 1,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom4(Clone)_2_1",
+          "m_xPos" : 2,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_1",
+          "m_xPos" : 3,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_1",
+          "m_xPos" : 4,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_1",
+          "m_xPos" : 5,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_6_1",
+          "m_xPos" : 6,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_2",
+          "m_xPos" : 0,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom4(Clone)_1_2",
+          "m_xPos" : 1,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom2(Clone)_2_2",
+          "m_xPos" : 2,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom5(Clone)_3_2",
+          "m_xPos" : 3,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom2(Clone)_4_2",
+          "m_xPos" : 4,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom2(Clone)_5_2",
+          "m_xPos" : 5,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_6_2",
+          "m_xPos" : 6,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_3",
+          "m_xPos" : 0,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_3",
+          "m_xPos" : 1,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom4(Clone)_2_3",
+          "m_xPos" : 2,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom1(Clone)_3_3",
+          "m_xPos" : 3,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom2(Clone)_4_3",
+          "m_xPos" : 4,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom2(Clone)_5_3",
+          "m_xPos" : 5,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_6_3",
+          "m_xPos" : 6,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_0_4",
+          "m_xPos" : 0,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom1(Clone)_1_4",
+          "m_xPos" : 1,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom2(Clone)_2_4",
+          "m_xPos" : 2,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_4",
+          "m_xPos" : 3,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_4",
+          "m_xPos" : 4,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_4",
+          "m_xPos" : 5,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_6_4",
+          "m_xPos" : 6,
+          "m_yPos" : 4
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom1(Clone)_0_5",
+          "m_xPos" : 0,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom3(Clone)_1_5",
+          "m_xPos" : 1,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_5",
+          "m_xPos" : 2,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_5",
+          "m_xPos" : 3,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_5",
+          "m_xPos" : 4,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_5",
+          "m_xPos" : 5,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_6_5",
+          "m_xPos" : 6,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom1(Clone)_0_6",
+          "m_xPos" : 0,
+          "m_yPos" : 6
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom5(Clone)_1_6",
+          "m_xPos" : 1,
+          "m_yPos" : 6
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom5(Clone)_2_6",
+          "m_xPos" : 2,
+          "m_yPos" : 6
+        }, {
+          "m_letterRepresentative" : "G_",
+          "m_prefabName" : "MediumRoom3(Clone)_3_6",
+          "m_xPos" : 3,
+          "m_yPos" : 6
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_4_6",
+          "m_xPos" : 4,
+          "m_yPos" : 6
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_5_6",
+          "m_xPos" : 5,
+          "m_yPos" : 6
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_6_6",
+          "m_xPos" : 6,
+          "m_yPos" : 6
+        } ]
+      },
+      "m_difficulty" : 1,
+      "m_playerData" : {
+        "m_currentPlayerDeaths" : 2,
+        "m_currentPlayerLives" : 8,
+        "m_deathRoomData" : [ {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom1(Clone)_0_5",
+          "m_xPos" : 0,
+          "m_yPos" : 5
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "MediumRoom1(Clone)_0_5",
+          "m_xPos" : 0,
+          "m_yPos" : 5
+        } ],
+        "m_enemiesKilled" : 0,
+        "m_score" : 15,
+        "m_timeTakenToCompleteLevel" : 137.6778564453125
+      }
+    }, {
+      "m_designData" : {
+        "m_grid" : [ {
+          "m_FileID" : -418286,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : -417322,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : -419666,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : -420630,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : -421722,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        }, {
+          "m_FileID" : 0,
+          "m_PathID" : 0
+        } ],
+        "m_gridHeight" : 4,
+        "m_gridWidth" : 4,
+        "m_simpleRoomData" : [ {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "EasyRoom2(Clone)_0_0",
+          "m_xPos" : 0,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "S_",
+          "m_prefabName" : "EasyRoom4(Clone)_1_0",
+          "m_xPos" : 1,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_0",
+          "m_xPos" : 2,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_0",
+          "m_xPos" : 3,
+          "m_yPos" : 0
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "EasyRoom4(Clone)_0_1",
+          "m_xPos" : 0,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_1",
+          "m_xPos" : 1,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_1",
+          "m_xPos" : 2,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_1",
+          "m_xPos" : 3,
+          "m_yPos" : 1
+        }, {
+          "m_letterRepresentative" : "P_",
+          "m_prefabName" : "EasyRoom3(Clone)_0_2",
+          "m_xPos" : 0,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_2",
+          "m_xPos" : 1,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_2",
+          "m_xPos" : 2,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_2",
+          "m_xPos" : 3,
+          "m_yPos" : 2
+        }, {
+          "m_letterRepresentative" : "G_",
+          "m_prefabName" : "EasyRoom3(Clone)_0_3",
+          "m_xPos" : 0,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_1_3",
+          "m_xPos" : 1,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_2_3",
+          "m_xPos" : 2,
+          "m_yPos" : 3
+        }, {
+          "m_letterRepresentative" : "E_",
+          "m_prefabName" : "BlankRoomTemplate(Clone)_3_3",
+          "m_xPos" : 3,
+          "m_yPos" : 3
+        } ]
+      },
+      "m_difficulty" : 0,
+      "m_playerData" : {
+        "m_currentPlayerDeaths" : 0,
+        "m_currentPlayerLives" : 0,
+        "m_enemiesKilled" : 0,
+        "m_score" : 0,
+        "m_timeTakenToCompleteLevel" : 16.14335823059082
+      }
+    } ],
+    "m_levelId" : 9
+  }

@@ -4,8 +4,12 @@ using UnityEngine;
 
 namespace LevelGeneration
 {
+    /// <summary>
+    /// Level generator class that manages the generation process
+    /// </summary>
     public class LevelGenerator : MonoBehaviour
     {
+        // Designer variables
         [SerializeField]
         private CameraMovement m_cameraMovement;
 
@@ -30,44 +34,46 @@ namespace LevelGeneration
         [SerializeField]
         private bool m_debugMode = false;
 
+        // Private variables
         private Grid m_grid;
 
         // Use this for initialization
         private void Start()
         {
+            // Add a new grid class to the level generation object
             m_grid = gameObject.AddComponent<LevelGeneration.Grid>();
-            int difficulty = (int)DataTracker.Instance.GetDifficulty();
-            TemplateGroup templateGroup;
-            if (difficulty == 0)
-            {
-                templateGroup = m_templateHolder.GetEasyGroup();
-            }
-            else if (difficulty == 1)
-            {
-                templateGroup = m_templateHolder.GetMediumGroup();
-            }
-            else
-            {
-                templateGroup = m_templateHolder.GetHardGroup();
-            }
+
+            // Get the template group based on the current difficulty
+            TemplateGroup templateGroup = m_templateHolder.GeTemplateGroup(DataTracker.Instance.GetDifficulty());
+
+            // Generate a random width and height based on the template groups min max values
             int randWidthHeight = Random.Range(templateGroup.m_gridMinMax.x,
                 templateGroup.m_gridMinMax.y);
+
+            // Set the grids width and height
             m_gridWidth = randWidthHeight;
             m_gridHeight = randWidthHeight;
+
+            // Create a new grid
             m_grid.CreateGrid(randWidthHeight, randWidthHeight, m_emptyRoomPrefab, m_positioningOffset, m_templateHolder,
                 m_cameraMovement, m_playerPref);
+
+            // Generate a new level
             m_grid.GenerateLevel();
         }
 
         // Update is called once per frame
         private void Update()
         {
+            // If in debug mode
             if (m_debugMode)
             {
+                // If the G key is pressed generate a level
                 if (Input.GetKeyDown(KeyCode.G))
                 {
                     m_grid.GenerateLevel();
                 }
+                // If the C key is pressed clear the grid
                 if (Input.GetKeyDown(KeyCode.C))
                 {
                     m_grid.Clear();

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "681468501445",
+    "firebase_url": "https://ma-dissertation.firebaseio.com",
+    "project_id": "ma-dissertation",
+    "storage_bucket": "ma-dissertation.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:681468501445:android:dbd258927ef67a0d",
+        "android_client_info": {
+          "package_name": "com.LoucaColes.MADissertation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "681468501445-mfpi6j1kv8tbpvqhbua8u1q05p26dar2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCA2EuI7SYxPzbPJufma4XS_h-NOiCW3xM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
