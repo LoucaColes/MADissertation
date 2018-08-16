@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gamemanager_2ecs',['GameManager.cs',['../_game_manager_8cs.html',1,'']]]
+  ['about_2ecs',['About.cs',['../_about_8cs.html',1,'']]]
 ];

@@ -9,14 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MA Dissertation
-   &#160;<span id="projectnumber">1</span>
+   &#160;<span id="projectnumber">Version 1.0.0</span>
    </div>
    <div id="projectbrief">An Artificial Intelligence controlled dynamic difficulty system within a prototype 2D platformer</div>
   </td>
@@ -56,22 +48,6 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('functions.html','');});
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -87,71 +63,53 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </div>
 
 <div class="contents">
-<div class="textblock">Here is a list of all class members with links to the classes they belong to:</div><ul>
-<li>ChangeState()
-: <a class="el" href="class_game_manager.html#a38cc549d56890d3d3097e0a81fd7428f">GameManager</a>
+<div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
+
+<h3><a id="index_a"></a>- a -</h3><ul>
+<li>AccessGroupName()
+: <a class="el" href="class_database_manager.html#a3ecc1e7d30ba7c71922588dd7a03c8cb">DatabaseManager</a>
 </li>
-<li>GetGameState()
-: <a class="el" href="class_game_manager.html#a58134230a7cde001ebf2b25f1dcd6091">GameManager</a>
+<li>AccessId()
+: <a class="el" href="class_database_manager.html#a59fd27d4114804a39d197da3b95fa2de">DatabaseManager</a>
 </li>
-<li>IsDebug()
-: <a class="el" href="class_game_manager.html#a35822d3c950f5d43e34c2f020d46c23d">GameManager</a>
+<li>AccessInitEasyAverages()
+: <a class="el" href="class_database_manager.html#a8b767bfbaf23f5ebc65fb3616db8932b">DatabaseManager</a>
 </li>
-<li>LoadMainMenu()
-: <a class="el" href="class_game_manager.html#a5c23fa91837ebfc3f114e315ee4a0623">GameManager</a>
+<li>AccessInitHardAverages()
+: <a class="el" href="class_database_manager.html#a61d0614a2d858005a6c3abac1283c8f2">DatabaseManager</a>
 </li>
-<li>LoadNextLevel()
-: <a class="el" href="class_game_manager.html#a5b92f7fbdd78acc3576b9f8fa83a7f6b">GameManager</a>
+<li>AccessInitMediumAverages()
+: <a class="el" href="class_database_manager.html#a7e11fd2b33cec339e52eb3df7b595da1">DatabaseManager</a>
 </li>
-<li>m_canvasManager
-: <a class="el" href="class_game_manager.html#ad3abeb539c4f257789aa7134c752c786">GameManager</a>
+<li>AccessUniqueId()
+: <a class="el" href="class_database_manager.html#a78fbe5d16d91f8a9da73c348518af5fb">DatabaseManager</a>
 </li>
-<li>m_currentPlayerData
-: <a class="el" href="class_game_manager.html#a8e671c2fc013be135ec70b43aea3a29e">GameManager</a>
+<li>AddNewLevelData()
+: <a class="el" href="class_data_tracker.html#ad8d42a698f0dc7bfa12d5200e158d0a4">DataTracker</a>
 </li>
-<li>m_debugMode
-: <a class="el" href="class_game_manager.html#a7aed1c66e288d6712e7b04c12bd0d5cc">GameManager</a>
+<li>AddNewPlayerData()
+: <a class="el" href="class_data_tracker.html#a385ec3ae6529d79a33932e3c759ec2b5">DataTracker</a>
 </li>
-<li>m_gameState
-: <a class="el" href="class_game_manager.html#a17e003b42eb6c99308a04813e359ff71">GameManager</a>
+<li>AssertIsInitialized()
+: <a class="el" href="class_utilities_1_1_singleton.html#a123c0df7e7714b113a68d48f1d247a04">Utilities.Singleton&lt; T &gt;</a>
 </li>
-<li>m_levelLimit
-: <a class="el" href="class_game_manager.html#a8166d596fca625618a2b5ab261b07659">GameManager</a>
+<li>AttemptSpawnCollectable()
+: <a class="el" href="class_level_generation_1_1_room.html#adfc209b5289f68c3c105e1590a4dd652">LevelGeneration.Room</a>
 </li>
-<li>m_respawningText
-: <a class="el" href="class_game_manager.html#a0fed6d237d49a6a342b35a4423e6c03d">GameManager</a>
-</li>
-<li>m_sceneLoaderPrefab
-: <a class="el" href="class_game_manager.html#afe830d016f2ae2f5b74e792bcd957cb4">GameManager</a>
-</li>
-<li>ResetAfterGameOver()
-: <a class="el" href="class_game_manager.html#a4d01c563f63394c879c458b8449967a0">GameManager</a>
-</li>
-<li>Start()
-: <a class="el" href="class_game_manager.html#a5ccfacd027ad08eeb4ff1f25a7f59c98">GameManager</a>
-</li>
-<li>Update()
-: <a class="el" href="class_game_manager.html#a44c79b205dec16bfe650e21259860c5b">GameManager</a>
-</li>
-<li>UpdateCurrentLevelLives()
-: <a class="el" href="class_game_manager.html#a66796650182ecf1f1dc98c8ee889d1a0">GameManager</a>
-</li>
-<li>UpdateCurrentLevelScore()
-: <a class="el" href="class_game_manager.html#ae77f42a6ee1bb7d5192709d24cf6ed34">GameManager</a>
-</li>
-<li>UpdateDataOnDatabase()
-: <a class="el" href="class_game_manager.html#a8778b6ae7b19b87aff284883c2bda04a">GameManager</a>
+<li>Awake()
+: <a class="el" href="class_character.html#a7cca5d1f141f2f46a1d087fd3e28a953">Character</a>
+, <a class="el" href="class_database_manager.html#ab6b2a5348b157b217b1ee38a468a3167">DatabaseManager</a>
+, <a class="el" href="class_data_tracker.html#a683df3af0a4675dc96498519641f6c53">DataTracker</a>
+, <a class="el" href="class_player.html#a21d9f4bbd86a4a1aaa8844917270aefb">Player</a>
+, <a class="el" href="class_utilities_1_1_singleton.html#a634b915d7ac492899512de602d59e650">Utilities.Singleton&lt; T &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
 </body>
 </html>

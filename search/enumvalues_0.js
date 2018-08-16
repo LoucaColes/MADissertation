@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gameover',['GameOver',['../_game_manager_8cs.html#a7899b65f1ea0f655e4bbf8d2a5714285a8f347bc7cebca9fa6d97e70c6bc29eb3',1,'GameManager.cs']]]
+  ['count',['Count',['../_data_tracker_8cs.html#a43efb0a2e61815a66134dfa5ccea0a83ae93f994f01c537c4e2f7d8528c3eb5e9',1,'DataTracker.cs']]]
 ];

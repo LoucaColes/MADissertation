@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['pause',['Pause',['../_game_manager_8cs.html#a7899b65f1ea0f655e4bbf8d2a5714285a105b296a83f9c105355403f3332af50f',1,'GameManager.cs']]],
-  ['play',['Play',['../_game_manager_8cs.html#a7899b65f1ea0f655e4bbf8d2a5714285ade3c731be5633838089a07179d301d7b',1,'GameManager.cs']]]
+  ['fixedupdate',['FixedUpdate',['../class_character.html#ad90105ab5e234884e5bca7ce5bd2c50e',1,'Character.FixedUpdate()'],['../class_player.html#a9f719f4557355ff498cc7ff6d3723a84',1,'Player.FixedUpdate()']]],
+  ['freeze',['Freeze',['../class_player.html#a8e3a84181da3b91573fb395fb8821a90',1,'Player']]]
 ];
