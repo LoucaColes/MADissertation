@@ -1,0 +1,341 @@
+\hypertarget{class_game_manager}{}\section{Game\+Manager Class Reference}
+\label{class_game_manager}\index{Game\+Manager@{Game\+Manager}}
+
+
+Manages game and its states  
+
+
+Inheritance diagram for Game\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_manager_a38cc549d56890d3d3097e0a81fd7428f}{Change\+State}} (\mbox{\hyperlink{_game_manager_8cs_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} \+\_\+new\+Game\+State)
+\begin{DoxyCompactList}\small\item\em Change the game state \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_manager_a1ba9d9459bb03a4046de5fc82734c612}{Change\+State}} (int \+\_\+new\+Game\+State)
+\begin{DoxyCompactList}\small\item\em Change the game state \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_manager_a66796650182ecf1f1dc98c8ee889d1a0}{Update\+Current\+Level\+Lives}} (int \+\_\+lives)
+\begin{DoxyCompactList}\small\item\em Update the amount of lives the player has \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_manager_ae77f42a6ee1bb7d5192709d24cf6ed34}{Update\+Current\+Level\+Score}} (int \+\_\+score)
+\begin{DoxyCompactList}\small\item\em Update the score value \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_game_manager_8cs_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} \mbox{\hyperlink{class_game_manager_a58134230a7cde001ebf2b25f1dcd6091}{Get\+Game\+State}} ()
+\begin{DoxyCompactList}\small\item\em Allow other classes access to the current game state \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_manager_a35822d3c950f5d43e34c2f020d46c23d}{Is\+Debug}} ()
+\begin{DoxyCompactList}\small\item\em Allows other classes to see if the game is in debug mode \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_manager_a8778b6ae7b19b87aff284883c2bda04a}{Update\+Data\+On\+Database}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_manager_a5ccfacd027ad08eeb4ff1f25a7f59c98}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_game_manager_a44c79b205dec16bfe650e21259860c5b}{Update}} ()
+\item 
+I\+Enumerator \mbox{\hyperlink{class_game_manager_a5b92f7fbdd78acc3576b9f8fa83a7f6b}{Load\+Next\+Level}} ()
+\begin{DoxyCompactList}\small\item\em Loads the next level \end{DoxyCompactList}\item 
+I\+Enumerator \mbox{\hyperlink{class_game_manager_a5c23fa91837ebfc3f114e315ee4a0623}{Load\+Main\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Loads the main menu scene \end{DoxyCompactList}\item 
+I\+Enumerator \mbox{\hyperlink{class_game_manager_a4d01c563f63394c879c458b8449967a0}{Reset\+After\+Game\+Over}} ()
+\begin{DoxyCompactList}\small\item\em Reset the game after the player dies \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_game_manager_afe830d016f2ae2f5b74e792bcd957cb4}{m\+\_\+scene\+Loader\+Prefab}}
+\item 
+bool \mbox{\hyperlink{class_game_manager_a7aed1c66e288d6712e7b04c12bd0d5cc}{m\+\_\+debug\+Mode}} = false
+\item 
+int \mbox{\hyperlink{class_game_manager_a8166d596fca625618a2b5ab261b07659}{m\+\_\+level\+Limit}} = 10
+\item 
+\mbox{\hyperlink{_game_manager_8cs_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} \mbox{\hyperlink{class_game_manager_a17e003b42eb6c99308a04813e359ff71}{m\+\_\+game\+State}} = \mbox{\hyperlink{_game_manager_8cs_a7899b65f1ea0f655e4bbf8d2a5714285a95b19f7739b0b7ea7d6b07586be54f36}{Game\+State.\+Init}}
+\item 
+Game\+Object \mbox{\hyperlink{class_game_manager_a0fed6d237d49a6a342b35a4423e6c03d}{m\+\_\+respawning\+Text}}
+\item 
+Player\+Data \mbox{\hyperlink{class_game_manager_a8e671c2fc013be135ec70b43aea3a29e}{m\+\_\+current\+Player\+Data}}
+\item 
+Canvas\+Manager \mbox{\hyperlink{class_game_manager_ad3abeb539c4f257789aa7134c752c786}{m\+\_\+canvas\+Manager}} = null
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Manages game and its states 
+
+
+
+Definition at line 9 of file Game\+Manager.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_manager_a38cc549d56890d3d3097e0a81fd7428f}\label{class_game_manager_a38cc549d56890d3d3097e0a81fd7428f}} 
+\index{Game\+Manager@{Game\+Manager}!Change\+State@{Change\+State}}
+\index{Change\+State@{Change\+State}!Game\+Manager@{Game\+Manager}}
+\subsubsection{\texorpdfstring{Change\+State()}{ChangeState()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Game\+Manager.\+Change\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_game_manager_8cs_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}}}]{\+\_\+new\+Game\+State }\end{DoxyParamCaption})}
+
+
+
+Change the game state 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+new\+Game\+State} & New game state\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 90 of file Game\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_game_manager_a1ba9d9459bb03a4046de5fc82734c612}\label{class_game_manager_a1ba9d9459bb03a4046de5fc82734c612}} 
+\index{Game\+Manager@{Game\+Manager}!Change\+State@{Change\+State}}
+\index{Change\+State@{Change\+State}!Game\+Manager@{Game\+Manager}}
+\subsubsection{\texorpdfstring{Change\+State()}{ChangeState()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Game\+Manager.\+Change\+State (\begin{DoxyParamCaption}\item[{int}]{\+\_\+new\+Game\+State }\end{DoxyParamCaption})}
+
+
+
+Change the game state 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+new\+Game\+State} & New game state\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 285 of file Game\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_game_manager_a58134230a7cde001ebf2b25f1dcd6091}\label{class_game_manager_a58134230a7cde001ebf2b25f1dcd6091}} 
+\index{Game\+Manager@{Game\+Manager}!Get\+Game\+State@{Get\+Game\+State}}
+\index{Get\+Game\+State@{Get\+Game\+State}!Game\+Manager@{Game\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Game\+State()}{GetGameState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_game_manager_8cs_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} Game\+Manager.\+Get\+Game\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Allow other classes access to the current game state 
+
+\begin{DoxyReturn}{Returns}
+Returns the current game state
+\end{DoxyReturn}
+
+
+Definition at line 398 of file Game\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_game_manager_a35822d3c950f5d43e34c2f020d46c23d}\label{class_game_manager_a35822d3c950f5d43e34c2f020d46c23d}} 
+\index{Game\+Manager@{Game\+Manager}!Is\+Debug@{Is\+Debug}}
+\index{Is\+Debug@{Is\+Debug}!Game\+Manager@{Game\+Manager}}
+\subsubsection{\texorpdfstring{Is\+Debug()}{IsDebug()}}
+{\footnotesize\ttfamily bool Game\+Manager.\+Is\+Debug (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Allows other classes to see if the game is in debug mode 
+
+\begin{DoxyReturn}{Returns}
+Returns true if the game is in debug mode but false if not
+\end{DoxyReturn}
+
+
+Definition at line 407 of file Game\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_game_manager_a5c23fa91837ebfc3f114e315ee4a0623}\label{class_game_manager_a5c23fa91837ebfc3f114e315ee4a0623}} 
+\index{Game\+Manager@{Game\+Manager}!Load\+Main\+Menu@{Load\+Main\+Menu}}
+\index{Load\+Main\+Menu@{Load\+Main\+Menu}!Game\+Manager@{Game\+Manager}}
+\subsubsection{\texorpdfstring{Load\+Main\+Menu()}{LoadMainMenu()}}
+{\footnotesize\ttfamily I\+Enumerator Game\+Manager.\+Load\+Main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Loads the main menu scene 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 272 of file Game\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_game_manager_a5b92f7fbdd78acc3576b9f8fa83a7f6b}\label{class_game_manager_a5b92f7fbdd78acc3576b9f8fa83a7f6b}} 
+\index{Game\+Manager@{Game\+Manager}!Load\+Next\+Level@{Load\+Next\+Level}}
+\index{Load\+Next\+Level@{Load\+Next\+Level}!Game\+Manager@{Game\+Manager}}
+\subsubsection{\texorpdfstring{Load\+Next\+Level()}{LoadNextLevel()}}
+{\footnotesize\ttfamily I\+Enumerator Game\+Manager.\+Load\+Next\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Loads the next level 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 256 of file Game\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_game_manager_a4d01c563f63394c879c458b8449967a0}\label{class_game_manager_a4d01c563f63394c879c458b8449967a0}} 
+\index{Game\+Manager@{Game\+Manager}!Reset\+After\+Game\+Over@{Reset\+After\+Game\+Over}}
+\index{Reset\+After\+Game\+Over@{Reset\+After\+Game\+Over}!Game\+Manager@{Game\+Manager}}
+\subsubsection{\texorpdfstring{Reset\+After\+Game\+Over()}{ResetAfterGameOver()}}
+{\footnotesize\ttfamily I\+Enumerator Game\+Manager.\+Reset\+After\+Game\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Reset the game after the player dies 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 367 of file Game\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_game_manager_a5ccfacd027ad08eeb4ff1f25a7f59c98}\label{class_game_manager_a5ccfacd027ad08eeb4ff1f25a7f59c98}} 
+\index{Game\+Manager@{Game\+Manager}!Start@{Start}}
+\index{Start@{Start}!Game\+Manager@{Game\+Manager}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Game\+Manager.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 28 of file Game\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_game_manager_a44c79b205dec16bfe650e21259860c5b}\label{class_game_manager_a44c79b205dec16bfe650e21259860c5b}} 
+\index{Game\+Manager@{Game\+Manager}!Update@{Update}}
+\index{Update@{Update}!Game\+Manager@{Game\+Manager}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Game\+Manager.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 35 of file Game\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_game_manager_a66796650182ecf1f1dc98c8ee889d1a0}\label{class_game_manager_a66796650182ecf1f1dc98c8ee889d1a0}} 
+\index{Game\+Manager@{Game\+Manager}!Update\+Current\+Level\+Lives@{Update\+Current\+Level\+Lives}}
+\index{Update\+Current\+Level\+Lives@{Update\+Current\+Level\+Lives}!Game\+Manager@{Game\+Manager}}
+\subsubsection{\texorpdfstring{Update\+Current\+Level\+Lives()}{UpdateCurrentLevelLives()}}
+{\footnotesize\ttfamily void Game\+Manager.\+Update\+Current\+Level\+Lives (\begin{DoxyParamCaption}\item[{int}]{\+\_\+lives }\end{DoxyParamCaption})}
+
+
+
+Update the amount of lives the player has 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+lives} & Lives value\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 380 of file Game\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_game_manager_ae77f42a6ee1bb7d5192709d24cf6ed34}\label{class_game_manager_ae77f42a6ee1bb7d5192709d24cf6ed34}} 
+\index{Game\+Manager@{Game\+Manager}!Update\+Current\+Level\+Score@{Update\+Current\+Level\+Score}}
+\index{Update\+Current\+Level\+Score@{Update\+Current\+Level\+Score}!Game\+Manager@{Game\+Manager}}
+\subsubsection{\texorpdfstring{Update\+Current\+Level\+Score()}{UpdateCurrentLevelScore()}}
+{\footnotesize\ttfamily void Game\+Manager.\+Update\+Current\+Level\+Score (\begin{DoxyParamCaption}\item[{int}]{\+\_\+score }\end{DoxyParamCaption})}
+
+
+
+Update the score value 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+score} & Score value\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 389 of file Game\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_game_manager_a8778b6ae7b19b87aff284883c2bda04a}\label{class_game_manager_a8778b6ae7b19b87aff284883c2bda04a}} 
+\index{Game\+Manager@{Game\+Manager}!Update\+Data\+On\+Database@{Update\+Data\+On\+Database}}
+\index{Update\+Data\+On\+Database@{Update\+Data\+On\+Database}!Game\+Manager@{Game\+Manager}}
+\subsubsection{\texorpdfstring{Update\+Data\+On\+Database()}{UpdateDataOnDatabase()}}
+{\footnotesize\ttfamily void Game\+Manager.\+Update\+Data\+On\+Database (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 412 of file Game\+Manager.\+cs.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_manager_ad3abeb539c4f257789aa7134c752c786}\label{class_game_manager_ad3abeb539c4f257789aa7134c752c786}} 
+\index{Game\+Manager@{Game\+Manager}!m\+\_\+canvas\+Manager@{m\+\_\+canvas\+Manager}}
+\index{m\+\_\+canvas\+Manager@{m\+\_\+canvas\+Manager}!Game\+Manager@{Game\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+canvas\+Manager}{m\_canvasManager}}
+{\footnotesize\ttfamily Canvas\+Manager Game\+Manager.\+m\+\_\+canvas\+Manager = null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 25 of file Game\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_game_manager_a8e671c2fc013be135ec70b43aea3a29e}\label{class_game_manager_a8e671c2fc013be135ec70b43aea3a29e}} 
+\index{Game\+Manager@{Game\+Manager}!m\+\_\+current\+Player\+Data@{m\+\_\+current\+Player\+Data}}
+\index{m\+\_\+current\+Player\+Data@{m\+\_\+current\+Player\+Data}!Game\+Manager@{Game\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+current\+Player\+Data}{m\_currentPlayerData}}
+{\footnotesize\ttfamily Player\+Data Game\+Manager.\+m\+\_\+current\+Player\+Data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 24 of file Game\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_game_manager_a7aed1c66e288d6712e7b04c12bd0d5cc}\label{class_game_manager_a7aed1c66e288d6712e7b04c12bd0d5cc}} 
+\index{Game\+Manager@{Game\+Manager}!m\+\_\+debug\+Mode@{m\+\_\+debug\+Mode}}
+\index{m\+\_\+debug\+Mode@{m\+\_\+debug\+Mode}!Game\+Manager@{Game\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+debug\+Mode}{m\_debugMode}}
+{\footnotesize\ttfamily bool Game\+Manager.\+m\+\_\+debug\+Mode = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 16 of file Game\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_game_manager_a17e003b42eb6c99308a04813e359ff71}\label{class_game_manager_a17e003b42eb6c99308a04813e359ff71}} 
+\index{Game\+Manager@{Game\+Manager}!m\+\_\+game\+State@{m\+\_\+game\+State}}
+\index{m\+\_\+game\+State@{m\+\_\+game\+State}!Game\+Manager@{Game\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+game\+State}{m\_gameState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_game_manager_8cs_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} Game\+Manager.\+m\+\_\+game\+State = \mbox{\hyperlink{_game_manager_8cs_a7899b65f1ea0f655e4bbf8d2a5714285a95b19f7739b0b7ea7d6b07586be54f36}{Game\+State.\+Init}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 22 of file Game\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_game_manager_a8166d596fca625618a2b5ab261b07659}\label{class_game_manager_a8166d596fca625618a2b5ab261b07659}} 
+\index{Game\+Manager@{Game\+Manager}!m\+\_\+level\+Limit@{m\+\_\+level\+Limit}}
+\index{m\+\_\+level\+Limit@{m\+\_\+level\+Limit}!Game\+Manager@{Game\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+level\+Limit}{m\_levelLimit}}
+{\footnotesize\ttfamily int Game\+Manager.\+m\+\_\+level\+Limit = 10\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 19 of file Game\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_game_manager_a0fed6d237d49a6a342b35a4423e6c03d}\label{class_game_manager_a0fed6d237d49a6a342b35a4423e6c03d}} 
+\index{Game\+Manager@{Game\+Manager}!m\+\_\+respawning\+Text@{m\+\_\+respawning\+Text}}
+\index{m\+\_\+respawning\+Text@{m\+\_\+respawning\+Text}!Game\+Manager@{Game\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+respawning\+Text}{m\_respawningText}}
+{\footnotesize\ttfamily Game\+Object Game\+Manager.\+m\+\_\+respawning\+Text\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 23 of file Game\+Manager.\+cs.
+
+\mbox{\Hypertarget{class_game_manager_afe830d016f2ae2f5b74e792bcd957cb4}\label{class_game_manager_afe830d016f2ae2f5b74e792bcd957cb4}} 
+\index{Game\+Manager@{Game\+Manager}!m\+\_\+scene\+Loader\+Prefab@{m\+\_\+scene\+Loader\+Prefab}}
+\index{m\+\_\+scene\+Loader\+Prefab@{m\+\_\+scene\+Loader\+Prefab}!Game\+Manager@{Game\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+scene\+Loader\+Prefab}{m\_sceneLoaderPrefab}}
+{\footnotesize\ttfamily Game\+Object Game\+Manager.\+m\+\_\+scene\+Loader\+Prefab\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 13 of file Game\+Manager.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/louca/\+Documents/\+M\+A\+Dissertation/\+M\+A\+Dissertation/\+M\+A\+Dissertation/\+Assets/\+Classes/\mbox{\hyperlink{_game_manager_8cs}{Game\+Manager.\+cs}}\end{DoxyCompactItemize}

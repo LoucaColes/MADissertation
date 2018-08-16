@@ -1099,7 +1099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_destroyOnLoad: 0
   m_idType: 0
-  m_groupName: Debug
+  m_groupName: ProcGenTest
   m_baseAverages: {fileID: 11400000, guid: d60748ca0e3b5d74c81b5d5b81846021, type: 2}
 --- !u!4 &1582202270
 Transform:

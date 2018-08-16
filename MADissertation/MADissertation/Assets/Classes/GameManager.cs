@@ -121,9 +121,10 @@ public class GameManager : Singleton<GameManager>
                 m_respawningText = m_canvasManager.GetRespawningText();
                 m_respawningText.SetActive(false);
 
-                // Access game canvas and update level text and deaths text
+                // Access game canvas and update level text, deaths text and difficulty text
                 m_canvasManager.GetGameCanvas().UpdateLevelText(DataTracker.Instance.GetLevelId());
                 m_canvasManager.GetGameCanvas().UpdateDeathsText(m_currentPlayerData.m_currentPlayerDeaths);
+                m_canvasManager.GetGameCanvas().UpdateDifficultyText(DataTracker.Instance.GetDifficulty());
 
                 // Find the player object
                 Player initPlayer = GameObject.FindObjectOfType<Player>();

@@ -21,6 +21,9 @@ public class GameCanvas : MonoBehaviour
     [SerializeField]
     private Text m_timeText;
 
+    [SerializeField]
+    private Text m_difficultyText;
+
     /// <summary>
     /// Update the level text object
     /// </summary>
@@ -46,5 +49,14 @@ public class GameCanvas : MonoBehaviour
     public void UpdateTimeText(float _time)
     {
         m_timeText.text = "Time: " + _time.ToString("F2");
+    }
+
+    /// <summary>
+    /// Update the difficulty text object
+    /// </summary>
+    /// <param name="_difficulty">Difficulty Value</param>
+    public void UpdateDifficultyText(Difficulty _difficulty)
+    {
+        m_difficultyText.text = "Difficulty: " + _difficulty.ToString();
     }
 }

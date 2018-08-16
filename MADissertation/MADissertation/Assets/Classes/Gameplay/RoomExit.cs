@@ -8,9 +8,8 @@ using LevelGeneration;
 /// </summary>
 public class RoomExit : MonoBehaviour
 {
-    // Room that the exit collider is connected to
     [SerializeField]
-    private Room m_connectedRoom;
+    private Room m_connectedRoom; // Room that the exit collider is connected to
 
     /// <summary>
     /// Set the connected room
