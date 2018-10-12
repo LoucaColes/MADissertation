@@ -23,5 +23,6 @@ var searchData=
   ['getroomtype',['GetRoomType',['../class_level_generation_1_1_room.html#aff17f63f58338e84997627bcaed08afc',1,'LevelGeneration::Room']]],
   ['getspawnposition',['GetSpawnPosition',['../class_level_generation_1_1_room.html#a3c9be1844b28b37af37ab01e199361d0',1,'LevelGeneration::Room']]],
   ['getspawnrate',['GetSpawnRate',['../class_collectable.html#a11287fc9a8dda57c70095d56f53aa329',1,'Collectable']]],
+  ['getstartroompos',['GetStartRoomPos',['../class_level_generation_1_1_grid.html#aec9de65ce8a2e5bae3dfc6f94b3f3669',1,'LevelGeneration::Grid']]],
   ['gettemplategroups',['GetTemplateGroups',['../class_level_generation_1_1_template_holder.html#a7bf3b585f3b2a6de8b5c0b32f34786ce',1,'LevelGeneration::TemplateHolder']]]
 ];

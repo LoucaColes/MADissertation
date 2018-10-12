@@ -8,5 +8,6 @@ var searchData=
   ['singleton_3c_20databasemanager_20_3e',['Singleton&lt; DatabaseManager &gt;',['../class_utilities_1_1_singleton.html',1,'Utilities']]],
   ['singleton_3c_20datatracker_20_3e',['Singleton&lt; DataTracker &gt;',['../class_utilities_1_1_singleton.html',1,'Utilities']]],
   ['singleton_3c_20gamemanager_20_3e',['Singleton&lt; GameManager &gt;',['../class_utilities_1_1_singleton.html',1,'Utilities']]],
-  ['singleton_3c_20sceneloader_20_3e',['Singleton&lt; SceneLoader &gt;',['../class_utilities_1_1_singleton.html',1,'Utilities']]]
+  ['singleton_3c_20sceneloader_20_3e',['Singleton&lt; SceneLoader &gt;',['../class_utilities_1_1_singleton.html',1,'Utilities']]],
+  ['statisticsmath',['StatisticsMath',['../class_statistics_math.html',1,'']]]
 ];

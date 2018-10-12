@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MA Dissertation
-   &#160;<span id="projectnumber">Version 1.0.0</span>
+   &#160;<span id="projectnumber">Version 1.0.1</span>
    </div>
    <div id="projectbrief">An Artificial Intelligence controlled dynamic difficulty system within a prototype 2D platformer</div>
   </td>
@@ -97,6 +97,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a17491d66e0960ade0afc20c57a0c4d29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_canvas.html#a17491d66e0960ade0afc20c57a0c4d29">UpdateDifficultyText</a> (<a class="el" href="_data_tracker_8cs.html#a43efb0a2e61815a66134dfa5ccea0a83">Difficulty</a> _difficulty)</td></tr>
 <tr class="memdesc:a17491d66e0960ade0afc20c57a0c4d29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the difficulty text object  <a href="#a17491d66e0960ade0afc20c57a0c4d29">More...</a><br /></td></tr>
 <tr class="separator:a17491d66e0960ade0afc20c57a0c4d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae0c5617c57e0416900fe122ae0596f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_canvas.html#aae0c5617c57e0416900fe122ae0596f4">UpdateScoreText</a> (int _score)</td></tr>
+<tr class="memdesc:aae0c5617c57e0416900fe122ae0596f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the score text object  <a href="#aae0c5617c57e0416900fe122ae0596f4">More...</a><br /></td></tr>
+<tr class="separator:aae0c5617c57e0416900fe122ae0596f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -110,6 +113,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:af88f49a744eea05195f70b8546851561"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbe798de61928e7d93ceef2661992acd"><td class="memItemLeft" align="right" valign="top">Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_canvas.html#abbe798de61928e7d93ceef2661992acd">m_difficultyText</a></td></tr>
 <tr class="separator:abbe798de61928e7d93ceef2661992acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab85ac816fe14a7436a30506b0b4c0937"><td class="memItemLeft" align="right" valign="top">Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_canvas.html#ab85ac816fe14a7436a30506b0b4c0937">m_scoreText</a></td></tr>
+<tr class="separator:ab85ac816fe14a7436a30506b0b4c0937"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A Canvas class that controls aspects of the game UI </p>
@@ -140,7 +145,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_game_canvas_8cs_source.html#l00040">40</a> of file <a class="el" href="_game_canvas_8cs_source.html">GameCanvas.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_game_canvas_8cs_source.html#l00043">43</a> of file <a class="el" href="_game_canvas_8cs_source.html">GameCanvas.cs</a>.</p>
 
 </div>
 </div>
@@ -168,7 +173,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_game_canvas_8cs_source.html#l00058">58</a> of file <a class="el" href="_game_canvas_8cs_source.html">GameCanvas.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_game_canvas_8cs_source.html#l00061">61</a> of file <a class="el" href="_game_canvas_8cs_source.html">GameCanvas.cs</a>.</p>
 
 </div>
 </div>
@@ -196,7 +201,35 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_game_canvas_8cs_source.html#l00031">31</a> of file <a class="el" href="_game_canvas_8cs_source.html">GameCanvas.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_game_canvas_8cs_source.html#l00034">34</a> of file <a class="el" href="_game_canvas_8cs_source.html">GameCanvas.cs</a>.</p>
+
+</div>
+</div>
+<a id="aae0c5617c57e0416900fe122ae0596f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae0c5617c57e0416900fe122ae0596f4">&#9670;&nbsp;</a></span>UpdateScoreText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameCanvas.UpdateScoreText </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_score</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update the score text object </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_score</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_game_canvas_8cs_source.html#l00070">70</a> of file <a class="el" href="_game_canvas_8cs_source.html">GameCanvas.cs</a>.</p>
 
 </div>
 </div>
@@ -224,7 +257,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_game_canvas_8cs_source.html#l00049">49</a> of file <a class="el" href="_game_canvas_8cs_source.html">GameCanvas.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_game_canvas_8cs_source.html#l00052">52</a> of file <a class="el" href="_game_canvas_8cs_source.html">GameCanvas.cs</a>.</p>
 
 </div>
 </div>
@@ -322,6 +355,30 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_game_canvas_8cs_source.html#l00013">13</a> of file <a class="el" href="_game_canvas_8cs_source.html">GameCanvas.cs</a>.</p>
+
+</div>
+</div>
+<a id="ab85ac816fe14a7436a30506b0b4c0937"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab85ac816fe14a7436a30506b0b4c0937">&#9670;&nbsp;</a></span>m_scoreText</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Text GameCanvas.m_scoreText</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_game_canvas_8cs_source.html#l00028">28</a> of file <a class="el" href="_game_canvas_8cs_source.html">GameCanvas.cs</a>.</p>
 
 </div>
 </div>

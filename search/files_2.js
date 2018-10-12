@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['cameramovement_2ecs',['CameraMovement.cs',['../_camera_movement_8cs.html',1,'']]],
   ['canvasmanager_2ecs',['CanvasManager.cs',['../_canvas_manager_8cs.html',1,'']]],
   ['character_2ecs',['Character.cs',['../_character_8cs.html',1,'']]],
   ['collectable_2ecs',['Collectable.cs',['../_collectable_8cs.html',1,'']]],

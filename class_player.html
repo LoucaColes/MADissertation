@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MA Dissertation
-   &#160;<span id="projectnumber">Version 1.0.0</span>
+   &#160;<span id="projectnumber">Version 1.0.1</span>
    </div>
    <div id="projectbrief">An Artificial Intelligence controlled dynamic difficulty system within a prototype 2D platformer</div>
   </td>
@@ -88,9 +88,6 @@ Inheritance diagram for Player:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae4848921e3458e9d0a2cde5acb63e165"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ae4848921e3458e9d0a2cde5acb63e165">SetCameraMovement</a> (<a class="el" href="class_camera_movement.html">CameraMovement</a> _cameraMovement)</td></tr>
-<tr class="memdesc:ae4848921e3458e9d0a2cde5acb63e165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the camera movement reference  <a href="#ae4848921e3458e9d0a2cde5acb63e165">More...</a><br /></td></tr>
-<tr class="separator:ae4848921e3458e9d0a2cde5acb63e165"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89c5345d4267bf7902531407fe50c61e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a89c5345d4267bf7902531407fe50c61e">ResetPlayer</a> ()</td></tr>
 <tr class="memdesc:a89c5345d4267bf7902531407fe50c61e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the player  <a href="#a89c5345d4267bf7902531407fe50c61e">More...</a><br /></td></tr>
 <tr class="separator:a89c5345d4267bf7902531407fe50c61e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,6 +118,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a9f719f4557355ff498cc7ff6d3723a84"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a9f719f4557355ff498cc7ff6d3723a84">FixedUpdate</a> ()</td></tr>
 <tr class="memdesc:a9f719f4557355ff498cc7ff6d3723a84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle physics  <a href="#a9f719f4557355ff498cc7ff6d3723a84">More...</a><br /></td></tr>
 <tr class="separator:a9f719f4557355ff498cc7ff6d3723a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27f3dc632aea8666da76f16e15e1db59"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a27f3dc632aea8666da76f16e15e1db59">UpdateSprite</a> ()</td></tr>
+<tr class="memdesc:a27f3dc632aea8666da76f16e15e1db59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the players sprite  <a href="#a27f3dc632aea8666da76f16e15e1db59">More...</a><br /></td></tr>
+<tr class="separator:a27f3dc632aea8666da76f16e15e1db59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_character"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_character')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_character.html">Character</a></td></tr>
 <tr class="memitem:a98bebdb5d37a51749749f0684f14a6ca inherit pro_methods_class_character"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character.html#a98bebdb5d37a51749749f0684f14a6ca">Start</a> ()</td></tr>
 <tr class="separator:a98bebdb5d37a51749749f0684f14a6ca inherit pro_methods_class_character"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,10 +160,26 @@ Private Attributes</h2></td></tr>
 <tr class="separator:affc5e2f9f56436e2410b7c2b862a466a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0c36a8e3bbc771780b19d45ae13604c"><td class="memItemLeft" align="right" valign="top">Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ac0c36a8e3bbc771780b19d45ae13604c">m_groundCheck</a></td></tr>
 <tr class="separator:ac0c36a8e3bbc771780b19d45ae13604c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbd35ce3448638d052c8b45de113156e"><td class="memItemLeft" align="right" valign="top">Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#acbd35ce3448638d052c8b45de113156e">m_rightCoyoteCheck</a></td></tr>
+<tr class="separator:acbd35ce3448638d052c8b45de113156e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d23296a801f81cde352de07566ab6e7"><td class="memItemLeft" align="right" valign="top">Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a5d23296a801f81cde352de07566ab6e7">m_leftCoyoteCheck</a></td></tr>
+<tr class="separator:a5d23296a801f81cde352de07566ab6e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3970c22f00f22913af2e56cc00e264eb"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a3970c22f00f22913af2e56cc00e264eb">m_wallCheckRadius</a> = 0.3f</td></tr>
 <tr class="separator:a3970c22f00f22913af2e56cc00e264eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71683cff1d7eb1df221d88f4787ac56f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a71683cff1d7eb1df221d88f4787ac56f">m_groundCheckRadius</a> = 0.3f</td></tr>
+<tr class="separator:a71683cff1d7eb1df221d88f4787ac56f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa315a2bf96e1af4d234956663c2e26fe"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#aa315a2bf96e1af4d234956663c2e26fe">m_coyoteCheckRadius</a> = 0.3f</td></tr>
+<tr class="separator:aa315a2bf96e1af4d234956663c2e26fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7e34d36776aeb65009e4b4fea06bc46"><td class="memItemLeft" align="right" valign="top">LayerMask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ad7e34d36776aeb65009e4b4fea06bc46">m_wallMask</a></td></tr>
 <tr class="separator:ad7e34d36776aeb65009e4b4fea06bc46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67a2abcf0274e43f30bd8e8b44f1a993"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a67a2abcf0274e43f30bd8e8b44f1a993">m_jumpPSPrefab</a></td></tr>
+<tr class="separator:a67a2abcf0274e43f30bd8e8b44f1a993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5ea6458a1ea1f3b62f943543fe2e92e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#aa5ea6458a1ea1f3b62f943543fe2e92e">m_slideFactor</a> = 1.1f</td></tr>
+<tr class="separator:aa5ea6458a1ea1f3b62f943543fe2e92e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10fed46bb801d63ffda39c12329d8846"><td class="memItemLeft" align="right" valign="top">Sprite&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a10fed46bb801d63ffda39c12329d8846">m_sprintRightSprite</a></td></tr>
+<tr class="separator:a10fed46bb801d63ffda39c12329d8846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a962a7d5dbfcc6e684f49a08d796f2619"><td class="memItemLeft" align="right" valign="top">Sprite&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a962a7d5dbfcc6e684f49a08d796f2619">m_sprintLeftSprite</a></td></tr>
+<tr class="separator:a962a7d5dbfcc6e684f49a08d796f2619"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e84c4a3c65d15a22e8529aa1fc3bbdb"><td class="memItemLeft" align="right" valign="top">Rewired.Player&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a5e84c4a3c65d15a22e8529aa1fc3bbdb">m_rewiredPlayer</a></td></tr>
 <tr class="separator:a5e84c4a3c65d15a22e8529aa1fc3bbdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab56d9080738b85b259f6bf4f666e2f0d"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ab56d9080738b85b259f6bf4f666e2f0d">m_movementInput</a></td></tr>
@@ -182,8 +198,6 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a00b14be69a98a107bae09971eb5e7aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21f0f6d81336c8496367832628432278"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a21f0f6d81336c8496367832628432278">m_pausedVelocity</a></td></tr>
 <tr class="separator:a21f0f6d81336c8496367832628432278"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae53c643f0dba39eaf49e9b18ebed2b75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_camera_movement.html">CameraMovement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ae53c643f0dba39eaf49e9b18ebed2b75">m_cameraMovement</a></td></tr>
-<tr class="separator:ae53c643f0dba39eaf49e9b18ebed2b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6332dacce435f2f718c66ca593497b44"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a6332dacce435f2f718c66ca593497b44">m_startPosition</a></td></tr>
 <tr class="separator:a6332dacce435f2f718c66ca593497b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae615faab066330df730928f5ec58e07f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ae615faab066330df730928f5ec58e07f">m_dashTimer</a> = 0</td></tr>
@@ -202,6 +216,12 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a38094b8ac5e0628c9bf243ceb60b99e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e1a179dc0797b0bcc634a1a27b97776"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_level_generation_1_1_room.html">Room</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a9e1a179dc0797b0bcc634a1a27b97776">m_currentRoom</a></td></tr>
 <tr class="separator:a9e1a179dc0797b0bcc634a1a27b97776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af479ddb0648d5d0abe77bda46493012d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#af479ddb0648d5d0abe77bda46493012d">m_heldJumping</a> = false</td></tr>
+<tr class="separator:af479ddb0648d5d0abe77bda46493012d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1394a67daf3bc092211cdd1d0efc7aca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a1394a67daf3bc092211cdd1d0efc7aca">m_wallJumpRight</a> = false</td></tr>
+<tr class="separator:a1394a67daf3bc092211cdd1d0efc7aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6adacd6bc76e2e35dcc3633bf48f446e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a6adacd6bc76e2e35dcc3633bf48f446e">m_wallJumpLeft</a> = false</td></tr>
+<tr class="separator:a6adacd6bc76e2e35dcc3633bf48f446e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -249,7 +269,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_character.html#a7cca5d1f141f2f46a1d087fd3e28a953">Character</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00079">79</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00105">105</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -280,7 +300,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_character.html#ad90105ab5e234884e5bca7ce5bd2c50e">Character</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00248">248</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00213">213</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -301,7 +321,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Freeze the player </p>
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00404">404</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00531">531</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -323,7 +343,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Get the current room the player is in </p>
 <dl class="section return"><dt>Returns</dt><dd>The current room the player is in</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00451">451</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00578">578</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -352,7 +372,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Makes the player jump in the air </p>
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00268">268</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00342">342</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -388,7 +408,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00288">288</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00427">427</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -409,35 +429,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reset the player </p>
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00387">387</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
-
-</div>
-</div>
-<a id="ae4848921e3458e9d0a2cde5acb63e165"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4848921e3458e9d0a2cde5acb63e165">&#9670;&nbsp;</a></span>SetCameraMovement()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Player.SetCameraMovement </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_camera_movement.html">CameraMovement</a>&#160;</td>
-          <td class="paramname"><em>_cameraMovement</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the camera movement reference </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">_cameraMovement</td><td>Camera movement reference</td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00101">101</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00514">514</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -465,7 +457,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00433">433</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00560">560</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -493,7 +485,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00442">442</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00569">569</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -514,7 +506,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Unfreeze the player </p>
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00420">420</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00547">547</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -545,13 +537,12 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_character.html#aeabbd75a8c44cc4542112852ca735f2d">Character</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00110">110</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00127">127</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ae53c643f0dba39eaf49e9b18ebed2b75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae53c643f0dba39eaf49e9b18ebed2b75">&#9670;&nbsp;</a></span>m_cameraMovement</h2>
+<a id="a27f3dc632aea8666da76f16e15e1db59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27f3dc632aea8666da76f16e15e1db59">&#9670;&nbsp;</a></span>UpdateSprite()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -560,20 +551,28 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_camera_movement.html">CameraMovement</a> Player.m_cameraMovement</td>
+          <td class="memname">override void Player.UpdateSprite </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00065">65</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p>Update the players sprite </p>
+
+<p>Reimplemented from <a class="el" href="class_character.html#a1c373a58eeecb75bcc9255bcdcac4699">Character</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00586">586</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="a0d6a4c12bf0a960c4b208177e371fca5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0d6a4c12bf0a960c4b208177e371fca5">&#9670;&nbsp;</a></span>m_collider</h2>
 
@@ -594,7 +593,31 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00060">60</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00084">84</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+
+</div>
+</div>
+<a id="aa315a2bf96e1af4d234956663c2e26fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa315a2bf96e1af4d234956663c2e26fe">&#9670;&nbsp;</a></span>m_coyoteCheckRadius</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Player.m_coyoteCheckRadius = 0.3f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00062">62</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -618,7 +641,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00074">74</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00097">97</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -690,7 +713,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00068">68</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00091">91</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -714,7 +737,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00069">69</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00092">92</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -738,7 +761,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00070">70</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00093">93</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -762,7 +785,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00071">71</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00094">94</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -810,7 +833,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00067">67</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00090">90</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -862,6 +885,30 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a71683cff1d7eb1df221d88f4787ac56f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71683cff1d7eb1df221d88f4787ac56f">&#9670;&nbsp;</a></span>m_groundCheckRadius</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Player.m_groundCheckRadius = 0.3f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00059">59</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+
+</div>
+</div>
 <a id="a730c548f5364e0e02a77c17589cadf6b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a730c548f5364e0e02a77c17589cadf6b">&#9670;&nbsp;</a></span>m_grounded</h2>
 
@@ -882,7 +929,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00062">62</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00086">86</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -906,7 +953,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00061">61</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00085">85</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -934,6 +981,30 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="af479ddb0648d5d0abe77bda46493012d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af479ddb0648d5d0abe77bda46493012d">&#9670;&nbsp;</a></span>m_heldJumping</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Player.m_heldJumping = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00098">98</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+
+</div>
+</div>
 <a id="a38094b8ac5e0628c9bf243ceb60b99e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a38094b8ac5e0628c9bf243ceb60b99e7">&#9670;&nbsp;</a></span>m_jumping</h2>
 
@@ -954,7 +1025,31 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00073">73</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00096">96</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+
+</div>
+</div>
+<a id="a67a2abcf0274e43f30bd8e8b44f1a993"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67a2abcf0274e43f30bd8e8b44f1a993">&#9670;&nbsp;</a></span>m_jumpPSPrefab</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject Player.m_jumpPSPrefab</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00068">68</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -1002,7 +1097,31 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00072">72</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00095">95</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+
+</div>
+</div>
+<a id="a5d23296a801f81cde352de07566ab6e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d23296a801f81cde352de07566ab6e7">&#9670;&nbsp;</a></span>m_leftCoyoteCheck</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Transform Player.m_leftCoyoteCheck</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00053">53</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -1050,7 +1169,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00057">57</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00081">81</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -1074,7 +1193,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00059">59</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00083">83</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -1098,7 +1217,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00064">64</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00088">88</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -1170,7 +1289,31 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00056">56</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00080">80</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+
+</div>
+</div>
+<a id="acbd35ce3448638d052c8b45de113156e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbd35ce3448638d052c8b45de113156e">&#9670;&nbsp;</a></span>m_rightCoyoteCheck</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Transform Player.m_rightCoyoteCheck</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00050">50</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -1218,7 +1361,31 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00063">63</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00087">87</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+
+</div>
+</div>
+<a id="aa5ea6458a1ea1f3b62f943543fe2e92e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5ea6458a1ea1f3b62f943543fe2e92e">&#9670;&nbsp;</a></span>m_slideFactor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Player.m_slideFactor = 1.1f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00071">71</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -1242,7 +1409,31 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00058">58</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00082">82</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+
+</div>
+</div>
+<a id="a962a7d5dbfcc6e684f49a08d796f2619"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a962a7d5dbfcc6e684f49a08d796f2619">&#9670;&nbsp;</a></span>m_sprintLeftSprite</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Sprite Player.m_sprintLeftSprite</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00077">77</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -1270,6 +1461,30 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a10fed46bb801d63ffda39c12329d8846"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10fed46bb801d63ffda39c12329d8846">&#9670;&nbsp;</a></span>m_sprintRightSprite</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Sprite Player.m_sprintRightSprite</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00074">74</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+
+</div>
+</div>
 <a id="a6332dacce435f2f718c66ca593497b44"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6332dacce435f2f718c66ca593497b44">&#9670;&nbsp;</a></span>m_startPosition</h2>
 
@@ -1290,7 +1505,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00066">66</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00089">89</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -1314,7 +1529,55 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00050">50</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00056">56</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+
+</div>
+</div>
+<a id="a6adacd6bc76e2e35dcc3633bf48f446e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6adacd6bc76e2e35dcc3633bf48f446e">&#9670;&nbsp;</a></span>m_wallJumpLeft</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Player.m_wallJumpLeft = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00100">100</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+
+</div>
+</div>
+<a id="a1394a67daf3bc092211cdd1d0efc7aca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1394a67daf3bc092211cdd1d0efc7aca">&#9670;&nbsp;</a></span>m_wallJumpRight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Player.m_wallJumpRight = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00099">99</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>
@@ -1338,7 +1601,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00053">53</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_player_8cs_source.html#l00065">65</a> of file <a class="el" href="_player_8cs_source.html">Player.cs</a>.</p>
 
 </div>
 </div>

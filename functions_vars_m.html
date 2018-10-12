@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MA Dissertation
-   &#160;<span id="projectnumber">Version 1.0.0</span>
+   &#160;<span id="projectnumber">Version 1.0.1</span>
    </div>
    <div id="projectbrief">An Artificial Intelligence controlled dynamic difficulty system within a prototype 2D platformer</div>
   </td>
@@ -84,11 +84,6 @@ $(function() {
 <li>m_bottomExitClass
 : <a class="el" href="class_level_generation_1_1_room.html#aba67c96254bfa454fe5d1b9fc7fcb988">LevelGeneration.Room</a>
 </li>
-<li>m_cameraMovement
-: <a class="el" href="class_level_generation_1_1_grid.html#af1eefc34af4f86fc80afdd6f8910d4e8">LevelGeneration.Grid</a>
-, <a class="el" href="class_level_generation_1_1_level_generator.html#af810bae8d8362de83043be45094f19da">LevelGeneration.LevelGenerator</a>
-, <a class="el" href="class_player.html#ae53c643f0dba39eaf49e9b18ebed2b75">Player</a>
-</li>
 <li>m_canvasManager
 : <a class="el" href="class_game_manager.html#ad3abeb539c4f257789aa7134c752c786">GameManager</a>
 </li>
@@ -113,6 +108,9 @@ $(function() {
 </li>
 <li>m_connectionType
 : <a class="el" href="class_level_generation_1_1_room.html#ad2dcc74cedb1dcf6b5b5ef643e2ba9d1">LevelGeneration.Room</a>
+</li>
+<li>m_coyoteCheckRadius
+: <a class="el" href="class_player.html#aa315a2bf96e1af4d234956663c2e26fe">Player</a>
 </li>
 <li>m_curEasyAverages
 : <a class="el" href="class_data_tracker.html#a4b011614b4686ff631b08f94afb893b9">DataTracker</a>
@@ -140,9 +138,6 @@ $(function() {
 </li>
 <li>m_currentRoom
 : <a class="el" href="class_player.html#a9e1a179dc0797b0bcc634a1a27b97776">Player</a>
-</li>
-<li>m_currentRoomTransform
-: <a class="el" href="class_camera_movement.html#a0a1d558a8ae2c653a289b4266caa9b2b">CameraMovement</a>
 </li>
 <li>m_dashCooldown
 : <a class="el" href="class_player.html#af45a55764a9be78481b983585bf1aad9">Player</a>
@@ -191,8 +186,7 @@ $(function() {
 : <a class="el" href="class_data_tracker.html#afd577c33caf6aae87e79ed3ffa034f9a">DataTracker</a>
 </li>
 <li>m_debugMode
-: <a class="el" href="class_camera_movement.html#afecf7b338367d103b288cffc97ced2a7">CameraMovement</a>
-, <a class="el" href="class_data_tracker.html#a0899fbf6308ef4e8d6fc7dfcc0b48056">DataTracker</a>
+: <a class="el" href="class_data_tracker.html#a0899fbf6308ef4e8d6fc7dfcc0b48056">DataTracker</a>
 , <a class="el" href="class_game_manager.html#a7aed1c66e288d6712e7b04c12bd0d5cc">GameManager</a>
 , <a class="el" href="class_level_generation_1_1_level_generator.html#a348a1df740de3d2a4bf1be052d940bf9">LevelGeneration.LevelGenerator</a>
 </li>
@@ -214,6 +208,12 @@ $(function() {
 </li>
 <li>m_difficultyText
 : <a class="el" href="class_game_canvas.html#abbe798de61928e7d93ceef2661992acd">GameCanvas</a>
+</li>
+<li>m_dolly
+: <a class="el" href="class_level_generation_1_1_grid.html#ab4fbb977e40e9216c2fefca189843f62">LevelGeneration.Grid</a>
+</li>
+<li>m_dollyCam
+: <a class="el" href="class_level_generation_1_1_grid.html#a826c433007de2b1bb6006a57bc8def39">LevelGeneration.Grid</a>
 </li>
 <li>m_dropOffset
 : <a class="el" href="class_player.html#ae8e71b098809a8d34fdb41303722fc80">Player</a>
@@ -254,6 +254,7 @@ $(function() {
 </li>
 <li>m_gameSceneData
 : <a class="el" href="class_control_scheme.html#aa0a043dd5c87677582b7e974baea62e0">ControlScheme</a>
+, <a class="el" href="class_intro.html#ac15577cdf4784b19292f877784347dc1">Intro</a>
 , <a class="el" href="class_main_menu.html#a42b7678cb0295f182cadf20fed433ea8">MainMenu</a>
 </li>
 <li>m_gameState
@@ -282,6 +283,9 @@ $(function() {
 <li>m_groundCheck
 : <a class="el" href="class_player.html#ac0c36a8e3bbc771780b19d45ae13604c">Player</a>
 </li>
+<li>m_groundCheckRadius
+: <a class="el" href="class_player.html#a71683cff1d7eb1df221d88f4787ac56f">Player</a>
+</li>
 <li>m_grounded
 : <a class="el" href="class_player.html#a730c548f5364e0e02a77c17589cadf6b">Player</a>
 </li>
@@ -304,8 +308,8 @@ $(function() {
 <li>m_heightOffset
 : <a class="el" href="class_player.html#a830175f033774d0e123d299562d1ea1c">Player</a>
 </li>
-<li>m_horizontalOffset
-: <a class="el" href="class_camera_movement.html#ab965107cd51e86c1667988e872b7f58e">CameraMovement</a>
+<li>m_heldJumping
+: <a class="el" href="class_player.html#af479ddb0648d5d0abe77bda46493012d">Player</a>
 </li>
 <li>m_id
 : <a class="el" href="class_playthrough_data.html#a32c9d72f156f0a9d3a66d05d65f25b21">PlaythroughData</a>
@@ -315,9 +319,6 @@ $(function() {
 </li>
 <li>m_idType
 : <a class="el" href="class_database_manager.html#a51d448efa9c152ef96e37525c5946316">DatabaseManager</a>
-</li>
-<li>m_init
-: <a class="el" href="class_camera_movement.html#a9b683c748235eb186bf61bf1be01f653">CameraMovement</a>
 </li>
 <li>m_initEasyAverages
 : <a class="el" href="class_database_manager.html#ac381956815ad54aea20c51fa868f637d">DatabaseManager</a>
@@ -330,6 +331,9 @@ $(function() {
 </li>
 <li>m_jumping
 : <a class="el" href="class_player.html#a38094b8ac5e0628c9bf243ceb60b99e7">Player</a>
+</li>
+<li>m_jumpPSPrefab
+: <a class="el" href="class_player.html#a67a2abcf0274e43f30bd8e8b44f1a993">Player</a>
 </li>
 <li>m_jumpSpeed
 : <a class="el" href="struct_character_start_data.html#a708b3c236235a419bb60048ea399845a">CharacterStartData</a>
@@ -346,11 +350,11 @@ $(function() {
 <li>m_lastData
 : <a class="el" href="class_data_tracker.html#a04133bad074e20c4b50f68b32a1e3841">DataTracker</a>
 </li>
-<li>m_lastPlayerPosition
-: <a class="el" href="class_camera_movement.html#afe6d37f2e8501c843037e133dfa86898">CameraMovement</a>
-</li>
 <li>m_leftAccessBlocks
 : <a class="el" href="class_level_generation_1_1_room.html#a35f1d6b5f6ed939b1c0877690f599d6d">LevelGeneration.Room</a>
+</li>
+<li>m_leftCoyoteCheck
+: <a class="el" href="class_player.html#a5d23296a801f81cde352de07566ab6e7">Player</a>
 </li>
 <li>m_leftExit
 : <a class="el" href="class_level_generation_1_1_room.html#a9d3a2f50b718ec6ce429080a2ce4eabd">LevelGeneration.Room</a>
@@ -401,8 +405,7 @@ $(function() {
 : <a class="el" href="class_player.html#ab19d9a4cfeb3cd12d604ab85febb2dde">Player</a>
 </li>
 <li>m_moveSpeed
-: <a class="el" href="class_camera_movement.html#ad89a1983f05f8e6832f9fb46a5918f80">CameraMovement</a>
-, <a class="el" href="struct_character_start_data.html#ae14b830ff22f4ac423ac786508e3575f">CharacterStartData</a>
+: <a class="el" href="struct_character_start_data.html#ae14b830ff22f4ac423ac786508e3575f">CharacterStartData</a>
 , <a class="el" href="class_pathing_object.html#af8a1ca24a60b50158d2797457daaf423">PathingObject</a>
 </li>
 <li>m_name
@@ -420,9 +423,6 @@ $(function() {
 <li>m_nextDifficulty
 : <a class="el" href="class_data_tracker.html#affda936e8d38aaa9441a49427d25bd3e">DataTracker</a>
 </li>
-<li>m_nextPosition
-: <a class="el" href="class_camera_movement.html#af35f94e5e00668c28b17402b427c578c">CameraMovement</a>
-</li>
 <li>m_offset
 : <a class="el" href="class_level_generation_1_1_grid.html#a67970c7ce210e22dbc29bfa80d731f58">LevelGeneration.Grid</a>
 </li>
@@ -434,9 +434,6 @@ $(function() {
 </li>
 <li>m_pausedVelocity
 : <a class="el" href="class_player.html#a21f0f6d81336c8496367832628432278">Player</a>
-</li>
-<li>m_player
-: <a class="el" href="class_camera_movement.html#aef49993cc1a5a77791e4c227a61828e7">CameraMovement</a>
 </li>
 <li>m_playerData
 : <a class="el" href="class_level_data.html#a4799c169b555d272151b150da57f6ec8">LevelData</a>
@@ -481,6 +478,9 @@ $(function() {
 <li>m_questionnaireLink
 : <a class="el" href="class_main_menu.html#a9108de88f49fd5d724996e96b6c8aaff">MainMenu</a>
 </li>
+<li>m_randomiseDifficulty
+: <a class="el" href="class_database_manager.html#ad7fed3f5c5697ab0aa0fc368bb77fb94">DatabaseManager</a>
+</li>
 <li>m_raycastLength
 : <a class="el" href="class_player.html#ac557895cf2da019b0e7dbe393dbb3025">Player</a>
 </li>
@@ -499,6 +499,9 @@ $(function() {
 </li>
 <li>m_rightAccessBlocks
 : <a class="el" href="class_level_generation_1_1_room.html#aa64e41f103c3905a03b62e753d6917ca">LevelGeneration.Room</a>
+</li>
+<li>m_rightCoyoteCheck
+: <a class="el" href="class_player.html#acbd35ce3448638d052c8b45de113156e">Player</a>
 </li>
 <li>m_rightExit
 : <a class="el" href="class_level_generation_1_1_room.html#a99c308868571dbcf1db3e823a69b364a">LevelGeneration.Room</a>
@@ -544,6 +547,9 @@ $(function() {
 <li>m_scores
 : <a class="el" href="struct_overall_player_data.html#aef07934a01be560544a9c373cebe184f">OverallPlayerData</a>
 </li>
+<li>m_scoreText
+: <a class="el" href="class_game_canvas.html#ab85ac816fe14a7436a30506b0b4c0937">GameCanvas</a>
+</li>
 <li>m_scoreValue
 : <a class="el" href="class_collectable.html#abc57587dac2cc6e50bd3f3077f6ef14c">Collectable</a>
 </li>
@@ -552,6 +558,9 @@ $(function() {
 </li>
 <li>m_simpleRoomData
 : <a class="el" href="class_design_data.html#aed539d15f4c07a46b7314403260d8736">DesignData</a>
+</li>
+<li>m_slideFactor
+: <a class="el" href="class_player.html#aa5ea6458a1ea1f3b62f943543fe2e92e">Player</a>
 </li>
 <li>m_solidCollider
 : <a class="el" href="class_one_way_platform.html#a6f8573e0bde260b8fce62155f99bcc18">OneWayPlatform</a>
@@ -565,24 +574,29 @@ $(function() {
 <li>m_sprinting
 : <a class="el" href="class_player.html#a2b2cc0fe21005ddb80316d68eb0c0a77">Player</a>
 </li>
+<li>m_sprintLeftSprite
+: <a class="el" href="class_player.html#a962a7d5dbfcc6e684f49a08d796f2619">Player</a>
+</li>
 <li>m_sprintMultiplier
 : <a class="el" href="class_player.html#aba03babd649750e9a25c362b6a39371e">Player</a>
+</li>
+<li>m_sprintRightSprite
+: <a class="el" href="class_player.html#a10fed46bb801d63ffda39c12329d8846">Player</a>
 </li>
 <li>m_standardDeviation
 : <a class="el" href="struct_level_generation_1_1_data_averages.html#a51766c79c560982148bac560a2ae789d">LevelGeneration.DataAverages</a>
 </li>
-<li>m_startPosition
-: <a class="el" href="class_camera_movement.html#acedf634e71122ef0b2952037610c030c">CameraMovement</a>
-, <a class="el" href="class_player.html#a6332dacce435f2f718c66ca593497b44">Player</a>
+<li>m_startDifficulty
+: <a class="el" href="class_database_manager.html#ae166071d6ecbe7e15ef6567d260df736">DatabaseManager</a>
 </li>
-<li>m_startRoomTransform
-: <a class="el" href="class_camera_movement.html#a69ca3f129b703566b088e335afb5198f">CameraMovement</a>
+<li>m_startDifficultyOverride
+: <a class="el" href="class_database_manager.html#ab9aff08469ef676b97b81a9383e51b8c">DatabaseManager</a>
+</li>
+<li>m_startPosition
+: <a class="el" href="class_player.html#a6332dacce435f2f718c66ca593497b44">Player</a>
 </li>
 <li>m_superSize
 : <a class="el" href="class_screenshot.html#a9abe9d95f9a5e9a70be2f02ab546fc06">Screenshot</a>
-</li>
-<li>m_targetRoomTransform
-: <a class="el" href="class_camera_movement.html#afed544330a90819a777aa690e24ee24a">CameraMovement</a>
 </li>
 <li>m_templateGroups
 : <a class="el" href="class_level_generation_1_1_template_holder.html#ab0eadac3caface0c7a4be7a79f297837">LevelGeneration.TemplateHolder</a>
@@ -617,12 +631,8 @@ $(function() {
 <li>m_topExitClass
 : <a class="el" href="class_level_generation_1_1_room.html#a77560482706ca52abf72644051a235fc">LevelGeneration.Room</a>
 </li>
-<li>m_transitionSpeed
-: <a class="el" href="class_camera_movement.html#ab0cca431ba81c84396e63fe140d93dae">CameraMovement</a>
-</li>
 <li>m_type
-: <a class="el" href="class_camera_movement.html#ad221ae6eb4be16783b135edea5354641">CameraMovement</a>
-, <a class="el" href="class_level_generation_1_1_room.html#a3011b40df4733a74ad8843d1f17ad1f0">LevelGeneration.Room</a>
+: <a class="el" href="class_level_generation_1_1_room.html#a3011b40df4733a74ad8843d1f17ad1f0">LevelGeneration.Room</a>
 </li>
 <li>m_uiInput
 : <a class="el" href="struct_input_scheme_objects.html#a35e337752b476d47a19e4984b470c5af">InputSchemeObjects</a>
@@ -630,11 +640,14 @@ $(function() {
 <li>m_uniqueId
 : <a class="el" href="class_database_manager.html#a74bcdf8b3e74293ba306f145fcf0231d">DatabaseManager</a>
 </li>
-<li>m_verticalOffset
-: <a class="el" href="class_camera_movement.html#adb703d035de991b5170edaf2911dd194">CameraMovement</a>
-</li>
 <li>m_wallCheckRadius
 : <a class="el" href="class_player.html#a3970c22f00f22913af2e56cc00e264eb">Player</a>
+</li>
+<li>m_wallJumpLeft
+: <a class="el" href="class_player.html#a6adacd6bc76e2e35dcc3633bf48f446e">Player</a>
+</li>
+<li>m_wallJumpRight
+: <a class="el" href="class_player.html#a1394a67daf3bc092211cdd1d0efc7aca">Player</a>
 </li>
 <li>m_wallMask
 : <a class="el" href="class_player.html#ad7e34d36776aeb65009e4b4fea06bc46">Player</a>

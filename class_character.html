@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MA Dissertation
-   &#160;<span id="projectnumber">Version 1.0.0</span>
+   &#160;<span id="projectnumber">Version 1.0.1</span>
    </div>
    <div id="projectbrief">An Artificial Intelligence controlled dynamic difficulty system within a prototype 2D platformer</div>
   </td>
@@ -66,7 +66,6 @@ $(function() {
   <div class="summary">
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="class_character-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Character Class Reference</div>  </div>
@@ -97,6 +96,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ad90105ab5e234884e5bca7ce5bd2c50e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character.html#ad90105ab5e234884e5bca7ce5bd2c50e">FixedUpdate</a> ()</td></tr>
 <tr class="memdesc:ad90105ab5e234884e5bca7ce5bd2c50e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fixed update is called once per fixed frame  <a href="#ad90105ab5e234884e5bca7ce5bd2c50e">More...</a><br /></td></tr>
 <tr class="separator:ad90105ab5e234884e5bca7ce5bd2c50e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c373a58eeecb75bcc9255bcdcac4699"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character.html#a1c373a58eeecb75bcc9255bcdcac4699">UpdateSprite</a> ()</td></tr>
+<tr class="memdesc:a1c373a58eeecb75bcc9255bcdcac4699"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the sprite based on the characters velocity  <a href="#a1c373a58eeecb75bcc9255bcdcac4699">More...</a><br /></td></tr>
+<tr class="separator:a1c373a58eeecb75bcc9255bcdcac4699"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -110,12 +112,6 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a98899aa78f445adc994fb39a50f37fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3522770974fe60235263b7050b30e1c8"><td class="memItemLeft" align="right" valign="top">SpriteRenderer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character.html#a3522770974fe60235263b7050b30e1c8">m_renderer</a></td></tr>
 <tr class="separator:a3522770974fe60235263b7050b30e1c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a0bac4109989c81f0029311021041a6c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_character.html#a0bac4109989c81f0029311021041a6c9">UpdateSprite</a> ()</td></tr>
-<tr class="memdesc:a0bac4109989c81f0029311021041a6c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the sprite based on the characters velocity  <a href="#a0bac4109989c81f0029311021041a6c9">More...</a><br /></td></tr>
-<tr class="separator:a0bac4109989c81f0029311021041a6c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for player and enemies </p>
@@ -240,8 +236,8 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0bac4109989c81f0029311021041a6c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bac4109989c81f0029311021041a6c9">&#9670;&nbsp;</a></span>UpdateSprite()</h2>
+<a id="a1c373a58eeecb75bcc9255bcdcac4699"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c373a58eeecb75bcc9255bcdcac4699">&#9670;&nbsp;</a></span>UpdateSprite()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -250,7 +246,7 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Character.UpdateSprite </td>
+          <td class="memname">virtual void Character.UpdateSprite </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -258,12 +254,14 @@ Private Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Update the sprite based on the characters velocity </p>
+
+<p>Reimplemented in <a class="el" href="class_player.html#a27f3dc632aea8666da76f16e15e1db59">Player</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_character_8cs_source.html#l00053">53</a> of file <a class="el" href="_character_8cs_source.html">Character.cs</a>.</p>
 

@@ -7,15 +7,14 @@ var searchData=
   ['replaceallrooms',['ReplaceAllRooms',['../class_level_generation_1_1_grid.html#af725a7a24e784e10cefbd21852254f93',1,'LevelGeneration::Grid']]],
   ['reset',['Reset',['../_game_manager_8cs.html#a7899b65f1ea0f655e4bbf8d2a5714285a526d688f37a86d3c3f27d0c5016eb71d',1,'GameManager.cs']]],
   ['resetaftergameover',['ResetAfterGameOver',['../class_game_manager.html#a4d01c563f63394c879c458b8449967a0',1,'GameManager']]],
-  ['resetcamera',['ResetCamera',['../class_camera_movement.html#a06848ed3326e21d52be8c25ecfe12843',1,'CameraMovement']]],
   ['resetplayer',['ResetPlayer',['../class_player.html#a89c5345d4267bf7902531407fe50c61e',1,'Player']]],
   ['rl',['RL',['../namespace_level_generation.html#ac48934e101078b19dce3479d82f689e0a7f49bbe2f0af1edb6c6cee353d3e204b',1,'LevelGeneration']]],
   ['room',['Room',['../class_level_generation_1_1_room.html',1,'LevelGeneration']]],
   ['room_2ecs',['Room.cs',['../_room_8cs.html',1,'']]],
   ['roomexit',['RoomExit',['../class_room_exit.html',1,'']]],
   ['roomexit_2ecs',['RoomExit.cs',['../_room_exit_8cs.html',1,'']]],
+  ['roomparser',['RoomParser',['../class_room_parser.html',1,'']]],
   ['roomparser_2ecs',['RoomParser.cs',['../_room_parser_8cs.html',1,'']]],
-  ['roomtoroom',['RoomToRoom',['../class_camera_movement.html#a297cb93f5fc197103c3447dac2340a83aaa1aff2765694c8dd10e9f9ff8f6aa6b',1,'CameraMovement']]],
   ['roomtype',['RoomType',['../namespace_level_generation.html#a206451e0c8bfced86ae4b9348cd3718f',1,'LevelGeneration']]],
   ['ru',['RU',['../namespace_level_generation.html#ac48934e101078b19dce3479d82f689e0af9308c5d059650ee40cab30bad1e96d0',1,'LevelGeneration']]]
 ];
