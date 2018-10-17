@@ -8,6 +8,7 @@ var searchData=
   ['setroomtype',['SetRoomType',['../class_level_generation_1_1_room.html#ac4d1b1b285ac602653b1810eb09492fd',1,'LevelGeneration::Room']]],
   ['setspawn',['SetSpawn',['../class_player.html#a425c47ab72a45262765b2d60b6636911',1,'Player']]],
   ['setupcount',['SetUpCount',['../class_database_manager.html#a9a60b2161d1e5c4acab40c1258a0da7e',1,'DatabaseManager']]],
+  ['setupnewdataandrecalculateaverages',['SetUpNewDataAndRecalculateAverages',['../class_data_tracker.html#a9a7862dfaa039b3ac96407e9099fa889',1,'DataTracker']]],
   ['setupnextleveldataandsendtodatabase',['SetUpNextLevelDataAndSendToDatabase',['../class_data_tracker.html#a530d58132a92b1007e2a14224af5ee88',1,'DataTracker']]],
   ['setuproomconnections',['SetUpRoomConnections',['../class_level_generation_1_1_grid.html#aa560614bfff54185b3e0fbb93a8c95a3',1,'LevelGeneration::Grid']]],
   ['start',['Start',['../class_database_manager.html#ae406f2db812b62ce0a4a915beae5ebae',1,'DatabaseManager.Start()'],['../class_game_manager.html#a5ccfacd027ad08eeb4ff1f25a7f59c98',1,'GameManager.Start()'],['../class_character.html#a98bebdb5d37a51749749f0684f14a6ca',1,'Character.Start()'],['../class_end_zone.html#af3dd1a881c7137aac332ae3e0a9aed52',1,'EndZone.Start()'],['../class_enemy.html#ae3442338205f74a157f1a311640e84eb',1,'Enemy.Start()'],['../class_pathing_object.html#a6f7f973fea84548746105c5cae6d5f27',1,'PathingObject.Start()'],['../class_level_generation_1_1_level_generator.html#afa476f9842a7b0027e5f8352a35de798',1,'LevelGeneration.LevelGenerator.Start()']]],

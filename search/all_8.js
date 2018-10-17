@@ -5,7 +5,7 @@ var searchData=
   ['increaseplaythroughid',['IncreasePlaythroughId',['../class_database_manager.html#a8215a2e17e479aa9c2f76bdf1a18a018',1,'DatabaseManager']]],
   ['init',['Init',['../class_level_generation_1_1_room.html#ac54baebea1ec085f79843e5c42a66467',1,'LevelGeneration.Room.Init()'],['../_game_manager_8cs.html#a7899b65f1ea0f655e4bbf8d2a5714285a95b19f7739b0b7ea7d6b07586be54f36',1,'Init():&#160;GameManager.cs']]],
   ['inputschemeobjects',['InputSchemeObjects',['../struct_input_scheme_objects.html',1,'']]],
-  ['instance',['Instance',['../class_utilities_1_1_singleton.html#a7b33f3dfee9e78908ad67a0b80eb3a61',1,'Utilities.Singleton.Instance()'],['../class_utilities_1_1_singleton.html#ae7f4fab3d7a426665e6d06d0600dfa96',1,'Utilities.Singleton.instance()']]],
+  ['instance',['instance',['../class_utilities_1_1_singleton.html#ae7f4fab3d7a426665e6d06d0600dfa96',1,'Utilities.Singleton.instance()'],['../class_utilities_1_1_singleton.html#a7b33f3dfee9e78908ad67a0b80eb3a61',1,'Utilities.Singleton.Instance()']]],
   ['intro',['Intro',['../class_intro.html',1,'']]],
   ['intro_2ecs',['Intro.cs',['../_intro_8cs.html',1,'']]],
   ['isdatabaseready',['IsDatabaseReady',['../class_database_manager.html#ad0baa3bf8e05288ba738646770672b34',1,'DatabaseManager']]],

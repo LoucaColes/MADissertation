@@ -14,6 +14,7 @@ var searchData=
   ['setroomtype',['SetRoomType',['../class_level_generation_1_1_room.html#ac4d1b1b285ac602653b1810eb09492fd',1,'LevelGeneration::Room']]],
   ['setspawn',['SetSpawn',['../class_player.html#a425c47ab72a45262765b2d60b6636911',1,'Player']]],
   ['setupcount',['SetUpCount',['../class_database_manager.html#a9a60b2161d1e5c4acab40c1258a0da7e',1,'DatabaseManager']]],
+  ['setupnewdataandrecalculateaverages',['SetUpNewDataAndRecalculateAverages',['../class_data_tracker.html#a9a7862dfaa039b3ac96407e9099fa889',1,'DataTracker']]],
   ['setupnextleveldataandsendtodatabase',['SetUpNextLevelDataAndSendToDatabase',['../class_data_tracker.html#a530d58132a92b1007e2a14224af5ee88',1,'DataTracker']]],
   ['setuproomconnections',['SetUpRoomConnections',['../class_level_generation_1_1_grid.html#aa560614bfff54185b3e0fbb93a8c95a3',1,'LevelGeneration::Grid']]],
   ['simpleroomdata',['SimpleRoomData',['../struct_simple_room_data.html',1,'']]],

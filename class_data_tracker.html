@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">MA Dissertation
-   &#160;<span id="projectnumber">Version 1.0.1</span>
+   &#160;<span id="projectnumber">Version 1.0.2</span>
    </div>
    <div id="projectbrief">An Artificial Intelligence controlled dynamic difficulty system within a prototype 2D platformer</div>
   </td>
@@ -131,7 +131,11 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a32b5e8473677becb37bd852624aa0d78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_tracker.html#a32b5e8473677becb37bd852624aa0d78">Update</a> ()</td></tr>
 <tr class="memdesc:a32b5e8473677becb37bd852624aa0d78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update function that can be used for debugging  <a href="#a32b5e8473677becb37bd852624aa0d78">More...</a><br /></td></tr>
 <tr class="separator:a32b5e8473677becb37bd852624aa0d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a7862dfaa039b3ac96407e9099fa889"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_tracker.html#a9a7862dfaa039b3ac96407e9099fa889">SetUpNewDataAndRecalculateAverages</a> ()</td></tr>
+<tr class="memdesc:a9a7862dfaa039b3ac96407e9099fa889"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up the new data for the next level Add the new data to th playthrough data Recalculate the averages and standard deviations  <a href="#a9a7862dfaa039b3ac96407e9099fa889">More...</a><br /></td></tr>
+<tr class="separator:a9a7862dfaa039b3ac96407e9099fa889"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ff72165009779627f4fa624e8fbc52e"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_tracker.html#a9ff72165009779627f4fa624e8fbc52e">WatingDataPush</a> (string json, string path, bool wait)</td></tr>
+<tr class="memdesc:a9ff72165009779627f4fa624e8fbc52e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force the game to wait until the data has been sent to the database  <a href="#a9ff72165009779627f4fa624e8fbc52e">More...</a><br /></td></tr>
 <tr class="separator:a9ff72165009779627f4fa624e8fbc52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a089ae1eea2f836b8a0b6305e4c645c8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_tracker.html#a089ae1eea2f836b8a0b6305e4c645c8d">OnApplicationQuit</a> ()</td></tr>
 <tr class="memdesc:a089ae1eea2f836b8a0b6305e4c645c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the object is destroyed and used to increase the playthrough count  <a href="#a089ae1eea2f836b8a0b6305e4c645c8d">More...</a><br /></td></tr>
@@ -170,6 +174,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:affda936e8d38aaa9441a49427d25bd3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcaa91dcf7096ea7d8da4af401385d76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_playthrough_data.html">PlaythroughData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_tracker.html#abcaa91dcf7096ea7d8da4af401385d76">m_playthroughData</a></td></tr>
 <tr class="separator:abcaa91dcf7096ea7d8da4af401385d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55b312188a2eb2f26410cec30836d221"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_playthrough_data.html">PlaythroughData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_tracker.html#a55b312188a2eb2f26410cec30836d221">m_debugPlaythroughData</a></td></tr>
+<tr class="separator:a55b312188a2eb2f26410cec30836d221"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b011614b4686ff631b08f94afb893b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_level_generation_1_1_averages.html">Averages</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_tracker.html#a4b011614b4686ff631b08f94afb893b9">m_curEasyAverages</a></td></tr>
 <tr class="separator:a4b011614b4686ff631b08f94afb893b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ee725b7d231e5fd7ff064f9d07d5c4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_level_generation_1_1_averages.html">Averages</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_tracker.html#a9ee725b7d231e5fd7ff064f9d07d5c4f">m_curMedAverages</a></td></tr>
@@ -227,7 +233,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00392">392</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00393">393</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
 
 </div>
 </div>
@@ -255,7 +261,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00163">163</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00164">164</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
 
 </div>
 </div>
@@ -286,7 +292,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_utilities_1_1_singleton.html#a634b915d7ac492899512de602d59e650">Utilities.Singleton&lt; DataTracker &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00064">64</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00065">65</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
 
 </div>
 </div>
@@ -314,7 +320,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00186">186</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00187">187</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
 
 </div>
 </div>
@@ -335,7 +341,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Decide the next level's difficulty </p>
 
-<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00518">518</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00541">541</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
 
 </div>
 </div>
@@ -357,7 +363,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Get the current difficulty </p>
 <dl class="section return"><dt>Returns</dt><dd>Current difficulty</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00540">540</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00563">563</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
 
 </div>
 </div>
@@ -386,7 +392,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Gets all existing playthrough data of the user </p>
 
-<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00557">557</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00580">580</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
 
 </div>
 </div>
@@ -408,7 +414,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Get the current playthrough ID </p>
 <dl class="section return"><dt>Returns</dt><dd>Current playthrough ID</dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00549">549</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00572">572</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
 
 </div>
 </div>
@@ -437,7 +443,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Increase the playthrough count in game and database </p>
 
-<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00491">491</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00514">514</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
 
 </div>
 </div>
@@ -466,7 +472,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Called when the object is destroyed and used to increase the playthrough count </p>
 
-<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00482">482</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00505">505</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
 
 </div>
 </div>
@@ -520,7 +526,36 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00698">698</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00774">774</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
+
+</div>
+</div>
+<a id="a9a7862dfaa039b3ac96407e9099fa889"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a7862dfaa039b3ac96407e9099fa889">&#9670;&nbsp;</a></span>SetUpNewDataAndRecalculateAverages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DataTracker.SetUpNewDataAndRecalculateAverages </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set up the new data for the next level Add the new data to th playthrough data Recalculate the averages and standard deviations </p>
+
+<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00419">419</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
 
 </div>
 </div>
@@ -559,7 +594,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00403">403</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00404">404</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
 
 </div>
 </div>
@@ -588,7 +623,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Update function that can be used for debugging </p>
 
-<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00146">146</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00147">147</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
 
 </div>
 </div>
@@ -616,7 +651,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00176">176</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00177">177</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
 
 </div>
 </div>
@@ -644,7 +679,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00429">429</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00438">438</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
 
 </div>
 </div>
@@ -688,7 +723,18 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00457">457</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
+<p>Force the game to wait until the data has been sent to the database </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">json</td><td>JSON version of the data being sent</td></tr>
+    <tr><td class="paramname">path</td><td>Database path</td></tr>
+    <tr><td class="paramname">wait</td><td>Does the game need to wait</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Null</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00473">473</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
 
 </div>
 </div>
@@ -713,7 +759,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00051">51</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00052">52</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
 
 </div>
 </div>
@@ -737,7 +783,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00053">53</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00054">54</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
 
 </div>
 </div>
@@ -761,7 +807,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00052">52</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00053">53</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
 
 </div>
 </div>
@@ -834,6 +880,30 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00030">30</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
+
+</div>
+</div>
+<a id="a55b312188a2eb2f26410cec30836d221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55b312188a2eb2f26410cec30836d221">&#9670;&nbsp;</a></span>m_debugPlaythroughData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_playthrough_data.html">PlaythroughData</a> DataTracker.m_debugPlaythroughData</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00050">50</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
 
 </div>
 </div>
@@ -929,7 +999,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00059">59</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00060">60</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
 
 </div>
 </div>
@@ -977,7 +1047,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00055">55</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00056">56</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
 
 </div>
 </div>
@@ -1001,7 +1071,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00057">57</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00058">58</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
 
 </div>
 </div>
@@ -1025,7 +1095,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00056">56</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_data_tracker_8cs_source.html#l00057">57</a> of file <a class="el" href="_data_tracker_8cs_source.html">DataTracker.cs</a>.</p>
 
 </div>
 </div>
