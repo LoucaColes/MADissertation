@@ -6,7 +6,6 @@
 #if UNITY_ANDROID && !UNITY_EDITOR && REWIRED_OUYA
 
 namespace Rewired.Platforms.Ouya {
-
     using UnityEngine;
     using System;
     using System.Collections.Generic;
@@ -16,7 +15,6 @@ namespace Rewired.Platforms.Ouya {
 
     [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
     public sealed class OuyaInputSource : CustomInputSource {
-
         private bool _initialized;
 
         public override bool isReady {
@@ -27,7 +25,6 @@ namespace Rewired.Platforms.Ouya {
                 return _initialized;
             }
         }
-
 
         public OuyaInputSource() : base(20) { // Ouya = 20
             for(int i = 0; i < OuyaController.MAX_CONTROLLERS; i++) {
@@ -87,12 +84,11 @@ namespace Rewired.Platforms.Ouya {
             _disposed = true;
         }
 
-#endregion
+#endregion IDisposable Implementation
 
 #region Private Classes
 
         private sealed class OyuaJoystick : CustomInputSource.Joystick {
-
             // Consts
 
             private const int _axisCount = 6;
@@ -124,7 +120,6 @@ namespace Rewired.Platforms.Ouya {
 
                 // Check for connection state changes
                 if(_isConnected != _isConnectedPrev) { // joystick was connected or disconnected
-
                     _isConnectedPrev = _isConnected;
 
                     if(!_isConnected) { // just disconnected
@@ -186,7 +181,8 @@ namespace Rewired.Platforms.Ouya {
                 _deviceName = ouyaController.getDeviceName();
             }
         }
-#endregion
+
+#endregion Private Classes
     }
 }
 #endif

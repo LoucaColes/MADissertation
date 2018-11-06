@@ -52,26 +52,27 @@
 #pragma warning disable 0649
 #pragma warning disable 0067
 
-namespace Rewired.Utils {
-
-    using UnityEngine;
-    using System.Collections;
-    using System.Collections.Generic;
+namespace Rewired.Utils
+{
     using Rewired.Utils.Interfaces;
+    using System.Collections.Generic;
+    using UnityEngine;
 
     /// <exclude></exclude>
     [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
-    public class ExternalTools : IExternalTools {
-
-        public object GetPlatformInitializer() {
+    public class ExternalTools : IExternalTools
+    {
+        public object GetPlatformInitializer()
+        {
 #if UNITY_WEBGL && !UNITY_EDITOR
             return Rewired.Utils.Platforms.WebGL.Main.GetPlatformInitializer();
 #else
             return null;
 #endif
         }
-        
-        public string GetFocusedEditorWindowTitle() {
+
+        public string GetFocusedEditorWindowTitle()
+        {
 #if UNITY_EDITOR
             UnityEditor.EditorWindow window = UnityEditor.EditorWindow.focusedWindow;
             return window != null ? window.title : string.Empty;
@@ -86,13 +87,15 @@ namespace Rewired.Utils {
             return UnityEngine.Input.IsJoystickPreconfigured(name);
         }
 #else
-        public bool LinuxInput_IsJoystickPreconfigured(string name) {
+
+        public bool LinuxInput_IsJoystickPreconfigured(string name)
+        {
             return false;
-            
         }
+
 #endif
 
-// Xbox One Tools
+        // Xbox One Tools
 
 #if UNITY_XBOXONE
 
@@ -140,15 +143,19 @@ namespace Rewired.Utils {
                     case Rewired.Platforms.XboxOne.XboxOneGamepadMotorType.LeftMotor:
                         Ext_Gamepad_PulseVibrateLeftMotor(xboxOneJoystickId, startLevel, endLevel, durationMS);
                         break;
+
                     case Rewired.Platforms.XboxOne.XboxOneGamepadMotorType.RightMotor:
                         Ext_Gamepad_PulseVibrateRightMotor(xboxOneJoystickId, startLevel, endLevel, durationMS);
                         break;
+
                     case Rewired.Platforms.XboxOne.XboxOneGamepadMotorType.LeftTriggerMotor:
                         Ext_Gamepad_PulseVibrateLeftTrigger(xboxOneJoystickId, startLevel, endLevel, durationMS);
                         break;
+
                     case Rewired.Platforms.XboxOne.XboxOneGamepadMotorType.RightTriggerMotor:
                         Ext_Gamepad_PulseVibrateRightTrigger(xboxOneJoystickId, startLevel, endLevel, durationMS);
                         break;
+
                     default: throw new System.NotImplementedException();
                 }
             } catch {
@@ -172,29 +179,53 @@ namespace Rewired.Utils {
 
         [System.Runtime.InteropServices.DllImport("Gamepad", EntryPoint = "PulseGamepadsLeftTrigger")]
         private static extern void Ext_Gamepad_PulseVibrateLeftTrigger(ulong xboxOneJoystickId, float startLevel, float endLevel, ulong durationMS);
-        
+
         [System.Runtime.InteropServices.DllImport("Gamepad", EntryPoint = "PulseGamepadsRightTrigger")]
         private static extern void Ext_Gamepad_PulseVibrateRightTrigger(ulong xboxOneJoystickId, float startLevel, float endLevel, ulong durationMS);
 
 #endif
 #else
+
         public event System.Action<uint, bool> XboxOneInput_OnGamepadStateChange;
 
-        public int XboxOneInput_GetUserIdForGamepad(uint id) { return 0; }
+        public int XboxOneInput_GetUserIdForGamepad(uint id)
+        {
+            return 0;
+        }
 
-        public ulong XboxOneInput_GetControllerId(uint unityJoystickId) { return 0; }
+        public ulong XboxOneInput_GetControllerId(uint unityJoystickId)
+        {
+            return 0;
+        }
 
-        public bool XboxOneInput_IsGamepadActive(uint unityJoystickId) { return false; }
+        public bool XboxOneInput_IsGamepadActive(uint unityJoystickId)
+        {
+            return false;
+        }
 
-        public string XboxOneInput_GetControllerType(ulong xboxControllerId) { return string.Empty; }
+        public string XboxOneInput_GetControllerType(ulong xboxControllerId)
+        {
+            return string.Empty;
+        }
 
-        public uint XboxOneInput_GetJoystickId(ulong xboxControllerId) { return 0; }
+        public uint XboxOneInput_GetJoystickId(ulong xboxControllerId)
+        {
+            return 0;
+        }
 
-        public void XboxOne_Gamepad_UpdatePlugin() { }
+        public void XboxOne_Gamepad_UpdatePlugin()
+        {
+        }
 
-        public bool XboxOne_Gamepad_SetGamepadVibration(ulong xboxOneJoystickId, float leftMotor, float rightMotor, float leftTriggerLevel, float rightTriggerLevel) { return false; }
+        public bool XboxOne_Gamepad_SetGamepadVibration(ulong xboxOneJoystickId, float leftMotor, float rightMotor, float leftTriggerLevel, float rightTriggerLevel)
+        {
+            return false;
+        }
 
-        public void XboxOne_Gamepad_PulseVibrateMotor(ulong xboxOneJoystickId, int motorInt, float startLevel, float endLevel, ulong durationMS) { }
+        public void XboxOne_Gamepad_PulseVibrateMotor(ulong xboxOneJoystickId, int motorInt, float startLevel, float endLevel, ulong durationMS)
+        {
+        }
+
 #endif
 
 #if UNITY_PS4
@@ -304,51 +335,115 @@ namespace Rewired.Utils {
         }
 
 #else
-        public Vector3 PS4Input_GetLastAcceleration(int id) { return Vector3.zero; }
 
-        public Vector3 PS4Input_GetLastGyro(int id) { return Vector3.zero; }
+        public Vector3 PS4Input_GetLastAcceleration(int id)
+        {
+            return Vector3.zero;
+        }
 
-        public Vector4 PS4Input_GetLastOrientation(int id) { return Vector4.zero; }
+        public Vector3 PS4Input_GetLastGyro(int id)
+        {
+            return Vector3.zero;
+        }
 
-        public void PS4Input_GetLastTouchData(int id, out int touchNum, out int touch0x, out int touch0y, out int touch0id, out int touch1x, out int touch1y, out int touch1id) { touchNum = 0; touch0x = 0; touch0y = 0; touch0id = 0; touch1x = 0; touch1y = 0; touch1id = 0; }
+        public Vector4 PS4Input_GetLastOrientation(int id)
+        {
+            return Vector4.zero;
+        }
 
-        public void PS4Input_GetPadControllerInformation(int id, out float touchpixelDensity, out int touchResolutionX, out int touchResolutionY, out int analogDeadZoneLeft, out int analogDeadZoneright, out int connectionType) { touchpixelDensity = 0f; touchResolutionX = 0; touchResolutionY = 0; analogDeadZoneLeft = 0; analogDeadZoneright = 0; connectionType = 0; }
+        public void PS4Input_GetLastTouchData(int id, out int touchNum, out int touch0x, out int touch0y, out int touch0id, out int touch1x, out int touch1y, out int touch1id)
+        {
+            touchNum = 0; touch0x = 0; touch0y = 0; touch0id = 0; touch1x = 0; touch1y = 0; touch1id = 0;
+        }
 
-        public void PS4Input_PadSetMotionSensorState(int id, bool bEnable) { }
+        public void PS4Input_GetPadControllerInformation(int id, out float touchpixelDensity, out int touchResolutionX, out int touchResolutionY, out int analogDeadZoneLeft, out int analogDeadZoneright, out int connectionType)
+        {
+            touchpixelDensity = 0f; touchResolutionX = 0; touchResolutionY = 0; analogDeadZoneLeft = 0; analogDeadZoneright = 0; connectionType = 0;
+        }
 
-        public void PS4Input_PadSetTiltCorrectionState(int id, bool bEnable) { }
+        public void PS4Input_PadSetMotionSensorState(int id, bool bEnable)
+        {
+        }
 
-        public void PS4Input_PadSetAngularVelocityDeadbandState(int id, bool bEnable) { }
+        public void PS4Input_PadSetTiltCorrectionState(int id, bool bEnable)
+        {
+        }
 
-        public void PS4Input_PadSetLightBar(int id, int red, int green, int blue) { }
+        public void PS4Input_PadSetAngularVelocityDeadbandState(int id, bool bEnable)
+        {
+        }
 
-        public void PS4Input_PadResetLightBar(int id) { }
+        public void PS4Input_PadSetLightBar(int id, int red, int green, int blue)
+        {
+        }
 
-        public void PS4Input_PadSetVibration(int id, int largeMotor, int smallMotor) { }
+        public void PS4Input_PadResetLightBar(int id)
+        {
+        }
 
-        public void PS4Input_PadResetOrientation(int id) { }
+        public void PS4Input_PadSetVibration(int id, int largeMotor, int smallMotor)
+        {
+        }
 
-        public bool PS4Input_PadIsConnected(int id) { return false; }
+        public void PS4Input_PadResetOrientation(int id)
+        {
+        }
 
-        public object PS4Input_PadGetUsersDetails(int slot) { return null; }
+        public bool PS4Input_PadIsConnected(int id)
+        {
+            return false;
+        }
 
-        public Vector3 PS4Input_GetLastMoveAcceleration(int id, int index) { return Vector3.zero; }
+        public object PS4Input_PadGetUsersDetails(int slot)
+        {
+            return null;
+        }
 
-        public Vector3 PS4Input_GetLastMoveGyro(int id, int index) { return Vector3.zero; }
+        public Vector3 PS4Input_GetLastMoveAcceleration(int id, int index)
+        {
+            return Vector3.zero;
+        }
 
-        public int PS4Input_MoveGetButtons(int id, int index) { return 0; }
+        public Vector3 PS4Input_GetLastMoveGyro(int id, int index)
+        {
+            return Vector3.zero;
+        }
 
-        public int PS4Input_MoveGetAnalogButton(int id, int index) { return 0; }
+        public int PS4Input_MoveGetButtons(int id, int index)
+        {
+            return 0;
+        }
 
-        public bool PS4Input_MoveIsConnected(int id, int index) { return false; }
+        public int PS4Input_MoveGetAnalogButton(int id, int index)
+        {
+            return 0;
+        }
 
-        public int PS4Input_MoveGetUsersMoveHandles(int maxNumberControllers, int[] primaryHandles, int[] secondaryHandles) { return 0; }
+        public bool PS4Input_MoveIsConnected(int id, int index)
+        {
+            return false;
+        }
 
-        public int PS4Input_MoveGetUsersMoveHandles(int maxNumberControllers, int[] primaryHandles) { return 0; }
+        public int PS4Input_MoveGetUsersMoveHandles(int maxNumberControllers, int[] primaryHandles, int[] secondaryHandles)
+        {
+            return 0;
+        }
 
-        public int PS4Input_MoveGetUsersMoveHandles(int maxNumberControllers) { return 0; }
+        public int PS4Input_MoveGetUsersMoveHandles(int maxNumberControllers, int[] primaryHandles)
+        {
+            return 0;
+        }
 
-        public System.IntPtr PS4Input_MoveGetControllerInputForTracking() { return System.IntPtr.Zero; }
+        public int PS4Input_MoveGetUsersMoveHandles(int maxNumberControllers)
+        {
+            return 0;
+        }
+
+        public System.IntPtr PS4Input_MoveGetControllerInputForTracking()
+        {
+            return System.IntPtr.Zero;
+        }
+
 #endif
 
 #if UNITY_ANDROID && !UNITY_EDITOR
@@ -357,7 +452,6 @@ namespace Rewired.Utils {
         const int API_LEVEL_KITKAT = 19;
 
         public void GetDeviceVIDPIDs(out List<int> vids, out List<int> pids) {
-
             vids = new List<int>();
             pids = new List<int>();
 
@@ -401,54 +495,65 @@ namespace Rewired.Utils {
             }
         }
 #else
-        public void GetDeviceVIDPIDs(out List<int> vids, out List<int> pids) {
+
+        public void GetDeviceVIDPIDs(out List<int> vids, out List<int> pids)
+        {
             vids = new List<int>();
             pids = new List<int>();
         }
 
-        public int GetAndroidAPILevel() {
+        public int GetAndroidAPILevel()
+        {
             return -1;
         }
-#endif
-        #region Unity UI
 
+#endif
+
+        #region Unity UI
 
 #if SUPPORTS_UNITY_UI
 
-        public bool UnityUI_Graphic_GetRaycastTarget(object graphic) {
-            if(graphic as UnityEngine.UI.Graphic == null) return false;
+        public bool UnityUI_Graphic_GetRaycastTarget(object graphic)
+        {
+            if (graphic as UnityEngine.UI.Graphic == null) return false;
 #if UNITY_5_2_PLUS
             return (graphic as UnityEngine.UI.Graphic).raycastTarget;
 #else
             return true;
 #endif
         }
-        public void UnityUI_Graphic_SetRaycastTarget(object graphic, bool value) {
-            if(graphic as UnityEngine.UI.Graphic == null) return;
+
+        public void UnityUI_Graphic_SetRaycastTarget(object graphic, bool value)
+        {
+            if (graphic as UnityEngine.UI.Graphic == null) return;
 #if UNITY_5_2_PLUS
             (graphic as UnityEngine.UI.Graphic).raycastTarget = value;
 #endif
         }
+
 #else
         public bool UnityUI_Graphic_GetRaycastTarget(object graphic) { return true; }
         public void UnityUI_Graphic_SetRaycastTarget(object graphic, bool value) { }
 #endif
 
-        #endregion
-        
+        #endregion Unity UI
+
         #region Touch
-        
-        public bool UnityInput_IsTouchPressureSupported {
-          get {
+
+        public bool UnityInput_IsTouchPressureSupported
+        {
+            get
+            {
 #if UNITY_5_3_PLUS
-              return UnityEngine.Input.touchPressureSupported;
+                return UnityEngine.Input.touchPressureSupported;
 #else
               return false;
 #endif
-          }
+            }
         }
-        
-        public float UnityInput_GetTouchPressure(ref UnityEngine.Touch touch) {
+
+        public float UnityInput_GetTouchPressure(ref UnityEngine.Touch touch)
+        {
 #if UNITY_5_3_PLUS
             return touch.pressure;
 #else
@@ -457,8 +562,9 @@ namespace Rewired.Utils {
                 ? 1.0f : 0.0f;
 #endif
         }
-        
-        public float UnityInput_GetTouchMaximumPossiblePressure(ref UnityEngine.Touch touch) {
+
+        public float UnityInput_GetTouchMaximumPossiblePressure(ref UnityEngine.Touch touch)
+        {
 #if UNITY_5_3_PLUS
             return touch.maximumPossiblePressure;
 #else
@@ -466,22 +572,25 @@ namespace Rewired.Utils {
 #endif
         }
 
-        #endregion
+        #endregion Touch
 
         #region Controller Templates
 
-        public IControllerTemplate CreateControllerTemplate(System.Guid typeGuid, object payload) {
+        public IControllerTemplate CreateControllerTemplate(System.Guid typeGuid, object payload)
+        {
             return Rewired.Internal.ControllerTemplateFactory.Create(typeGuid, payload);
         }
 
-        public System.Type[] GetControllerTemplateTypes() {
+        public System.Type[] GetControllerTemplateTypes()
+        {
             return Rewired.Internal.ControllerTemplateFactory.templateTypes;
         }
 
-        public System.Type[] GetControllerTemplateInterfaceTypes() {
+        public System.Type[] GetControllerTemplateInterfaceTypes()
+        {
             return Rewired.Internal.ControllerTemplateFactory.templateInterfaceTypes;
         }
 
-        #endregion
+        #endregion Controller Templates
     }
 }

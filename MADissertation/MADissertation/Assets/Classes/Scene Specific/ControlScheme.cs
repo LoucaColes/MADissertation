@@ -1,9 +1,6 @@
-﻿using System;
-using System.IO;
-using System.Collections;
-using System.Collections.Generic;
+﻿using Rewired;
+using System;
 using UnityEngine;
-using Rewired;
 
 /// <summary>
 /// A class that controls the control scheme scene
@@ -78,7 +75,8 @@ public class ControlScheme : MonoBehaviour
     }
 
     /// <summary>
-    /// Enable the keyboard input text
+    /// Enable the keyboard input text and
+    /// Set the rest of the input text to not active
     /// </summary>
     private void EnableKeyboardInput()
     {
@@ -101,7 +99,8 @@ public class ControlScheme : MonoBehaviour
     }
 
     /// <summary>
-    /// Enable the xbox 360 input text
+    /// Enable the xbox 360 input text and
+    /// Set the rest of the input text to not active
     /// </summary>
     private void EnableX360Input()
     {
@@ -124,7 +123,8 @@ public class ControlScheme : MonoBehaviour
     }
 
     /// <summary>
-    /// Enable the Xbox One input text
+    /// Enable the Xbox One input text and
+    /// Set the rest of the input text to not active
     /// </summary>
     private void EnableXOneInput()
     {
@@ -147,7 +147,8 @@ public class ControlScheme : MonoBehaviour
     }
 
     /// <summary>
-    /// Enable the ps3 input text
+    /// Enable the ps3 input text and
+    /// Set the rest of the input text to not active
     /// </summary>
     private void EnablePS3Input()
     {
@@ -170,7 +171,8 @@ public class ControlScheme : MonoBehaviour
     }
 
     /// <summary>
-    /// Enable the ps4 input text
+    /// Enable the ps4 input text and
+    /// Set the rest of the input text to not active
     /// </summary>
     private void EnablePS4Input()
     {

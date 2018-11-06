@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace LevelGeneration
 {
@@ -10,9 +8,6 @@ namespace LevelGeneration
     public class LevelGenerator : MonoBehaviour
     {
         // Designer variables
-        [SerializeField]
-        private CameraMovement m_cameraMovement;
-
         [SerializeField]
         private int m_gridWidth = 4;
 
@@ -55,8 +50,7 @@ namespace LevelGeneration
             m_gridHeight = randWidthHeight;
 
             // Create a new grid
-            m_grid.CreateGrid(randWidthHeight, randWidthHeight, m_emptyRoomPrefab, m_positioningOffset, m_templateHolder,
-                m_cameraMovement, m_playerPref);
+            m_grid.CreateGrid(randWidthHeight, randWidthHeight, m_emptyRoomPrefab, m_positioningOffset, m_templateHolder, m_playerPref);
 
             // Generate a new level
             m_grid.GenerateLevel();

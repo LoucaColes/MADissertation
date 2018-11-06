@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using LevelGeneration;
-using UnityEngine;
+﻿using LevelGeneration;
 using Rewired;
+using UnityEngine;
 
 /// <summary>
 /// Human controlled player class
@@ -47,10 +45,34 @@ public class Player : Character
     private Transform m_groundCheck;
 
     [SerializeField]
+    private Transform m_rightCoyoteCheck;
+
+    [SerializeField]
+    private Transform m_leftCoyoteCheck;
+
+    [SerializeField]
     private float m_wallCheckRadius = 0.3f;
 
     [SerializeField]
+    private float m_groundCheckRadius = 0.3f;
+
+    [SerializeField]
+    private float m_coyoteCheckRadius = 0.3f;
+
+    [SerializeField]
     private LayerMask m_wallMask;
+
+    [SerializeField]
+    private GameObject m_jumpPSPrefab;
+
+    [SerializeField]
+    private float m_slideFactor = 1.1f;
+
+    [SerializeField]
+    private Sprite m_sprintRightSprite;
+
+    [SerializeField]
+    private Sprite m_sprintLeftSprite;
 
     // Private variables
     private Rewired.Player m_rewiredPlayer;
@@ -62,7 +84,6 @@ public class Player : Character
     private bool m_grounded = false;
     private int m_score;
     private Vector2 m_pausedVelocity;
-    private CameraMovement m_cameraMovement;
     private Vector2 m_startPosition;
     private float m_dashTimer = 0;
     private bool m_dashing = false;
@@ -72,6 +93,9 @@ public class Player : Character
     private float m_jumpTimer = 0;
     private bool m_jumping = false;
     private Room m_currentRoom;
+    private bool m_heldJumping = false;
+    private bool m_wallJumpRight = false;
+    private bool m_wallJumpLeft = false;
 
     /// <summary>
     /// Handle Set Up
@@ -95,15 +119,6 @@ public class Player : Character
     }
 
     /// <summary>
-    /// Set the camera movement reference
-    /// </summary>
-    /// <param name="_cameraMovement">Camera movement reference</param>
-    public void SetCameraMovement(CameraMovement _cameraMovement)
-    {
-        m_cameraMovement = _cameraMovement;
-    }
-
-    /// <summary>
     /// Handle Input
     /// </summary>
     // Update is called once per frame
@@ -122,21 +137,7 @@ public class Player : Character
             // If the player is holding down the jump button and jumping equals true
             if (m_rewiredPlayer.GetButton("Jump") && m_jumping)
             {
-                // If jump timer is greater than 0
-                if (m_jumpTimer > 0)
-                {
-                    // Set the velocity to increase upwards
-                    m_rigidBody.velocity = Vector2.up * m_characterData.m_jumpSpeed * m_movementMultiplier;
-
-                    // Decrease the jump timer
-                    m_jumpTimer -= Time.deltaTime;
-                }
-
-                // else set jumping to false
-                else
-                {
-                    m_jumping = false;
-                }
+                m_heldJumping = true;
             }
 
             // If the player releases the jump button set jumping to false
@@ -199,6 +200,64 @@ public class Player : Character
                 m_dashingRight = false;
             }
 
+            // Use base class update
+            base.Update();
+        }
+    }
+
+    /// <summary>
+    /// Handle physics
+    /// </summary>
+    protected override void FixedUpdate()
+    {
+        // If game state is play
+        if (GameManager.Instance.GetGameState() == GameState.Play)
+        {
+            // Calculate movement based on whether the player is grounded or not
+            Vector2 movement;
+            if (!m_dashing)
+            {
+                // Check if there is a wall to the left
+                bool wallCheckLeft = Physics2D.OverlapCircle(m_leftWallCheck.position, m_wallCheckRadius, m_wallMask);
+                // Check if there is a wall to the right
+                bool wallCheckRight = Physics2D.OverlapCircle(m_rightWallCheck.position, m_wallCheckRadius, m_wallMask);
+
+                // If there is a wall to the right of the player and the player is moving left
+                if (wallCheckRight && m_movementInput.x < 0)
+                {
+                    // Use normal movement calculation
+                    movement = new Vector2(
+                        m_movementInput.x * m_characterData.m_moveSpeed * m_movementMultiplier * Time.deltaTime,
+                        m_rigidBody.velocity.y);
+                }
+                // If there is a wall to the left of the player and the player is moving right
+                else if (wallCheckLeft && m_movementInput.x > 0)
+                {
+                    // Use normal movement calculation
+                    movement = new Vector2(
+                        m_movementInput.x * m_characterData.m_moveSpeed * m_movementMultiplier * Time.deltaTime,
+                        m_rigidBody.velocity.y);
+                }
+                // If there is a wall to the left and the player is moving to the left
+                // Or there is a wall to the right and the player is moving to the right
+                else if ((wallCheckLeft && m_movementInput.x <= 0) || (wallCheckRight && m_movementInput.x >= 0))
+                {
+                    // Slide down the wall and ignore any horizontal input
+                    movement = new Vector2(
+                        0f,
+                        m_rigidBody.velocity.y / m_slideFactor);
+                }
+                else
+                {
+                    // Else use normal movement calculation
+                    movement = new Vector2(
+                        m_movementInput.x * m_characterData.m_moveSpeed * m_movementMultiplier * Time.deltaTime,
+                        m_rigidBody.velocity.y);
+                }
+                // Update movement
+                m_rigidBody.velocity = movement;
+            }
+
             // If dashing is true
             if (m_dashing)
             {
@@ -209,14 +268,14 @@ public class Player : Character
                 if (m_dashingRight)
                 {
                     // Increase the velocity in the right direction
-                    m_rigidBody.velocity = Vector2.right * m_dashForce;
+                    m_rigidBody.velocity = Vector2.right * m_dashForce * Time.deltaTime;
                 }
 
                 // If dashing left
                 if (m_dashingLeft)
                 {
                     // Increase the velocity in the left direction
-                    m_rigidBody.velocity = Vector2.left * m_dashForce;
+                    m_rigidBody.velocity = Vector2.left * m_dashForce * Time.deltaTime;
                 }
 
                 // If the dashing timer is greater than or equal the dash time
@@ -237,27 +296,41 @@ public class Player : Character
                 }
             }
 
-            // Use base class update
-            base.Update();
-        }
-    }
-
-    /// <summary>
-    /// Handle physics
-    /// </summary>
-    protected override void FixedUpdate()
-    {
-        if (GameManager.Instance.GetGameState() == GameState.Play)
-        {
-            // Calculate movement based on whether the player is grounded or not
-            Vector2 movement;
-            if (!m_dashing)
+            // If the player is holding down the jump button
+            if (m_heldJumping)
             {
-                movement = new Vector2(m_movementInput.x * m_characterData.m_moveSpeed * m_movementMultiplier,
-                    m_rigidBody.velocity.y);
+                // If jump timer is greater than 0
+                if (m_jumpTimer > 0)
+                {
+                    // Set the velocity to increase upwards if not wall jumping
+                    if (!m_wallJumpLeft && !m_wallJumpRight)
+                    {
+                        m_rigidBody.velocity = Vector2.up * m_characterData.m_jumpSpeed * m_movementMultiplier *
+                                               Time.deltaTime;
+                    }
+                    // Set the velocity to increase upwards and to the right if wall jumping left
+                    else if (m_wallJumpLeft && !m_wallJumpRight)
+                    {
+                        m_rigidBody.velocity = new Vector2(1, 1) * m_characterData.m_jumpSpeed * m_movementMultiplier *
+                                               Time.deltaTime;
+                    }
+                    // Set the velocity to increase upwards and to the left if wall jumping right
+                    else if (!m_wallJumpLeft && m_wallJumpRight)
+                    {
+                        m_rigidBody.velocity = new Vector2(-1, 1) * m_characterData.m_jumpSpeed * m_movementMultiplier *
+                                               Time.deltaTime;
+                    }
 
-                // Update movement
-                m_rigidBody.velocity = movement;
+                    // Decrease the jump timer
+                    m_jumpTimer -= Time.deltaTime;
+                }
+
+                // else set jumping to false
+                else
+                {
+                    m_jumping = false;
+                    m_heldJumping = false;
+                }
             }
         }
     }
@@ -267,17 +340,82 @@ public class Player : Character
     /// </summary>
     private void Jump()
     {
-        bool wallCheckLeft = Physics2D.OverlapCircle(m_leftWallCheck.position, m_wallCheckRadius, m_wallMask);
-        //Debug.Log("Wall Check Left: " + wallCheckLeft);
-        bool wallCheckRight = Physics2D.OverlapCircle(m_rightWallCheck.position, m_wallCheckRadius, m_wallMask);
-        //Debug.Log("Wall Check Right: " + wallCheckRight);
-        bool grounded = Physics2D.OverlapCircle(m_groundCheck.position, m_wallCheckRadius, m_wallMask);
+        // Check if there is a wall to the left
+        bool wallCheckLeft = Physics2D.OverlapCircle(m_leftWallCheck.position, m_wallCheckRadius * 3, m_wallMask);
+        // Check if there is a wall to the right
+        bool wallCheckRight = Physics2D.OverlapCircle(m_rightWallCheck.position, m_wallCheckRadius * 3, m_wallMask);
+        // Check if the player is grounded
+        bool grounded = Physics2D.OverlapCircle(m_groundCheck.position, m_groundCheckRadius, m_wallMask);
+        // Check if coyote jump is possible from the left
+        bool coyoteCheckLeft = Physics2D.OverlapCircle(m_leftCoyoteCheck.position, m_coyoteCheckRadius, m_wallMask);
+        // Check if coyote jump is possible from the right
+        bool coyoteCheckRight = Physics2D.OverlapCircle(m_rightCoyoteCheck.position, m_coyoteCheckRadius, m_wallMask);
+
         // If player is grounded then jump
-        if (grounded || wallCheckRight || wallCheckLeft)
+        if (grounded)
         {
+            // Set jumping to true
             m_jumping = true;
+            // Set the jump timer
             m_jumpTimer = m_jumpTime;
-            m_rigidBody.velocity = Vector2.up * m_characterData.m_jumpSpeed * m_movementMultiplier;
+            // Set the wall jump bools to false
+            m_wallJumpLeft = false;
+            m_wallJumpRight = false;
+            // If the player is moving right jump upwards and to the right
+            if (m_rigidBody.velocity.x > 0)
+            {
+                m_rigidBody.velocity = new Vector2(1, 1) * m_characterData.m_jumpSpeed * m_movementMultiplier;
+            }
+            // If the player is moving left jump upwards and to the left
+            else if (m_rigidBody.velocity.x < 0)
+            {
+                m_rigidBody.velocity = new Vector2(-1, 1) * m_characterData.m_jumpSpeed * m_movementMultiplier;
+            }
+            // Else jump straight upwards
+            else
+            {
+                m_rigidBody.velocity = Vector2.up * m_characterData.m_jumpSpeed * m_movementMultiplier;
+            }
+        }
+        // If wall jumping right or coyote jumping right is possible
+        else if (wallCheckRight || coyoteCheckRight)
+        {
+            // Set jumping to true
+            m_jumping = true;
+            // Set the jump timer
+            m_jumpTimer = m_jumpTime;
+            // Set wall jump right to true and wall jump left to false
+            m_wallJumpLeft = false;
+            m_wallJumpRight = true;
+            // Jump upwards and to the left
+            m_rigidBody.velocity = new Vector2(-1, 1) * m_characterData.m_jumpSpeed * m_movementMultiplier;
+        }
+        // If wall jumping left or coyote jumping left is possible
+        else if (wallCheckLeft || coyoteCheckLeft)
+        {
+            // Set jumping to true
+            m_jumping = true;
+            // Set the jump timer
+            m_jumpTimer = m_jumpTime;
+            // Set wall jump right to false and wall jump left to true
+            m_wallJumpLeft = true;
+            m_wallJumpRight = false;
+            // Jump upwards and to the right
+            m_rigidBody.velocity = new Vector2(1, 1) * m_characterData.m_jumpSpeed * m_movementMultiplier;
+        }
+
+        // Create the jump particle system based on the collision check
+        if (grounded)
+        {
+            GameObject jumpPS = (GameObject)Instantiate(m_jumpPSPrefab, m_groundCheck.position, Quaternion.Euler(0, 0, 0));
+        }
+        if (wallCheckRight)
+        {
+            GameObject jumpPS = (GameObject)Instantiate(m_jumpPSPrefab, m_rightWallCheck.position, Quaternion.Euler(0, 0, 90));
+        }
+        if (wallCheckLeft)
+        {
+            GameObject jumpPS = (GameObject)Instantiate(m_jumpPSPrefab, m_leftWallCheck.position, Quaternion.Euler(0, 0, -90));
         }
     }
 
@@ -290,7 +428,10 @@ public class Player : Character
         // If end zone then load next level
         if (other.tag == "EndZone")
         {
-            GameManager.Instance.ChangeState(GameState.LevelOver);
+            if (!GameManager.Instance.Finished)
+            {
+                GameManager.Instance.ChangeState(GameState.LevelOver);
+            }
         }
         // If collectable then increase the score and destroy collectable
         if (other.tag == "Collectable")
@@ -309,37 +450,25 @@ public class Player : Character
         // If the player collided with a room entrance
         if (other.tag == "Entrance")
         {
-            // If the player has a reference to the camera movement class
-            if (m_cameraMovement)
+            // Find the room exit class
+            RoomExit exit = other.gameObject.GetComponent<RoomExit>();
+
+            // Check if the exit has a room
+            if (exit.GetRoom() != null)
             {
-                // Find the room exit class
-                RoomExit exit = other.gameObject.GetComponent<RoomExit>();
+                // If there is a room, get it's transform
+                Transform targetTransform = exit.GetRoom().transform;
 
-                // Check if the exit has a room
-                if (exit.GetRoom() != null)
-                {
-                    // If there is a room, get it's transform
-                    Transform targetTransform = exit.GetRoom().transform;
+                // Set the players current room
+                m_currentRoom = exit.GetRoom();
 
-                    // Check the transform is not equal to the cameras current
-                    // target transform
-                    if (targetTransform != m_cameraMovement.CurrentTargetTransform())
-                    {
-                        // If its not set it as the new target
-                        m_cameraMovement.SetNewRoomTarget(targetTransform);
-
-                        // Set the players current room
-                        m_currentRoom = exit.GetRoom();
-
-                        // Send data to the database
-                        GameManager.Instance.UpdateDataOnDatabase();
-                    }
-                }
+                // Send data to the database
+                GameManager.Instance.UpdateDataOnDatabase();
             }
         }
 
         // Check if the player collided with an obstacle
-        if (other.tag == "Obstacle")
+        if (other.tag == "Obstacle" && !GameManager.Instance.Finished)
         {
             // Remove a life from the player
             m_currentHealth--;
@@ -451,5 +580,41 @@ public class Player : Character
     public Room GetCurrentRoom()
     {
         return m_currentRoom;
+    }
+
+    /// <summary>
+    /// Update the players sprite
+    /// </summary>
+    protected override void UpdateSprite()
+    {
+        // If the x velocity is 0 set sprite to idle
+        if (m_rigidBody.velocity.x == 0)
+        {
+            m_renderer.sprite = m_characterData.m_idleSprite;
+        }
+
+        // If the x velocity is greater than 0 set sprite to right facing sprite
+        else if (m_rigidBody.velocity.x > 0 && !m_sprinting)
+        {
+            m_renderer.sprite = m_characterData.m_rightSprite;
+        }
+        // Else x velocity is less than 0
+        // Set sprite to left facing sprite
+        else if (m_rigidBody.velocity.x < 0 && !m_sprinting)
+        {
+            m_renderer.sprite = m_characterData.m_leftSprite;
+        }
+
+        // If the x velocity is greater than 0 set sprite to right facing sprite
+        else if (m_rigidBody.velocity.x > 0 && m_sprinting)
+        {
+            m_renderer.sprite = m_sprintRightSprite;
+        }
+        // Else x velocity is less than 0
+        // Set sprite to left facing sprite
+        else if (m_rigidBody.velocity.x < 0 && m_sprinting)
+        {
+            m_renderer.sprite = m_sprintLeftSprite;
+        }
     }
 }

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using LevelGeneration;
+﻿using LevelGeneration;
 using UnityEngine;
 
 /// <summary>

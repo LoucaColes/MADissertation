@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 /// <summary>
 /// A manager class that allows other classes to
@@ -23,6 +21,7 @@ public class CanvasManager : MonoBehaviour
 
     /// <summary>
     /// Enable the game canvas
+    /// and disable pause canvas
     /// </summary>
     public void EnableGameCanvas()
     {
@@ -32,6 +31,7 @@ public class CanvasManager : MonoBehaviour
 
     /// <summary>
     /// Enable the pause canvas
+    /// and disable game canvas
     /// </summary>
     public void EnablePauseCanvas()
     {

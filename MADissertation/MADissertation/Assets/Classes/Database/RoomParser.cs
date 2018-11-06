@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using LevelGeneration;
-using UnityEngine;
+﻿using LevelGeneration;
 
 /// <summary>
 /// A parser that can convert the room class into other formats

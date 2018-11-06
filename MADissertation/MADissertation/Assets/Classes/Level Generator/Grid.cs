@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections;
+﻿using Cinemachine;
+using System;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 /// <summary>
@@ -21,7 +20,8 @@ namespace LevelGeneration
         private List<Room> m_rooms;
         private List<Room> m_path;
         private TemplateHolder m_templateHolder;
-        private CameraMovement m_cameraMovement;
+        private CinemachineSmoothPath m_dolly;
+        private CinemachineVirtualCamera m_dollyCam;
         private GameObject m_playerPref;
         private int m_collectableCount = 0;
 
@@ -33,10 +33,9 @@ namespace LevelGeneration
         /// <param name="_emptyRoom">Empty Room Prefab</param>
         /// <param name="_offset">Position Offset</param>
         /// <param name="_templateHolder">Template Holder Scriptable Object</param>
-        /// <param name="_cameraMovement">Camera Movement Class</param>
         /// <param name="_player">Player Prefab</param>
         public void CreateGrid(int _gridWidth, int _gridHeight, GameObject _emptyRoom, Vector2 _offset,
-            TemplateHolder _templateHolder, CameraMovement _cameraMovement, GameObject _player)
+            TemplateHolder _templateHolder, GameObject _player)
         {
             // Set the grid with and height
             m_gridWidth = _gridWidth;
@@ -85,8 +84,11 @@ namespace LevelGeneration
             // Set the template holer
             m_templateHolder = _templateHolder;
 
-            // Set the camera movement class
-            m_cameraMovement = _cameraMovement;
+            // Find the dolly points object
+            m_dolly = GameObject.FindObjectOfType<CinemachineSmoothPath>();
+
+            // Find the dolly camera object
+            m_dollyCam = GameObject.FindObjectOfType<CinemachineVirtualCamera>();
 
             // Set the player prefab
             m_playerPref = _player;
@@ -109,9 +111,10 @@ namespace LevelGeneration
             Vector3 startRoomPostion = m_path[0].transform.position;
 
             // Move the camera to the room's position
-            Vector3 newCameraPosition = new Vector3(startRoomPostion.x, startRoomPostion.y, m_cameraMovement.transform.position.z);
-            m_cameraMovement.gameObject.transform.position = newCameraPosition;
-            m_cameraMovement.SetStartRoomTransform(m_path[0].transform);
+            Vector3 newCameraPosition = new Vector3(startRoomPostion.x, startRoomPostion.y, -10);
+            m_dolly.gameObject.transform.position = newCameraPosition;
+            m_dollyCam.gameObject.transform.position = newCameraPosition;
+            m_dolly.gameObject.transform.position = new Vector3(0, 0, -10);
 
             // Init end room
             m_path[m_path.Count - 1].SetRoomType(RoomType.End);
@@ -129,6 +132,26 @@ namespace LevelGeneration
             Vector3 spawnPosition = m_path[0].GetSpawnPosition().position;
             GameObject player = (GameObject)Instantiate(m_playerPref, spawnPosition, Quaternion.identity);
 
+            // Set the follow and look at field to the player transform
+            m_dollyCam.m_Follow = player.transform;
+            m_dollyCam.m_LookAt = player.transform;
+
+            // Create a new array of waypoints equal to the size of the path list
+            CinemachineSmoothPath.Waypoint[] waypoints = new CinemachineSmoothPath.Waypoint[m_path.Count];
+
+            // Loop through and set each waypoints position
+            for (int i = 0; i < m_path.Count; i++)
+            {
+                waypoints[i].position = m_path[i].transform.position;
+            }
+
+            // Set the dolly's waypoints to the new waypoints
+            m_dolly.m_Waypoints = waypoints;
+
+            // Set the dolly points and camera's position to the start room position
+            m_dolly.gameObject.transform.position = new Vector3(startRoomPostion.x, startRoomPostion.y, -7.5f);
+            m_dollyCam.transform.position = m_dolly.gameObject.transform.position;
+
             // Get the player class
             Player playerClass = player.GetComponent<Player>();
 
@@ -140,9 +163,6 @@ namespace LevelGeneration
 
             // Set the player's current room to the start room
             playerClass.SetCurrentRoom(m_path[0]);
-
-            // Initialise the camera movement
-            m_cameraMovement.Init();
 
             // Set up level data
             DesignData currentLevelData = new DesignData();
@@ -167,6 +187,10 @@ namespace LevelGeneration
 
             // Pass current level data to the data tracker
             DataTracker.Instance.AddNewLevelData(ref currentLevelData);
+
+            // Set the dolly points and camera to the start rooms position
+            m_dolly.gameObject.transform.position = new Vector3(0, 0, -7.5f);
+            m_dollyCam.transform.position = new Vector3(startRoomPostion.x, startRoomPostion.y, -7.5f);
         }
 
         /// <summary>
@@ -483,6 +507,15 @@ namespace LevelGeneration
                     Destroy(room.gameObject);
                 }
             }
+        }
+
+        /// <summary>
+        /// Access the start room world position
+        /// </summary>
+        /// <returns>Returns the start rooms world position</returns>
+        public Vector3 GetStartRoomPos()
+        {
+            return m_path[0].transform.position;
         }
     }
 }

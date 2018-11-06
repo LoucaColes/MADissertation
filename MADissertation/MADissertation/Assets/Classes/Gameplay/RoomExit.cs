@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using LevelGeneration;
 using UnityEngine;
-using LevelGeneration;
 
 /// <summary>
 /// Used to help transition from room to room
@@ -14,7 +12,7 @@ public class RoomExit : MonoBehaviour
     /// <summary>
     /// Set the connected room
     /// </summary>
-    /// <param name="_room"></param>
+    /// <param name="_room">Connected room</param>
     public void SetConnectedRoom(Room _room)
     {
         m_connectedRoom = _room;
@@ -23,7 +21,7 @@ public class RoomExit : MonoBehaviour
     /// <summary>
     /// Access the connected room
     /// </summary>
-    /// <returns></returns>
+    /// <returns>Connected room</returns>
     public Room GetRoom()
     {
         return m_connectedRoom;

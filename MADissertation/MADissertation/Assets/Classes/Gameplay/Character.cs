@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 /// <summary>
 /// Base class for player and enemies
@@ -24,8 +22,13 @@ public class Character : MonoBehaviour
     /// </summary>
     protected virtual void Awake()
     {
+        // Set the current health
         m_currentHealth = m_characterData.m_health;
+
+        // Get the rigidbody
         m_rigidBody = GetComponent<Rigidbody2D>();
+
+        // Get the sprite renderer
         m_renderer = GetComponent<SpriteRenderer>();
     }
 
@@ -37,6 +40,7 @@ public class Character : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {
+        // Update the character sprite
         UpdateSprite();
     }
 
@@ -50,7 +54,7 @@ public class Character : MonoBehaviour
     /// <summary>
     /// Update the sprite based on the characters velocity
     /// </summary>
-    private void UpdateSprite()
+    protected virtual void UpdateSprite()
     {
         // If the x velocity is 0 set sprite to idle
         if (m_rigidBody.velocity.x == 0)

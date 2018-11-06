@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab1cc38db35b60c489dd52c5b3c1041d, type: 3}
+  m_Name: ProcGenAverages
+  m_EditorClassIdentifier: 
+  m_easyAverages:
+    m_deathsAverages:
+      m_average: 0.33
+      m_standardDeviation: 0.55
+    m_scoreAverages:
+      m_average: 5.21
+      m_standardDeviation: 4.89
+    m_timeAverages:
+      m_average: 51.89
+      m_standardDeviation: 2.63
+  m_mediumAverages:
+    m_deathsAverages:
+      m_average: 6.62
+      m_standardDeviation: 7.93
+    m_scoreAverages:
+      m_average: 10.38
+      m_standardDeviation: 5.38
+    m_timeAverages:
+      m_average: 201.74
+      m_standardDeviation: 159.77
+  m_hardAverages:
+    m_deathsAverages:
+      m_average: 13.9
+      m_standardDeviation: 11.9
+    m_scoreAverages:
+      m_average: 7
+      m_standardDeviation: 4
+    m_timeAverages:
+      m_average: 265.34
+      m_standardDeviation: 175.38

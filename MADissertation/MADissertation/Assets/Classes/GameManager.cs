@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Cinemachine;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Utilities;
@@ -23,6 +24,18 @@ public class GameManager : Singleton<GameManager>
     private GameObject m_respawningText;
     private PlayerData m_currentPlayerData;
     private CanvasManager m_canvasManager = null;
+    private bool m_finished = false;
+
+    /// <summary>
+    /// Check if the level is finished
+    /// </summary>
+    public bool Finished
+    {
+        get
+        {
+            return m_finished;
+        }
+    }
 
     // Use this for initialization
     private void Start()
@@ -122,20 +135,15 @@ public class GameManager : Singleton<GameManager>
                 m_respawningText.SetActive(false);
 
                 // Access game canvas and update level text, deaths text and difficulty text
-                m_canvasManager.GetGameCanvas().UpdateLevelText(DataTracker.Instance.GetLevelId());
+                m_canvasManager.GetGameCanvas().UpdateLevelText(DataTracker.Instance.GetLevelId() + 1);
                 m_canvasManager.GetGameCanvas().UpdateDeathsText(m_currentPlayerData.m_currentPlayerDeaths);
                 m_canvasManager.GetGameCanvas().UpdateDifficultyText(DataTracker.Instance.GetDifficulty());
 
+                // Update canvas score
+                m_canvasManager.GetGameCanvas().UpdateScoreText(m_currentPlayerData.m_score);
+
                 // Find the player object
                 Player initPlayer = GameObject.FindObjectOfType<Player>();
-
-                // Find the camera movement object
-                CameraMovement cameraMovement = Camera.main.gameObject.GetComponent<CameraMovement>();
-                if (initPlayer != null)
-                {
-                    // If there is a player, reset the camera
-                    cameraMovement.ResetCamera();
-                }
 
                 // Change the state to play
                 ChangeState(GameState.Play);
@@ -158,12 +166,19 @@ public class GameManager : Singleton<GameManager>
                     resetPlayer.ResetPlayer();
                 }
 
-                // Find the camera movement object
-                CameraMovement rCameraMovement = Camera.main.gameObject.GetComponent<CameraMovement>();
-                if (resetPlayer != null)
+                // Find the grid object
+                LevelGeneration.Grid grid = GameObject.FindObjectOfType<LevelGeneration.Grid>();
+                // Find the dolly virtual camera
+                CinemachineVirtualCamera dollyCam = GameObject.FindObjectOfType<CinemachineVirtualCamera>();
+                // Reset the dolly camera position
+                dollyCam.transform.position = new Vector3(grid.GetStartRoomPos().x, grid.GetStartRoomPos().y, -7.5f);
+                // Find the dolly
+                CinemachineTrackedDolly trackedDolly = GameObject.FindObjectOfType<CinemachineTrackedDolly>();
+                // If the dolly was found set the path position to 0
+                if (trackedDolly != null)
                 {
-                    // If there is a player, reset the camera
-                    rCameraMovement.ResetCamera();
+                    trackedDolly.m_PathPosition = 0;
+                    Debug.Log("Found tracked dolly object");
                 }
 
                 // Change the state to play
@@ -198,12 +213,6 @@ public class GameManager : Singleton<GameManager>
 
             // If state is game over
             case GameState.GameOver:
-                // Find the camera movement object
-                CameraMovement tempCameraMovement = Camera.main.gameObject.GetComponent<CameraMovement>();
-
-                // Stop all coroutines in camera movement class
-                tempCameraMovement.StopAllCoroutines();
-
                 // Set the respawn text active to false
                 m_respawningText.SetActive(true);
 
@@ -219,33 +228,55 @@ public class GameManager : Singleton<GameManager>
                 // Add the current room the the death room stat
                 m_currentPlayerData.m_deathRoomData.Add(RoomParser.ParseRoomToString(deadPlayer.GetCurrentRoom()));
 
+                // Find the grid object
+                LevelGeneration.Grid gogrid = GameObject.FindObjectOfType<LevelGeneration.Grid>();
+                // Find the dolly virtual camera
+                CinemachineVirtualCamera godollyCam = GameObject.FindObjectOfType<CinemachineVirtualCamera>();
+                // Reset the dolly camera position
+                godollyCam.transform.position = new Vector3(gogrid.GetStartRoomPos().x, gogrid.GetStartRoomPos().y, -7.5f);
+
                 // Reset the game
                 StartCoroutine(ResetAfterGameOver());
                 break;
 
             // If state is level over
             case GameState.LevelOver:
-                // Add player data to the data tracker
-                DataTracker.Instance.AddNewPlayerData(ref m_currentPlayerData);
-
-                // Send the data to the database and increase the level count
-                int levelCount;
-                DataTracker.Instance.SetUpNextLevelDataAndSendToDatabase(out levelCount);
-
-                // Create a new player data
-                m_currentPlayerData = new PlayerData();
-
-                // If the level count is less then the limit
-                if (levelCount < m_levelLimit)
+                // Check if finished already so it can't trigger multiple times
+                if (!Finished)
                 {
-                    // Load the next level
-                    StartCoroutine(LoadNextLevel());
+                    m_finished = true;
+
+                    // Add player data to the data tracker
+                    DataTracker.Instance.AddNewPlayerData(ref m_currentPlayerData);
+
+                    // Send the data to the database and increase the level count
+                    int levelCount;
+                    // Set the game to wait until the data has been fully sent before continuing
+                    DataTracker.Instance.SetUpNextLevelDataAndSendToDatabase(out levelCount, true);
                 }
-                else // Else load the main menu
-                {
-                    StartCoroutine(LoadMainMenu());
-                }
+
                 break;
+        }
+    }
+
+    /// <summary>
+    /// Completes the current level
+    /// </summary>
+    /// <param name="levelCount">The current level count</param>
+    public void LevelFinished(int levelCount)
+    {
+        // Create a new player data
+        m_currentPlayerData = new PlayerData();
+
+        // If the level count is less then the limit
+        if (levelCount < m_levelLimit)
+        {
+            // Load the next level
+            StartCoroutine(LoadNextLevel());
+        }
+        else // Else load the main menu
+        {
+            StartCoroutine(LoadMainMenu());
         }
     }
 
@@ -304,10 +335,13 @@ public class GameManager : Singleton<GameManager>
                 m_canvasManager = GameObject.FindObjectOfType<CanvasManager>();
 
                 // Update the level text
-                m_canvasManager.GetGameCanvas().UpdateLevelText(DataTracker.Instance.GetLevelId());
+                m_canvasManager.GetGameCanvas().UpdateLevelText(DataTracker.Instance.GetLevelId() + 1);
 
                 // Update the deaths text
                 m_canvasManager.GetGameCanvas().UpdateDeathsText(m_currentPlayerData.m_currentPlayerDeaths);
+
+                // Update canvas score
+                m_canvasManager.GetGameCanvas().UpdateScoreText(m_currentPlayerData.m_score);
 
                 // Change the state to play
                 ChangeState(GameState.Play);
@@ -367,7 +401,7 @@ public class GameManager : Singleton<GameManager>
     private IEnumerator ResetAfterGameOver()
     {
         // Wait for 5 seconds
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(2f);
 
         // Set the state to reset
         ChangeState(GameState.Reset);
@@ -388,7 +422,11 @@ public class GameManager : Singleton<GameManager>
     /// <param name="_score">Score value</param>
     public void UpdateCurrentLevelScore(int _score)
     {
+        // Set the score
         m_currentPlayerData.m_score = _score;
+
+        // Update canvas score
+        m_canvasManager.GetGameCanvas().UpdateScoreText(_score);
     }
 
     /// <summary>
@@ -409,6 +447,9 @@ public class GameManager : Singleton<GameManager>
         return m_debugMode;
     }
 
+    /// <summary>
+    /// Update the players data onto the database
+    /// </summary>
     public void UpdateDataOnDatabase()
     {
         DataTracker.Instance.UpdateCurrentPlayerData(ref m_currentPlayerData);

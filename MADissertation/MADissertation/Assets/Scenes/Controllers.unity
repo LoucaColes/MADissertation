@@ -945,8 +945,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_gameSceneData:
-    m_sceneName: LevelGenTest
-    m_sceneIndex: 5
+    m_sceneName: Intro
+    m_sceneIndex: 6
     m_loadASync: 0
   m_keyboardInput:
     m_name: Keyboard
@@ -1491,48 +1491,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1939457580}
---- !u!1001 &1991666894
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4050955427480788, guid: 2c87db072acf35245810f14cca2b6bca, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4050955427480788, guid: 2c87db072acf35245810f14cca2b6bca, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4050955427480788, guid: 2c87db072acf35245810f14cca2b6bca, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4050955427480788, guid: 2c87db072acf35245810f14cca2b6bca, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4050955427480788, guid: 2c87db072acf35245810f14cca2b6bca, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4050955427480788, guid: 2c87db072acf35245810f14cca2b6bca, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4050955427480788, guid: 2c87db072acf35245810f14cca2b6bca, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4050955427480788, guid: 2c87db072acf35245810f14cca2b6bca, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 2c87db072acf35245810f14cca2b6bca, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1996334970
 GameObject:
   m_ObjectHideFlags: 0
@@ -1691,8 +1649,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Xbox One Input\nGameplay\n\nMove Horizontal - Left Analogue Stick\r\nMove
     Vertical- Left Analogue Stick\r\nJump - A\r\nSprint - Right Trigger\r\nDash Right
-    - Right Bumper\r\nDash Left - Left Bumper\r\nDrop Down - X or D-pad Down\r\nPause
-    - Menu"
+    - Right Bumper\r\nDash Left - Left Bumper\r\r\nPause - Menu"
 --- !u!222 &2099612724
 CanvasRenderer:
   m_ObjectHideFlags: 0

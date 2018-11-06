@@ -3,18 +3,18 @@
 #pragma warning disable 0618
 #pragma warning disable 0649
 
-namespace Rewired {
-
-    using UnityEngine;
-    using System.Collections.Generic;
+namespace Rewired
+{
     using Rewired.Platforms;
     using Rewired.Utils;
     using Rewired.Utils.Interfaces;
+    using UnityEngine;
 
     [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
-    public sealed class InputManager : InputManager_Base {
-
-        protected override void DetectPlatform() {
+    public sealed class InputManager : InputManager_Base
+    {
+        protected override void DetectPlatform()
+        {
             // Set the editor and platform versions
 
             editorPlatform = EditorPlatform.None;
@@ -166,11 +166,14 @@ namespace Rewired {
 #endif
         }
 
-        protected override void CheckRecompile() {
+        protected override void CheckRecompile()
+        {
 #if UNITY_EDITOR
             // Destroy system if recompiling
-            if(UnityEditor.EditorApplication.isCompiling) { // editor is recompiling
-                if(!isCompiling) { // this is the first cycle of recompile
+            if (UnityEditor.EditorApplication.isCompiling)
+            { // editor is recompiling
+                if (!isCompiling)
+                { // this is the first cycle of recompile
                     isCompiling = true; // flag it
                     RecompileStart();
                 }
@@ -178,18 +181,21 @@ namespace Rewired {
             }
 
             // Check for end of compile
-            if(isCompiling) { // compiling is done
+            if (isCompiling)
+            { // compiling is done
                 isCompiling = false; // flag off
                 RecompileEnd();
             }
 #endif
         }
 
-        protected override IExternalTools GetExternalTools() {
+        protected override IExternalTools GetExternalTools()
+        {
             return new ExternalTools();
         }
 
-        private bool CheckDeviceName(string searchPattern, string deviceName, string deviceModel) {
+        private bool CheckDeviceName(string searchPattern, string deviceName, string deviceModel)
+        {
             return System.Text.RegularExpressions.Regex.IsMatch(deviceName, searchPattern, System.Text.RegularExpressions.RegexOptions.IgnoreCase) ||
                 System.Text.RegularExpressions.Regex.IsMatch(deviceModel, searchPattern, System.Text.RegularExpressions.RegexOptions.IgnoreCase);
         }

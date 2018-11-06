@@ -1099,8 +1099,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_destroyOnLoad: 0
   m_idType: 0
-  m_groupName: ProcGenTest
-  m_baseAverages: {fileID: 11400000, guid: d60748ca0e3b5d74c81b5d5b81846021, type: 2}
+  m_groupName: DynamicDifficultyUserTestV11
+  m_baseAverages: {fileID: 11400000, guid: bacd046a650c28b40868d9d6c245278d, type: 2}
+  m_startDifficultyOverride: 1
+  m_startDifficulty: 0
+  m_randomiseDifficulty: 0
+  m_canvas: {fileID: 772254934}
 --- !u!4 &1582202270
 Transform:
   m_ObjectHideFlags: 0

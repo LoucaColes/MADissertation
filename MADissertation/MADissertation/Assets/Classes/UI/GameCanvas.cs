@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 /// <summary>
@@ -23,6 +21,9 @@ public class GameCanvas : MonoBehaviour
 
     [SerializeField]
     private Text m_difficultyText;
+
+    [SerializeField]
+    private Text m_scoreText;
 
     /// <summary>
     /// Update the level text object
@@ -58,5 +59,14 @@ public class GameCanvas : MonoBehaviour
     public void UpdateDifficultyText(Difficulty _difficulty)
     {
         m_difficultyText.text = "Difficulty: " + _difficulty.ToString();
+    }
+
+    /// <summary>
+    /// Update the score text object
+    /// </summary>
+    /// <param name="_score">Score</param>
+    public void UpdateScoreText(int _score)
+    {
+        m_scoreText.text = "Score: " + _score;
     }
 }

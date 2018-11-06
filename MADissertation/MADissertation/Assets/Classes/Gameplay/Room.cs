@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace LevelGeneration
 {
@@ -87,8 +85,8 @@ namespace LevelGeneration
         /// <summary>
         /// Initialise the room with room type and grid position
         /// </summary>
-        /// <param name="_type"></param>
-        /// <param name="_position"></param>
+        /// <param name="_type">Room type</param>
+        /// <param name="_position">Position of room</param>
         public void Init(RoomType _type, Vector2Int _position)
         {
             // Set the room type
@@ -124,7 +122,7 @@ namespace LevelGeneration
         /// <summary>
         /// Set the room type
         /// </summary>
-        /// <param name="_type"></param>
+        /// <param name="_type">Room type</param>
         public void SetRoomType(RoomType _type)
         {
             // Set the room type
@@ -162,7 +160,7 @@ namespace LevelGeneration
         /// <summary>
         /// Set the connection type
         /// </summary>
-        /// <param name="_type"></param>
+        /// <param name="_type">Connection type</param>
         public void SetConnectionType(ConnectionType _type)
         {
             // Set the connection type
